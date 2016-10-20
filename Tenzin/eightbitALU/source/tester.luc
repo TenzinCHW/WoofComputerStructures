@@ -1,0 +1,72 @@
+module tester (
+    input clk,  // clock
+    input rst,  // reset
+    output out[8],
+    output a[8],
+    output b[8],
+    input ab[1],  // click to change value of a and b
+    input aLUFN[6]
+  ) {
+  
+  .clk(clk){
+    .rst(rst){  
+    dff generateAB[25];
+    }
+  }
+  
+  sig zerozero[8];
+  sig zeroone[8];
+  sig onezero[8];
+  sig oneone[8];
+  sig asig[8];
+  sig bsig[8];
+  
+  always {
+    
+    if (ab){
+      generateAB.d = generateAB.q + 3;
+      }
+    
+    asig = generateAB.q[18:11];
+    bsig = generateAB.q[23:16];
+    // need to generate a and b based on aLUFN
+    // compare z v and n
+    
+    
+    
+    case (aLUFN[5:4]){
+      0: case (aLUFN[0]){
+          0: out = asig + bsig;
+          1: out = asig - bsig;
+          default: out = 0;
+          }
+        case (aLUFN[1]){
+          0: out = asig / bsig;
+          1: out = asig * bsig;
+          default: out = 0;
+          }
+      1: bsig[7:3] = 0;
+        case (aLUFN[1:0]){
+        0: out = asig << bsig;
+        1: out = asig >> bsig;
+        2: out = $signed(asig) <<< bsig;
+        3: out = $signed(asig) >>> bsig;
+        default: out = 0;
+        }
+      2: zerozero = ~asig & ~bsig & 8x{aLUFN[0]};
+        zeroone = asig & ~bsig & 8x{aLUFN[1]};
+        onezero = ~asig & bsig & 8x{aLUFN[2]};
+        oneone = asig & bsig & 8x{aLUFN[3]};
+        out = (zerozero | zeroone | onezero | oneone);
+      3: out = 0;
+        case (aLUFN[2:1]){
+        1: out[0] = (asig == bsig);
+        2: out[0] = (asig < bsig);
+        3: out[0] = (asig <= bsig);
+        default: out[0] = 0;
+      }
+    }
+    a = asig;
+    b = bsig;
+  }
+}

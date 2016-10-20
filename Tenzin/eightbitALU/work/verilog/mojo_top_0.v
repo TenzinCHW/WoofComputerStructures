@@ -34,6 +34,8 @@ module mojo_top_0 (
   
   reg [5:0] aLUFN;
   
+  reg [7:0] out;
+  
   wire [8-1:0] M_adder_out;
   wire [1-1:0] M_adder_z;
   wire [1-1:0] M_adder_v;
@@ -51,11 +53,22 @@ module mojo_top_0 (
     .n(M_adder_n)
   );
   
+  wire [1-1:0] M_mult_out;
+  reg [8-1:0] M_mult_a;
+  reg [8-1:0] M_mult_b;
+  reg [6-1:0] M_mult_aLUFN;
+  multiplier_2 mult (
+    .a(M_mult_a),
+    .b(M_mult_b),
+    .aLUFN(M_mult_aLUFN),
+    .out(M_mult_out)
+  );
+  
   wire [8-1:0] M_shifter_out;
   reg [8-1:0] M_shifter_a;
   reg [3-1:0] M_shifter_b;
   reg [6-1:0] M_shifter_aLUFN;
-  shifter_2 shifter (
+  shifter_3 shifter (
     .a(M_shifter_a),
     .b(M_shifter_b),
     .aLUFN(M_shifter_aLUFN),
@@ -66,7 +79,7 @@ module mojo_top_0 (
   reg [8-1:0] M_bool_a;
   reg [8-1:0] M_bool_b;
   reg [6-1:0] M_bool_aLUFN;
-  boolean_3 bool (
+  boolean_4 bool (
     .a(M_bool_a),
     .b(M_bool_b),
     .aLUFN(M_bool_aLUFN),
@@ -77,7 +90,7 @@ module mojo_top_0 (
   reg [8-1:0] M_comparer_a;
   reg [8-1:0] M_comparer_b;
   reg [6-1:0] M_comparer_aLUFN;
-  compare_4 comparer (
+  compare_5 comparer (
     .a(M_comparer_a),
     .b(M_comparer_b),
     .aLUFN(M_comparer_aLUFN),
@@ -86,10 +99,24 @@ module mojo_top_0 (
   
   wire [1-1:0] M_reset_cond_out;
   reg [1-1:0] M_reset_cond_in;
-  reset_conditioner_5 reset_cond (
+  reset_conditioner_6 reset_cond (
     .clk(clk),
     .in(M_reset_cond_in),
     .out(M_reset_cond_out)
+  );
+  wire [8-1:0] M_tester_out;
+  wire [8-1:0] M_tester_a;
+  wire [8-1:0] M_tester_b;
+  reg [1-1:0] M_tester_ab;
+  reg [6-1:0] M_tester_aLUFN;
+  tester_7 tester (
+    .clk(clk),
+    .rst(rst),
+    .ab(M_tester_ab),
+    .aLUFN(M_tester_aLUFN),
+    .out(M_tester_out),
+    .a(M_tester_a),
+    .b(M_tester_b)
   );
   
   always @* begin
@@ -99,15 +126,30 @@ module mojo_top_0 (
     spi_miso = 1'bz;
     spi_channel = 4'bzzzz;
     avr_rx = 1'bz;
-    io_led = 24'h000000;
     io_seg = 8'hff;
     io_sel = 4'hf;
-    a = io_dip[0+7-:8];
-    b = io_dip[8+7-:8];
+    a = 1'h0;
+    b = 1'h0;
     aLUFN = io_dip[16+0+5-:6];
+    M_tester_aLUFN = aLUFN;
+    M_tester_ab = io_dip[16+7+0-:1];
+    
+    case (io_dip[16+7+0-:1])
+      1'h0: begin
+        a = io_dip[0+7-:8];
+        b = io_dip[8+7-:8];
+      end
+      1'h1: begin
+        a = M_tester_a;
+        b = M_tester_b;
+      end
+    endcase
     M_adder_a = a;
     M_adder_b = b;
     M_adder_aLUFN = aLUFN;
+    M_mult_a = a;
+    M_mult_b = b;
+    M_mult_aLUFN = aLUFN;
     M_shifter_a = a;
     M_shifter_b = b[0+2-:3];
     M_shifter_aLUFN = aLUFN;
@@ -117,27 +159,41 @@ module mojo_top_0 (
     M_comparer_a = a;
     M_comparer_b = b;
     M_comparer_aLUFN = aLUFN;
+    led[2+5-:6] = aLUFN;
     io_led[16+0+0-:1] = M_adder_z;
     io_led[16+1+0-:1] = M_adder_v;
     io_led[16+2+0-:1] = M_adder_n;
     
     case (io_dip[16+4+1-:2])
       1'h0: begin
-        io_led[0+7-:8] = M_adder_out;
+        if (aLUFN[2+0-:1]) begin
+          out = M_mult_out;
+        end else begin
+          out = M_adder_out;
+        end
       end
       1'h1: begin
-        io_led[0+7-:8] = M_shifter_out;
+        out = M_shifter_out;
       end
       2'h2: begin
-        io_led[0+7-:8] = M_bool_out;
+        out = M_bool_out;
       end
       2'h3: begin
-        io_led[0+7-:8] = 1'h0;
-        io_led[0+0+0-:1] = M_comparer_out;
+        out = 1'h0;
+        out[0+0-:1] = M_comparer_out;
       end
       default: begin
         io_led[0+7-:8] = 1'h0;
       end
     endcase
+    io_led[0+7-:8] = out;
+    if (io_dip[16+7+0-:1]) begin
+      io_led[8+7-:8] = M_tester_out;
+      if (out != M_tester_out) begin
+        io_led[16+7+0-:1] = 1'h1;
+      end else begin
+        io_led[16+7+0-:1] = 1'h0;
+      end
+    end
   end
 endmodule

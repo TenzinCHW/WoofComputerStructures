@@ -1,0 +1,25 @@
+module dffTester (
+    input clk,    // clock
+    input rst,    // reset
+    output blink,  // output to LED
+    input rar
+  ) {
+  
+  fsm counter(.clk(clk), .rst(rst)) = {OFF, ON};
+
+  sig on[1];
+  
+  always {
+    blink = 0;
+    case (counter.q){
+      counter.OFF: blink = 0;
+        if (rar){
+          counter.d = counter.ON;
+        }
+      counter.ON: blink = 1;
+        if (rar){
+          counter.d = counter.OFF;
+      }
+    }
+  }    
+}

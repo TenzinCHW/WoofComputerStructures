@@ -1,13 +1,19 @@
 module blinker (
     input clk,    // clock
     input rst,    // reset
-    output blink  // output to LED
+    output blink,  // output to LED
+    input rar
   ) {
   
   dff counter[25](.clk(clk), .rst(rst));
 
   always {
-    blink = counter.q[24];
-    counter.d = counter.q + 1;
+    if (rar){
+      counter.d = counter.q + 1;
+    }
+    blink = counter.q[0];
+    
+    //blink = counter.q[24];
+    //counter.d = counter.q + 1;
   }
 }

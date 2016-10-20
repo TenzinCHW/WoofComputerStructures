@@ -8,7 +8,34 @@
 <msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">spi_sck_IBUF</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(0)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(1)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(2)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
 <msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">avr_rx_busy_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(3)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(4)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(5)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(6)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(7)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(9)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
 </msg>
 
 <msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">spi_mosi_IBUF</arg> has no load.  PAR will not attempt to route this signal.
@@ -20,7 +47,53 @@
 <msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">avr_tx_IBUF</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(10)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(11)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(12)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(20)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(13)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(21)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(14)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(22)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(15)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(23)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(16)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(17)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(18)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="Par" num="289" delta="new" >The signal <arg fmt="%s" index="1">io_led(19)_OBUF</arg> has no driver.  PAR will not attempt to route this signal.
+</msg>
+
 <msg type="warning" file="Par" num="288" delta="new" >The signal <arg fmt="%s" index="1">cclk_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="ParHelpers" num="362" delta="new" >There are <arg fmt="%d" index="1">23</arg> sourceless signals in this design. This design will not pass the DRC check run by Bitgen.
+
 </msg>
 
 <msg type="warning" file="ParHelpers" num="361" delta="new" >There are <arg fmt="%d" index="1">6</arg> loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
@@ -28,6 +101,10 @@
 </msg>
 
 <msg type="warning" file="Par" num="283" delta="new" >There are <arg fmt="%d" index="1">6</arg> loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+</msg>
+
+<msg type="warning" file="Par" num="284" delta="new" >There are <arg fmt="%d" index="1">23</arg> sourceless signals in this design. This design will not pass the DRC check run by Bitgen.
 
 </msg>
 

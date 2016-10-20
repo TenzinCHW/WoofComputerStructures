@@ -10,6 +10,6 @@ module multiplier (
       0: out = a/b;
       1: out = a * b;
       default: out = 0;
-      }
+    }
   }
 }

@@ -21,15 +21,12 @@ module adder_1 (
   always @* begin
     p = 8'h00;
     
-    case (aLUFN[0+1-:2])
+    case (aLUFN[0+0-:1])
       1'h0: begin
         p = a + b;
       end
       1'h1: begin
         p = a - b;
-      end
-      2'h2: begin
-        p = a * b;
       end
       default: begin
         p = 1'h0;

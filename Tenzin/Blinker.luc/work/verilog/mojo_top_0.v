@@ -16,7 +16,9 @@ module mojo_top_0 (
     output reg [3:0] spi_channel,
     input avr_tx,
     output reg avr_rx,
-    input avr_rx_busy
+    input avr_rx_busy,
+    input [4:0] io_buttons,
+    output reg [23:0] io_led
   );
   
   
@@ -31,9 +33,11 @@ module mojo_top_0 (
     .out(M_reset_cond_out)
   );
   wire [1-1:0] M_myBlinker_blink;
+  reg [1-1:0] M_myBlinker_rar;
   blinker_2 myBlinker (
     .clk(clk),
     .rst(rst),
+    .rar(M_myBlinker_rar),
     .blink(M_myBlinker_blink)
   );
   
@@ -44,5 +48,7 @@ module mojo_top_0 (
     spi_miso = 1'bz;
     spi_channel = 4'bzzzz;
     avr_rx = 1'bz;
+    M_myBlinker_rar = io_buttons[0+0-:1];
+    io_led[8+0+0-:1] = M_myBlinker_blink;
   end
 endmodule

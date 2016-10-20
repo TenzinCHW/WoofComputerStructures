@@ -5,7 +5,7 @@ C:\Users\HanWei\Xilinx\14.7\ISE_DS\ISE\.
    "mojo_top_0" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -2
 Opened constraints file mojo_top_0.pcf.
 
-Sat Oct 15 23:35:04 2016
+Fri Oct 21 00:32:50 2016
 
 C:\Users\HanWei\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -g Binary:Yes -g Compress -w -intstyle pa mojo_top_0_routed.ncd mojo_top_0.bit mojo_top_0.pcf 
 
@@ -129,9 +129,74 @@ There were 1 CONFIG constraint(s) processed from mojo_top_0.pcf.
    CONFIG VCCAUX = "3.3"
 
 Running DRC.
-DRC detected 0 errors and 0 warnings.
-Creating bit map...
-Saving bit stream in "mojo_top_0.bit".
-Bitstream compression saved 1756880 bits.
-Saving bit stream in "mojo_top_0.bin".
-Bitstream generation is complete.
+ERROR:PhysDesignRules:368 - The signal <io_led(0)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(1)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(2)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(3)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(4)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(5)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(6)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(7)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(9)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(10)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(11)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(12)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(20)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(13)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(21)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(14)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(22)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(15)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(23)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(16)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(17)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(18)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <io_led(19)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+ERROR:PhysDesignRules:10 - The network <io_led(0)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(1)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(2)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(3)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(4)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(5)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(6)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(7)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(9)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(10)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(11)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(12)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(20)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(13)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(21)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(14)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(22)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(15)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(23)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(16)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(17)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(18)_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <io_led(19)_OBUF> is completely unrouted.
+ERROR:Bitgen:25 - DRC detected 46 errors and 0 warnings.  Please see the
+   previously displayed individual error or warning messages for more details.

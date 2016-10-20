@@ -7,7 +7,8 @@
 module blinker_2 (
     input clk,
     input rst,
-    output reg blink
+    output reg blink,
+    input rar
   );
   
   
@@ -17,8 +18,10 @@ module blinker_2 (
   always @* begin
     M_counter_d = M_counter_q;
     
-    blink = M_counter_q[24+0-:1];
-    M_counter_d = M_counter_q + 1'h1;
+    if (rar) begin
+      M_counter_d = M_counter_q + 1'h1;
+    end
+    blink = M_counter_q[0+0-:1];
   end
   
   always @(posedge clk) begin

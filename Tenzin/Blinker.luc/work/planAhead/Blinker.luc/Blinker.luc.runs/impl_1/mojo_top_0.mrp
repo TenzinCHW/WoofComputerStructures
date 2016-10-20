@@ -8,37 +8,37 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Sat Oct 15 23:34:19 2016
+Mapped Date    : Fri Oct 21 00:32:13 2016
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    6
+Number of warnings:   29
 Slice Logic Utilization:
-  Number of Slice Registers:                    29 out of  11,440    1%
-    Number used as Flip Flops:                  29
+  Number of Slice Registers:                     5 out of  11,440    1%
+    Number used as Flip Flops:                   5
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                         26 out of   5,720    1%
-    Number used as logic:                       24 out of   5,720    1%
-      Number using O6 output only:               0
-      Number using O5 output only:              23
-      Number using O5 and O6:                    1
+  Number of Slice LUTs:                          2 out of   5,720    1%
+    Number used as logic:                        1 out of   5,720    1%
+      Number using O6 output only:               1
+      Number using O5 output only:               0
+      Number using O5 and O6:                    0
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   1,440    0%
-    Number used exclusively as route-thrus:      2
+    Number used exclusively as route-thrus:      1
       Number with same-slice register load:      1
-      Number with same-slice carry load:         1
+      Number with same-slice carry load:         0
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                     8 out of   1,430    1%
-  Number of MUXCYs used:                        28 out of   2,860    1%
-  Number of LUT Flip Flop pairs used:           28
-    Number with an unused Flip Flop:             0 out of      28    0%
-    Number with an unused LUT:                   2 out of      28    7%
-    Number of fully used LUT-FF pairs:          26 out of      28   92%
+  Number of occupied Slices:                     2 out of   1,430    1%
+  Number of MUXCYs used:                         4 out of   2,860    1%
+  Number of LUT Flip Flop pairs used:            4
+    Number with an unused Flip Flop:             0 out of       4    0%
+    Number with an unused LUT:                   2 out of       4   50%
+    Number of fully used LUT-FF pairs:           2 out of       4   50%
     Number of unique control sets:               2
     Number of slice register sites lost
       to control set restrictions:              11 out of  11,440    1%
@@ -50,8 +50,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        16 out of     102   15%
-    Number of LOCed IOBs:                       16 out of      16  100%
+  Number of bonded IOBs:                        41 out of     102   40%
+    Number of LOCed IOBs:                       40 out of      41   97%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -78,11 +78,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                1.67
+Average Fanout of Non-Clock Nets:                1.43
 
 Peak Memory Usage:  333 MB
-Total REAL time to MAP completion:  13 secs 
-Total CPU time to MAP completion (all processors):   7 secs 
+Total REAL time to MAP completion:  8 secs 
+Total CPU time to MAP completion (all processors):   8 secs 
 
 Table of Contents
 -----------------
@@ -117,20 +117,66 @@ WARNING:MapLib:701 - Signal spi_miso connected to top level port spi_miso has
    been removed.
 WARNING:MapLib:701 - Signal avr_rx connected to top level port avr_rx has been
    removed.
+WARNING:PhysDesignRules:368 - The signal <io_led(0)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(1)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(2)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(3)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(4)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(5)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(6)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(7)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(9)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(10)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(11)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(12)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(20)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(13)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(21)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(14)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(22)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(15)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(23)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(16)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(17)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(18)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:368 - The signal <io_led(19)_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
 
 Section 3 - Informational
 -------------------------
 INFO:Map:284 - Map is running with the multi-threading option on. Map currently
    supports the use of up to 2 processors. Based on the the user options and
    machine load, Map will use 2 processors during this run.
-INFO:LIT:243 - Logical network avr_rx_busy_IBUF has no load.
-INFO:LIT:395 - The above info message is repeated 5 more times for the following
+INFO:LIT:243 - Logical network io_buttons(4) has no load.
+INFO:LIT:395 - The above info message is repeated 9 more times for the following
    (max. 5 shown):
-   spi_mosi_IBUF,
-   spi_ss_IBUF,
-   spi_sck_IBUF,
-   cclk_IBUF,
-   avr_tx_IBUF
+   io_buttons(3),
+   io_buttons(2),
+   io_buttons(1),
+   avr_rx_busy_IBUF,
+   spi_mosi_IBUF
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -142,12 +188,15 @@ INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
    1.260 Volts)
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
+INFO:Place:834 - Only a subset of IOs are locked. Out of 41 IOs, 40 are locked
+   and 1 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
 INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
   14 block(s) removed
-   3 block(s) optimized away
+   2 block(s) optimized away
    8 signal(s) removed
 
 Section 5 - Removed Logic
@@ -184,7 +233,6 @@ Unused block "spi_miso" (PAD) removed.
 Optimized Block(s):
 TYPE 		BLOCK
 GND 		myBlinker/XST_GND
-VCC 		myBlinker/XST_VCC
 GND 		reset_cond/XST_GND
 
 To enable printing of redundant blocks removed and signals merged, set the
@@ -201,6 +249,31 @@ Section 6 - IOB Properties
 | avr_tx                             | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
 | cclk                               | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
 | clk                                | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
+| io_buttons[0]                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_led(0)                          | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(1)                          | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(2)                          | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(3)                          | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(4)                          | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(5)                          | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(6)                          | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(7)                          | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(9)                          | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(10)                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(11)                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(12)                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(13)                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(14)                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(15)                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(16)                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(17)                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(18)                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(19)                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(20)                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(21)                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(22)                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led(23)                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
+| io_led[8]                          | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
 | led[0]                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
 | led[1]                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
 | led[2]                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |

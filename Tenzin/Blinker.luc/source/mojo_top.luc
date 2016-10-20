@@ -10,7 +10,10 @@ module mojo_top (
     output spi_channel [4], // AVR general purpose pins (used by default to select ADC channel)
     input avr_tx,           // AVR TX (FPGA RX)
     output avr_rx,          // AVR RX (FPGA TX)
-    input avr_rx_busy       // AVR RX buffer full
+    input avr_rx_busy,       // AVR RX buffer full
+    
+    input io_buttons[5],
+    output io_led[3][8]
   ) {
   
   sig rst;                  // reset signal
@@ -33,5 +36,8 @@ module mojo_top (
     spi_miso = bz;             // not using SPI
     spi_channel = bzzzz;       // not using flags
     avr_rx = bz;               // not using serial port
+    
+    myBlinker.rar = io_buttons[0];
+    io_led[1][0] = myBlinker.blink;
   }
 }

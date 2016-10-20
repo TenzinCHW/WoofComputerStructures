@@ -30,18 +30,19 @@ Elaborating module <blinker_2>.
 
 Synthesizing Unit <mojo_top_0>.
     Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/Blinker.luc/work/planAhead/Blinker.luc/Blinker.luc.srcs/sources_1/imports/verilog/mojo_top_0.v".
+WARNING:Xst:647 - Input <io_buttons<4:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <cclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <spi_ss> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <spi_mosi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <spi_sck> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <avr_tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <avr_rx_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 1-bit tristate buffer for signal <spi_miso> created at line 40
-    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 40
-    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 40
-    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 40
-    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 40
-    Found 1-bit tristate buffer for signal <avr_rx> created at line 40
+    Found 1-bit tristate buffer for signal <spi_miso> created at line 44
+    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 44
+    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 44
+    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 44
+    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 44
+    Found 1-bit tristate buffer for signal <avr_rx> created at line 44
     Summary:
 	inferred   6 Tristate(s).
 Unit <mojo_top_0> synthesized.
@@ -56,7 +57,7 @@ Unit <reset_conditioner_1> synthesized.
 Synthesizing Unit <blinker_2>.
     Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/Blinker.luc/work/planAhead/Blinker.luc/Blinker.luc.srcs/sources_1/imports/verilog/blinker_2.v".
     Found 25-bit register for signal <M_counter_q>.
-    Found 25-bit adder for signal <M_counter_d> created at line 21.
+    Found 25-bit adder for signal <M_counter_q[24]_GND_3_o_add_0_OUT> created at line 22.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  25 D-type flip-flop(s).
@@ -99,6 +100,30 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_1> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_2> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_3> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_4> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_5> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_6> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_7> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_8> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_9> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_10> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_11> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_12> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_13> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_14> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_15> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_16> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_17> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_18> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_19> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_20> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_21> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_22> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_23> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <myBlinker/M_counter_q_24> of sequential type is unconnected in block <mojo_top_0>.
 
 Optimizing unit <mojo_top_0> ...
 
@@ -116,8 +141,8 @@ Unit <mojo_top_0> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 29
- Flip-Flops                                            : 29
+# Registers                                            : 5
+ Flip-Flops                                            : 5
 
 =========================================================================
 
@@ -141,7 +166,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 29    |
+clk                                | BUFGP                  | 5     |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -152,9 +177,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 2.491ns (Maximum Frequency: 401.485MHz)
+   Minimum period: 2.010ns (Maximum Frequency: 497.512MHz)
    Minimum input arrival time before clock: 3.526ns
-   Maximum output required time after clock: 4.412ns
+   Maximum output required time after clock: 4.444ns
    Maximum combinational path delay: No path found
 
 =========================================================================

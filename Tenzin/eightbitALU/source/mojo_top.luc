@@ -19,9 +19,10 @@ module mojo_top (
   ) {
   
   sig rst;                  // reset signal
-  sig a[8];
+  sig a[8];  // Create signals to store a, b and aLUFN
   sig b[8];
   sig aLUFN[6];
+  sig out[8];
   adder adder;
   multiplier mult;
   shifter shifter;
@@ -32,6 +33,9 @@ module mojo_top (
     // The reset conditioner is used to synchronize the reset signal to the FPGA
     // clock. This ensures the entire FPGA comes out of reset at the same time.
     reset_conditioner reset_cond;
+    .rst(rst){
+      tester tester;
+    }
   }
   
   always {
@@ -43,13 +47,25 @@ module mojo_top (
     spi_channel = bzzzz;    // not using flags
     avr_rx = bz;            // not using serial port
     
-    io_led = 3x{{8h00}};    // turn LEDs off
+    //io_led = 3x{{8h00}};    // turn LEDs off
     io_seg = 8hff;          // turn segments off
     io_sel = 4hf;           // select no digits
     
-    a = io_dip[0];
-    b = io_dip[1];
+    a = 0;
+    b = 0;
     aLUFN = io_dip[2][5:0];
+    tester.aLUFN = aLUFN;
+    tester.ab = io_dip[2][7];
+    
+    case (io_dip[2][7]){
+      0:
+      a = io_dip[0];
+      b = io_dip[1];        
+    
+      1:
+      a = tester.a;
+      b = tester.b;
+    }
     
     adder.a = a;
     adder.b = b;
@@ -71,22 +87,32 @@ module mojo_top (
     comparer.b = b;
     comparer.aLUFN = aLUFN;
     
+    led[7:2] = aLUFN;  // Visualise aLUFN value
     io_led[2][0] = adder.z;
     io_led[2][1] = adder.v;
     io_led[2][2] = adder.n;
     
     case (io_dip[2][5:4]) {
-      0: if (aLUFN[1]) {
-        io_led[0] = mult.out;
+      0: if (aLUFN[2]) {
+        out = mult.out;
           }else{
-          io_led[0] = adder.out;
+          out = adder.out;
           }
-      //0: io_led[0] = adder.out;
-      1: io_led[0] = shifter.out;
-      2: io_led[0] = bool.out;
-      3: io_led[0] = 0;
-         io_led[0][0] = comparer.out;
+      1: out = shifter.out;
+      2: out = bool.out;
+      3: out = 0;
+         out[0] = comparer.out;
       default: io_led[0] = 0;
     }
+    io_led[0] = out;
+    
+    if (io_dip[2][7]){
+      io_led[1] = tester.out;
+      if (out != tester.out){
+        io_led[2][7] = 1;
+        }else {
+          io_led[2][7] = 0;
+        }
+      }
   }
 }
