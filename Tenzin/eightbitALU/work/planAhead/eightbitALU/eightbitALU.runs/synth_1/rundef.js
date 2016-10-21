@@ -8,9 +8,9 @@ var WshShell = new ActiveXObject( "WScript.Shell" );
 var ProcEnv = WshShell.Environment( "Process" );
 var PathVal = ProcEnv("PATH");
 if ( PathVal.length == 0 ) {
-  PathVal = "C:/Users/HanWei/Xilinx/14.7/ISE_DS/EDK/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/EDK/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/ISE/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/ISE/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/common/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/common/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/bin;";
+  PathVal = "C:/Xilinx/14.7/ISE_DS/EDK/bin/nt64;C:/Xilinx/14.7/ISE_DS/EDK/lib/nt64;C:/Xilinx/14.7/ISE_DS/ISE/bin/nt64;C:/Xilinx/14.7/ISE_DS/ISE/lib/nt64;C:/Xilinx/14.7/ISE_DS/common/bin/nt64;C:/Xilinx/14.7/ISE_DS/common/lib/nt64;C:/Xilinx/14.7/ISE_DS/PlanAhead/bin;";
 } else {
-  PathVal = "C:/Users/HanWei/Xilinx/14.7/ISE_DS/EDK/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/EDK/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/ISE/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/ISE/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/common/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/common/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/bin;" + PathVal;
+  PathVal = "C:/Xilinx/14.7/ISE_DS/EDK/bin/nt64;C:/Xilinx/14.7/ISE_DS/EDK/lib/nt64;C:/Xilinx/14.7/ISE_DS/ISE/bin/nt64;C:/Xilinx/14.7/ISE_DS/ISE/lib/nt64;C:/Xilinx/14.7/ISE_DS/common/bin/nt64;C:/Xilinx/14.7/ISE_DS/common/lib/nt64;C:/Xilinx/14.7/ISE_DS/PlanAhead/bin;" + PathVal;
 }
 
 ProcEnv("PATH") = PathVal;

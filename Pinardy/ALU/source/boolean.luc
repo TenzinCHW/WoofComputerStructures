@@ -5,7 +5,7 @@ module boolean (
     output out
   ) {
   // For implementing the MUX, refer to 
-  // the diagram in Pinardy's project logbook
+  // http://www.electronics-tutorials.ws/combination/comb27.gif?x98918
   
   sig mux_00[8];
   sig mux_01[8];
