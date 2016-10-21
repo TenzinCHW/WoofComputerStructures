@@ -8,7 +8,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed Oct 19 03:52:43 2016
+Mapped Date    : Thu Oct 20 17:17:42 2016
 
 Design Summary
 --------------
@@ -16,21 +16,21 @@ Number of errors:      0
 Number of warnings:    6
 Slice Logic Utilization:
   Number of Slice Registers:                     0 out of  11,440    0%
-  Number of Slice LUTs:                         73 out of   5,720    1%
-    Number used as logic:                       73 out of   5,720    1%
-      Number using O6 output only:              68
+  Number of Slice LUTs:                         75 out of   5,720    1%
+    Number used as logic:                       75 out of   5,720    1%
+      Number using O6 output only:              67
       Number using O5 output only:               0
-      Number using O5 and O6:                    5
+      Number using O5 and O6:                    8
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   1,440    0%
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    31 out of   1,430    2%
+  Number of occupied Slices:                    32 out of   1,430    2%
   Number of MUXCYs used:                         8 out of   2,860    1%
-  Number of LUT Flip Flop pairs used:           73
-    Number with an unused Flip Flop:            73 out of      73  100%
-    Number with an unused LUT:                   0 out of      73    0%
-    Number of fully used LUT-FF pairs:           0 out of      73    0%
+  Number of LUT Flip Flop pairs used:           75
+    Number with an unused Flip Flop:            75 out of      75  100%
+    Number with an unused LUT:                   0 out of      75    0%
+    Number of fully used LUT-FF pairs:           0 out of      75    0%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -58,7 +58,7 @@ Specific Feature Utilization:
   Number of BUFHs:                               0 out of     128    0%
   Number of BUFPLLs:                             0 out of       8    0%
   Number of BUFPLL_MCBs:                         0 out of       4    0%
-  Number of DSP48A1s:                            1 out of      16    6%
+  Number of DSP48A1s:                            0 out of      16    0%
   Number of ICAPs:                               0 out of       1    0%
   Number of MCBs:                                0 out of       2    0%
   Number of PCILOGICSEs:                         0 out of       2    0%
@@ -67,11 +67,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                3.28
+Average Fanout of Non-Clock Nets:                3.56
 
-Peak Memory Usage:  332 MB
-Total REAL time to MAP completion:  19 secs 
-Total CPU time to MAP completion (all processors):   18 secs 
+Peak Memory Usage:  450 MB
+Total REAL time to MAP completion:  4 secs 
+Total CPU time to MAP completion (all processors):   4 secs 
 
 Table of Contents
 -----------------
@@ -136,7 +136,7 @@ INFO:Pack:1650 - Map created a placed design.
 Section 4 - Removed Logic Summary
 ---------------------------------
   12 block(s) removed
-   4 block(s) optimized away
+   2 block(s) optimized away
    6 signal(s) removed
 
 Section 5 - Removed Logic
@@ -170,8 +170,6 @@ Optimized Block(s):
 TYPE 		BLOCK
 GND 		XST_GND
 VCC 		XST_VCC
-VCC 		adder/C
-GND 		adder/D
 
 Section 6 - IOB Properties
 --------------------------

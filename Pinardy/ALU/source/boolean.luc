@@ -1,0 +1,24 @@
+module boolean (
+    input a[8],
+    input b[8],
+    input aLUFN[6],
+    output out
+  ) {
+  // For implementing the MUX, refer to 
+  // http://www.electronics-tutorials.ws/combination/comb27.gif?x98918
+  
+  sig mux_00[8];
+  sig mux_01[8];
+  sig mux_10[8];
+  sig mux_11[8]; 
+  
+  always {
+    mux_00 = ~a & ~b & 8x{aLUFN[0]};
+    mux_01 = a & ~b & 8x{aLUFN[1]};
+    mux_10 = ~a & b & 8x{aLUFN[2]};
+    mux_11 = a & b & 8x{aLUFN[3]};
+    
+    out = (mux_00 | mux_01 | mux_10 | mux_11);
+   
+  }
+}

@@ -1,0 +1,36 @@
+module adder (
+// Note: a & b are 8-bit inputs. ALUFN is a 6-bit input
+// z, v, n are all 1-bit outputs.
+    input a[8],
+    input b[8],
+    input aLUFN[6],
+    output out[8],
+    output z[1],
+    output v[1],
+    output n[1]
+  ) {
+  // The signal out is write only and cannot be read.
+  // Hence, a signal s is used as a temp variable for the output.
+  sig s[8]; 
+  
+  always {
+    s = 8b0; // 
+    n = s[7];
+    v = (a[7] & (b[7] ^ aLUFN[0]) & !s[7]) | (!a[7] & !(b[7] ^ aLUFN[0]) & s[7]); 
+    
+    case(s) {
+      0: z=1;
+      default: z = 0;
+  }
+    
+    case(aLUFN[0]){
+      0: s = a+b;
+      1: s = a-b;
+      default: s = 0;
+  }
+    out = s;
+  }
+}
+    
+    
+    

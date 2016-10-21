@@ -1,0 +1,17 @@
+module shifter (
+    input a[8],
+    input b[8],
+    input aLUFN[6],
+    output out
+  ) {
+
+  always {
+  case (aLUFN[1:0]){
+    default: out = 0;
+    0: out = a << b;
+    1: out = a >> b;
+    2: out = $signed(a) <<< b;
+    3: out = $signed(a) >>> b;
+    }
+  }
+}

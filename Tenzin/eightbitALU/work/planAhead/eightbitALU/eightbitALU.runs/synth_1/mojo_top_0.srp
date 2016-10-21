@@ -2,8 +2,8 @@ Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.27 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Reading design: mojo_top_0.prj
 
@@ -53,17 +53,19 @@ Netlist Hierarchy                  : rebuilt
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/shifter_2.v" into library work
-Parsing module <shifter_2>.
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/reset_conditioner_5.v" into library work
-Parsing module <reset_conditioner_5>.
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/compare_4.v" into library work
-Parsing module <compare_4>.
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/boolean_3.v" into library work
-Parsing module <boolean_3>.
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/adder_1.v" into library work
+Analyzing Verilog file "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/Github Uploads/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/shifter_3.v" into library work
+Parsing module <shifter_3>.
+Analyzing Verilog file "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/Github Uploads/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/reset_conditioner_6.v" into library work
+Parsing module <reset_conditioner_6>.
+Analyzing Verilog file "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/Github Uploads/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/multiplier_2.v" into library work
+Parsing module <multiplier_2>.
+Analyzing Verilog file "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/Github Uploads/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/compare_5.v" into library work
+Parsing module <compare_5>.
+Analyzing Verilog file "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/Github Uploads/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/boolean_4.v" into library work
+Parsing module <boolean_4>.
+Analyzing Verilog file "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/Github Uploads/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/adder_1.v" into library work
 Parsing module <adder_1>.
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/mojo_top_0.v" into library work
+Analyzing Verilog file "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/Github Uploads/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/mojo_top_0.v" into library work
 Parsing module <mojo_top_0>.
 
 =========================================================================
@@ -74,22 +76,26 @@ Elaborating module <mojo_top_0>.
 
 Elaborating module <adder_1>.
 
-Elaborating module <shifter_2>.
+Elaborating module <multiplier_2>.
+WARNING:HDLCompiler:413 - "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/Github Uploads/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/multiplier_2.v" Line 20: Result of 8-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/Github Uploads/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/multiplier_2.v" Line 23: Result of 8-bit expression is truncated to fit in 1-bit target.
 
-Elaborating module <boolean_3>.
+Elaborating module <shifter_3>.
 
-Elaborating module <compare_4>.
+Elaborating module <boolean_4>.
 
-Elaborating module <reset_conditioner_5>.
-WARNING:HDLCompiler:1127 - "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 95: Assignment to rst ignored, since the identifier is never used
-WARNING:Xst:2972 - "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/mojo_top_0.v" line 89. All outputs of instance <reset_cond> of block <reset_conditioner_5> are unconnected in block <mojo_top_0>. Underlying logic will be removed.
+Elaborating module <compare_5>.
+
+Elaborating module <reset_conditioner_6>.
+WARNING:HDLCompiler:1127 - "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/Github Uploads/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 106: Assignment to rst ignored, since the identifier is never used
+WARNING:Xst:2972 - "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/Github Uploads/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/mojo_top_0.v" line 100. All outputs of instance <reset_cond> of block <reset_conditioner_6> are unconnected in block <mojo_top_0>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <mojo_top_0>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/mojo_top_0.v".
+    Related source file is "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/Github Uploads/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/mojo_top_0.v".
 WARNING:Xst:647 - Input <io_button> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <io_dip<23:22>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <cclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -98,41 +104,80 @@ WARNING:Xst:647 - Input <spi_mosi> is never used. This port will be preserved an
 WARNING:Xst:647 - Input <spi_sck> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <avr_tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <avr_rx_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/mojo_top_0.v" line 89: Output port <out> of the instance <reset_cond> is unconnected or connected to loadless signal.
-    Found 1-bit 4-to-1 multiplexer for signal <io_led<7>> created at line 124.
-    Found 1-bit 4-to-1 multiplexer for signal <io_led<6>> created at line 124.
-    Found 1-bit 4-to-1 multiplexer for signal <io_led<5>> created at line 124.
-    Found 1-bit 4-to-1 multiplexer for signal <io_led<4>> created at line 124.
-    Found 1-bit 4-to-1 multiplexer for signal <io_led<3>> created at line 124.
-    Found 1-bit 4-to-1 multiplexer for signal <io_led<2>> created at line 124.
-    Found 1-bit 4-to-1 multiplexer for signal <io_led<1>> created at line 124.
-    Found 1-bit 4-to-1 multiplexer for signal <io_led<0>> created at line 124.
-    Found 1-bit tristate buffer for signal <spi_miso> created at line 95
-    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 95
-    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 95
-    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 95
-    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 95
-    Found 1-bit tristate buffer for signal <avr_rx> created at line 95
+INFO:Xst:3210 - "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/Github Uploads/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/mojo_top_0.v" line 100: Output port <out> of the instance <reset_cond> is unconnected or connected to loadless signal.
+    Found 1-bit 4-to-1 multiplexer for signal <io_led<7>> created at line 138.
+    Found 1-bit 4-to-1 multiplexer for signal <io_led<6>> created at line 138.
+    Found 1-bit 4-to-1 multiplexer for signal <io_led<5>> created at line 138.
+    Found 1-bit 4-to-1 multiplexer for signal <io_led<4>> created at line 138.
+    Found 1-bit 4-to-1 multiplexer for signal <io_led<3>> created at line 138.
+    Found 1-bit 4-to-1 multiplexer for signal <io_led<2>> created at line 138.
+    Found 1-bit 4-to-1 multiplexer for signal <io_led<1>> created at line 138.
+    Found 1-bit 4-to-1 multiplexer for signal <io_led<0>> created at line 138.
+    Found 1-bit tristate buffer for signal <spi_miso> created at line 106
+    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 106
+    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 106
+    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 106
+    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 106
+    Found 1-bit tristate buffer for signal <avr_rx> created at line 106
     Summary:
-	inferred   8 Multiplexer(s).
+	inferred  16 Multiplexer(s).
 	inferred   6 Tristate(s).
 Unit <mojo_top_0> synthesized.
 
 Synthesizing Unit <adder_1>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/adder_1.v".
-WARNING:Xst:647 - Input <aLUFN<5:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Related source file is "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/Github Uploads/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/adder_1.v".
+WARNING:Xst:647 - Input <aLUFN<5:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 8-bit subtractor for signal <a[7]_b[7]_sub_2_OUT> created at line 29.
     Found 8-bit adder for signal <a[7]_b[7]_add_0_OUT> created at line 26.
-    Found 8x8-bit multiplier for signal <n0023> created at line 32.
-    Found 8-bit 4-to-1 multiplexer for signal <p> created at line 24.
     Summary:
-	inferred   1 Multiplier(s).
 	inferred   1 Adder/Subtractor(s).
-	inferred   2 Multiplexer(s).
 Unit <adder_1> synthesized.
 
-Synthesizing Unit <shifter_2>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/shifter_2.v".
+Synthesizing Unit <multiplier_2>.
+    Related source file is "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/Github Uploads/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/multiplier_2.v".
+WARNING:Xst:647 - Input <aLUFN<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <aLUFN<5:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8x8-bit multiplier for signal <n0006> created at line 23.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   1 Multiplexer(s).
+Unit <multiplier_2> synthesized.
+
+Synthesizing Unit <div_8u_8u>.
+    Related source file is "".
+    Found 16-bit adder for signal <n0292> created at line 0.
+    Found 16-bit adder for signal <GND_4_o_b[7]_add_1_OUT> created at line 0.
+    Found 15-bit adder for signal <n0296> created at line 0.
+    Found 15-bit adder for signal <GND_4_o_b[7]_add_3_OUT> created at line 0.
+    Found 14-bit adder for signal <n0300> created at line 0.
+    Found 14-bit adder for signal <GND_4_o_b[7]_add_5_OUT> created at line 0.
+    Found 13-bit adder for signal <n0304> created at line 0.
+    Found 13-bit adder for signal <GND_4_o_b[7]_add_7_OUT> created at line 0.
+    Found 12-bit adder for signal <n0308> created at line 0.
+    Found 12-bit adder for signal <GND_4_o_b[7]_add_9_OUT> created at line 0.
+    Found 11-bit adder for signal <n0312> created at line 0.
+    Found 11-bit adder for signal <GND_4_o_b[7]_add_11_OUT> created at line 0.
+    Found 10-bit adder for signal <n0316> created at line 0.
+    Found 10-bit adder for signal <GND_4_o_b[7]_add_13_OUT> created at line 0.
+    Found 9-bit adder for signal <n0320> created at line 0.
+    Found 9-bit adder for signal <GND_4_o_b[7]_add_15_OUT> created at line 0.
+    Found 16-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 15-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 14-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Summary:
+	inferred  16 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+	inferred  57 Multiplexer(s).
+Unit <div_8u_8u> synthesized.
+
+Synthesizing Unit <shifter_3>.
+    Related source file is "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/Github Uploads/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/shifter_3.v".
 WARNING:Xst:647 - Input <aLUFN<5:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 8-bit shifter logical right for signal <a[7]_b[2]_shift_right_1_OUT> created at line 23
     Found 8-bit shifter logical left for signal <a[7]_b[2]_shift_left_2_OUT> created at line 26
@@ -141,17 +186,17 @@ WARNING:Xst:647 - Input <aLUFN<5:2>> is never used. This port will be preserved 
     Summary:
 	inferred   1 Multiplexer(s).
 	inferred   3 Combinational logic shifter(s).
-Unit <shifter_2> synthesized.
+Unit <shifter_3> synthesized.
 
-Synthesizing Unit <boolean_3>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/boolean_3.v".
+Synthesizing Unit <boolean_4>.
+    Related source file is "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/Github Uploads/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/boolean_4.v".
 WARNING:Xst:647 - Input <aLUFN<5:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
-Unit <boolean_3> synthesized.
+Unit <boolean_4> synthesized.
 
-Synthesizing Unit <compare_4>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/compare_4.v".
+Synthesizing Unit <compare_5>.
+    Related source file is "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/Github Uploads/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/compare_5.v".
 WARNING:Xst:647 - Input <aLUFN<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <aLUFN<5:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit 4-to-1 multiplexer for signal <out> created at line 18.
@@ -161,7 +206,7 @@ WARNING:Xst:647 - Input <aLUFN<5:3>> is never used. This port will be preserved 
     Summary:
 	inferred   3 Comparator(s).
 	inferred   1 Multiplexer(s).
-Unit <compare_4> synthesized.
+Unit <compare_5> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -169,15 +214,32 @@ HDL Synthesis Report
 Macro Statistics
 # Multipliers                                          : 1
  8x8-bit multiplier                                    : 1
-# Adders/Subtractors                                   : 1
+# Adders/Subtractors                                   : 17
+ 10-bit adder                                          : 2
+ 11-bit adder                                          : 2
+ 12-bit adder                                          : 2
+ 13-bit adder                                          : 2
+ 14-bit adder                                          : 2
+ 15-bit adder                                          : 2
+ 16-bit adder                                          : 2
  8-bit addsub                                          : 1
-# Comparators                                          : 3
+ 9-bit adder                                           : 2
+# Comparators                                          : 12
+ 10-bit comparator lessequal                           : 1
+ 11-bit comparator lessequal                           : 1
+ 12-bit comparator lessequal                           : 1
+ 13-bit comparator lessequal                           : 1
+ 14-bit comparator lessequal                           : 1
+ 15-bit comparator lessequal                           : 1
+ 16-bit comparator lessequal                           : 1
  8-bit comparator equal                                : 1
  8-bit comparator greater                              : 1
- 8-bit comparator lessequal                            : 1
-# Multiplexers                                         : 12
+ 8-bit comparator lessequal                            : 2
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 76
+ 1-bit 2-to-1 multiplexer                              : 65
  1-bit 4-to-1 multiplexer                              : 9
- 8-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 1
  8-bit 4-to-1 multiplexer                              : 1
 # Logic shifters                                       : 3
  8-bit shifter arithmetic right                        : 1
@@ -189,7 +251,6 @@ Macro Statistics
  1-bit xor2                                            : 1
 
 =========================================================================
-INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
@@ -202,15 +263,25 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Multipliers                                          : 1
  8x8-bit multiplier                                    : 1
-# Adders/Subtractors                                   : 1
+# Adders/Subtractors                                   : 9
+ 8-bit adder carry in                                  : 8
  8-bit addsub                                          : 1
-# Comparators                                          : 3
+# Comparators                                          : 12
+ 10-bit comparator lessequal                           : 1
+ 11-bit comparator lessequal                           : 1
+ 12-bit comparator lessequal                           : 1
+ 13-bit comparator lessequal                           : 1
+ 14-bit comparator lessequal                           : 1
+ 15-bit comparator lessequal                           : 1
+ 16-bit comparator lessequal                           : 1
  8-bit comparator equal                                : 1
  8-bit comparator greater                              : 1
- 8-bit comparator lessequal                            : 1
-# Multiplexers                                         : 12
+ 8-bit comparator lessequal                            : 2
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 75
+ 1-bit 2-to-1 multiplexer                              : 64
  1-bit 4-to-1 multiplexer                              : 9
- 8-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 1
  8-bit 4-to-1 multiplexer                              : 1
 # Logic shifters                                       : 3
  8-bit shifter arithmetic right                        : 1
@@ -227,11 +298,11 @@ Macro Statistics
 
 Optimizing unit <mojo_top_0> ...
 
-Optimizing unit <adder_1> ...
+Optimizing unit <div_8u_8u> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 1.
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 2.
 
 Final Macro Processing ...
 
@@ -260,22 +331,21 @@ Top Level Output File Name         : mojo_top_0.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 97
-#      GND                         : 2
+# BELS                             : 103
+#      GND                         : 1
 #      LUT2                        : 2
-#      LUT3                        : 12
-#      LUT4                        : 12
-#      LUT5                        : 16
-#      LUT6                        : 36
+#      LUT3                        : 19
+#      LUT4                        : 5
+#      LUT5                        : 8
+#      LUT6                        : 49
 #      MUXCY                       : 7
-#      VCC                         : 2
+#      MUXF7                       : 3
+#      VCC                         : 1
 #      XORCY                       : 8
 # IO Buffers                       : 72
 #      IBUF                        : 22
 #      OBUF                        : 44
 #      OBUFT                       : 6
-# DSPs                             : 1
-#      DSP48A1                     : 1
 
 Device utilization summary:
 ---------------------------
@@ -284,14 +354,14 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                   78  out of   5720     1%  
-    Number used as Logic:                78  out of   5720     1%  
+ Number of Slice LUTs:                   83  out of   5720     1%  
+    Number used as Logic:                83  out of   5720     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     78
-   Number with an unused Flip Flop:      78  out of     78   100%  
-   Number with an unused LUT:             0  out of     78     0%  
-   Number of fully used LUT-FF pairs:     0  out of     78     0%  
+ Number of LUT Flip Flop pairs used:     83
+   Number with an unused Flip Flop:      83  out of     83   100%  
+   Number with an unused LUT:             0  out of     83     0%  
+   Number of fully used LUT-FF pairs:     0  out of     83     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
@@ -299,7 +369,6 @@ IO Utilization:
  Number of bonded IOBs:                  72  out of    102    70%  
 
 Specific Feature Utilization:
- Number of DSP48A1s:                      1  out of     16     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -332,7 +401,7 @@ Speed Grade: -2
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 13.407ns
+   Maximum combinational path delay: 11.304ns
 
 Timing Details:
 ---------------
@@ -340,27 +409,26 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 949 / 11
+  Total number of paths / destination ports: 695 / 11
 -------------------------------------------------------------------------
-Delay:               13.407ns (Levels of Logic = 7)
-  Source:            io_dip<7> (PAD)
-  Destination:       io_led<16> (PAD)
+Delay:               11.304ns (Levels of Logic = 7)
+  Source:            io_dip<8> (PAD)
+  Destination:       io_led<0> (PAD)
 
-  Data Path: io_dip<7> to io_led<16>
+  Data Path: io_dip<8> to io_led<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.181  io_dip_7_IBUF (Sh15)
-     begin scope: 'adder:a<7>'
-     DSP48A1:B7->M4        1   3.894   0.790  Mmult_n0023 (n0023<4>)
-     LUT4:I2->O            2   0.250   1.181  Mmux_p351 (out<4>)
-     LUT6:I0->O            1   0.254   0.682  z_SW0 (N2)
-     LUT6:I5->O            1   0.254   0.681  z (z<0>)
-     end scope: 'adder:z<0>'
-     OBUF:I->O                 2.912          io_led_16_OBUF (io_led<16>)
+     IBUF:I->O            29   1.328   1.470  io_dip_8_IBUF (io_dip<8>1)
+     LUT2:I1->O            1   0.254   0.910  Mmux_io_led<0>327_SW0 (N2)
+     LUT6:I3->O            1   0.235   0.958  Mmux_io_led<0>327 (Mmux_io_led<0>321)
+     LUT6:I2->O            1   0.254   0.682  Mmux_io_led<0>328 (Mmux_io_led<0>322)
+     LUT5:I4->O            1   0.254   1.112  Mmux_io_led<0>330_SW0 (N8)
+     LUT6:I1->O            1   0.254   0.681  Mmux_io_led<0>330 (io_led_0_OBUF)
+     OBUF:I->O                 2.912          io_led_0_OBUF (io_led<0>)
     ----------------------------------------
-    Total                     13.407ns (8.892ns logic, 4.515ns route)
-                                       (66.3% logic, 33.7% route)
+    Total                     11.304ns (5.491ns logic, 5.813ns route)
+                                       (48.6% logic, 51.4% route)
 
 =========================================================================
 
@@ -370,14 +438,14 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 30.00 secs
-Total CPU time to Xst completion: 29.33 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.52 secs
  
 --> 
 
-Total memory usage is 270048 kilobytes
+Total memory usage is 298872 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   15 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :   19 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

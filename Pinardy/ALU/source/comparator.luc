@@ -1,0 +1,17 @@
+module comparator (
+    input a[8],
+    input b[8],
+    input aLUFN[6],
+    output out[1] //either "0" or "1"
+  ) {
+  
+  // based on the table in pg 7 of Lab 3 handout
+  always {
+    case (aLUFN[2:1]) {
+    default: out = 0;
+    1: out = a==b;
+    2: out = a<b;
+    3: out = a<=b;
+    }
+  }
+}

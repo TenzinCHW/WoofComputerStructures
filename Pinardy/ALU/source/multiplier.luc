@@ -1,0 +1,21 @@
+module multiplier (
+// Note: a & b are 8-bit inputs. ALUFN is a 6-bit input
+// z, v, n are all 1-bit outputs.
+    input a[8],
+    input b[8],
+    input aLUFN[6],
+    output out[8]
+  ) {
+  // Referred to Pg 11 of Lab 3 handout for ALUFN encoding
+  always {
+    case(aLUFN[1]){
+    default: out = 0;
+      // 0: out = a/b; <-- occupied by add?
+      1: out = a*b;
+    }
+    case(aLUFN[2]){
+    default: out = 0;
+      1: out = a/b;
+    }
+  }
+}

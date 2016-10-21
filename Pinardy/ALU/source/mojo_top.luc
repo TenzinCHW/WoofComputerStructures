@@ -19,6 +19,14 @@ module mojo_top (
   ) {
   
   sig rst;                  // reset signal
+  sig a[8];
+  sig b[8];
+  sig aLUFN[6];
+  adder adder;
+  multiplier mult;
+  shifter shift;
+  boolean bool;
+  comparator compare;
   
   .clk(clk) {
     // The reset conditioner is used to synchronize the reset signal to the FPGA
@@ -38,5 +46,50 @@ module mojo_top (
     io_led = 3x{{8h00}};    // turn LEDs off
     io_seg = 8hff;          // turn segments off
     io_sel = 4hf;           // select no digits
+    
+    // Assigning the inputs to the switches
+    a = io_dip[0];
+    b = io_dip[1];
+    aLUFN = io_dip[2][5:0];
+    
+    // Assigning the inputs to each of the components
+    adder.a = a;
+    adder.b = b;
+    adder.aLUFN = aLUFN;
+    
+    mult.a = a;
+    mult.b = b;
+    mult.aLUFN = aLUFN;
+    
+    shift.a = a;
+    shift.b = b[2:0];
+    shift.aLUFN = aLUFN;
+    
+    bool.a = a;
+    bool.b = b;
+    bool.aLUFN = aLUFN;
+    
+    compare.a = a;
+    compare.b = b;
+    compare.aLUFN = aLUFN;
+    
+    // Assigning outputs to LEDs
+    io_led[2][0] = adder.z;
+    io_led[2][1] = adder.v;
+    io_led[2][2] = adder.n;
+    
+    case (io_dip[2][5:4]) {
+      0: if (aLUFN[1]) {
+        io_led[0] = mult.out;
+          } else {
+          io_led[0] = adder.out;
+          }
+      //0: io_led[0] = adder.out;
+         default: io_led[0] = 0;
+      1: io_led[0] = shift.out;
+      2: io_led[0] = bool.out;
+      3: io_led[0] = 0;
+         io_led[0][0] = compare.out;
+    } 
   }
 }
