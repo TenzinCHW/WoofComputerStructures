@@ -4,10 +4,10 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module shifter_3 (
+module compare_8 (
     output reg [7:0] out,
     input [7:0] a,
-    input [2:0] b,
+    input [7:0] b,
     input [5:0] aLUFN
   );
   
@@ -15,18 +15,15 @@ module shifter_3 (
   
   always @* begin
     
-    case (aLUFN[0+1-:2])
-      1'h0: begin
-        out = a << b;
-      end
+    case (aLUFN[1+1-:2])
       1'h1: begin
-        out = a >> b;
+        out = (a == b);
       end
       2'h2: begin
-        out = $signed(a) <<< b;
+        out = (a < b);
       end
       2'h3: begin
-        out = $signed(a) >>> b;
+        out = (a <= b);
       end
       default: begin
         out = 1'h0;

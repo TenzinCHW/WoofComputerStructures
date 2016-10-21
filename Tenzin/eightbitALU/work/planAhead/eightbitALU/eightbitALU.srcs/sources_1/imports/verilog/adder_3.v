@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module adder_1 (
+module adder_3 (
     output reg [7:0] out,
     output reg [0:0] z,
     output reg [0:0] v,
@@ -42,7 +42,7 @@ module adder_1 (
       end
     endcase
     out = p;
-    n = p[7+0-:1];
     v = (a[7+0-:1] & (b[7+0-:1] ^ aLUFN[0+0-:1]) & !p[7+0-:1]) | (!a[7+0-:1] & !(b[7+0-:1] ^ aLUFN[0+0-:1]) & p[7+0-:1]);
+    n = p[7+0-:1];
   end
 endmodule

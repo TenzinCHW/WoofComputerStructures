@@ -34,70 +34,22 @@ module mojo_top_0 (
   
   reg [5:0] aLUFN;
   
-  wire [8-1:0] M_adder_out;
-  wire [1-1:0] M_adder_z;
-  wire [1-1:0] M_adder_v;
-  wire [1-1:0] M_adder_n;
-  reg [8-1:0] M_adder_a;
-  reg [8-1:0] M_adder_b;
-  reg [6-1:0] M_adder_aLUFN;
-  adder_1 adder (
-    .a(M_adder_a),
-    .b(M_adder_b),
-    .aLUFN(M_adder_aLUFN),
-    .out(M_adder_out),
-    .z(M_adder_z),
-    .v(M_adder_v),
-    .n(M_adder_n)
-  );
-  
-  wire [1-1:0] M_mult_out;
-  reg [8-1:0] M_mult_a;
-  reg [8-1:0] M_mult_b;
-  reg [6-1:0] M_mult_aLUFN;
-  multiplier_2 mult (
-    .a(M_mult_a),
-    .b(M_mult_b),
-    .aLUFN(M_mult_aLUFN),
-    .out(M_mult_out)
-  );
-  
-  wire [8-1:0] M_shifter_out;
-  reg [8-1:0] M_shifter_a;
-  reg [3-1:0] M_shifter_b;
-  reg [6-1:0] M_shifter_aLUFN;
-  shifter_3 shifter (
-    .a(M_shifter_a),
-    .b(M_shifter_b),
-    .aLUFN(M_shifter_aLUFN),
-    .out(M_shifter_out)
-  );
-  
-  wire [8-1:0] M_bool_out;
-  reg [8-1:0] M_bool_a;
-  reg [8-1:0] M_bool_b;
-  reg [6-1:0] M_bool_aLUFN;
-  boolean_4 bool (
-    .a(M_bool_a),
-    .b(M_bool_b),
-    .aLUFN(M_bool_aLUFN),
-    .out(M_bool_out)
-  );
-  
-  wire [1-1:0] M_comparer_out;
-  reg [8-1:0] M_comparer_a;
-  reg [8-1:0] M_comparer_b;
-  reg [6-1:0] M_comparer_aLUFN;
-  compare_5 comparer (
-    .a(M_comparer_a),
-    .b(M_comparer_b),
-    .aLUFN(M_comparer_aLUFN),
-    .out(M_comparer_out)
+  wire [8-1:0] M_alufn_out;
+  wire [3-1:0] M_alufn_zvn;
+  reg [8-1:0] M_alufn_a;
+  reg [8-1:0] M_alufn_b;
+  reg [6-1:0] M_alufn_aLUFN;
+  alufn_1 alufn (
+    .a(M_alufn_a),
+    .b(M_alufn_b),
+    .aLUFN(M_alufn_aLUFN),
+    .out(M_alufn_out),
+    .zvn(M_alufn_zvn)
   );
   
   wire [1-1:0] M_reset_cond_out;
   reg [1-1:0] M_reset_cond_in;
-  reset_conditioner_6 reset_cond (
+  reset_conditioner_2 reset_cond (
     .clk(clk),
     .in(M_reset_cond_in),
     .out(M_reset_cond_out)
@@ -116,46 +68,10 @@ module mojo_top_0 (
     a = io_dip[0+7-:8];
     b = io_dip[8+7-:8];
     aLUFN = io_dip[16+0+5-:6];
-    M_adder_a = a;
-    M_adder_b = b;
-    M_adder_aLUFN = aLUFN;
-    M_mult_a = a;
-    M_mult_b = b;
-    M_mult_aLUFN = aLUFN;
-    M_shifter_a = a;
-    M_shifter_b = b[0+2-:3];
-    M_shifter_aLUFN = aLUFN;
-    M_bool_a = a;
-    M_bool_b = b;
-    M_bool_aLUFN = aLUFN;
-    M_comparer_a = a;
-    M_comparer_b = b;
-    M_comparer_aLUFN = aLUFN;
-    io_led[16+0+0-:1] = M_adder_z;
-    io_led[16+1+0-:1] = M_adder_v;
-    io_led[16+2+0-:1] = M_adder_n;
-    
-    case (io_dip[16+4+1-:2])
-      1'h0: begin
-        if (aLUFN[1+0-:1]) begin
-          io_led[0+7-:8] = M_mult_out;
-        end else begin
-          io_led[0+7-:8] = M_adder_out;
-        end
-      end
-      1'h1: begin
-        io_led[0+7-:8] = M_shifter_out;
-      end
-      2'h2: begin
-        io_led[0+7-:8] = M_bool_out;
-      end
-      2'h3: begin
-        io_led[0+7-:8] = 1'h0;
-        io_led[0+0+0-:1] = M_comparer_out;
-      end
-      default: begin
-        io_led[0+7-:8] = 1'h0;
-      end
-    endcase
+    M_alufn_a = a;
+    M_alufn_b = b;
+    M_alufn_aLUFN = aLUFN;
+    io_led[0+7-:8] = M_alufn_out;
+    io_led[16+0+2-:3] = M_alufn_zvn;
   end
 endmodule

@@ -1,4 +1,4 @@
-module multiplier (
+module divisor (
     output out[8],
     input a[8],
     input b[8],
@@ -6,9 +6,9 @@ module multiplier (
   ) {
 
   always {
-    case (aLUFN[1]){
-      1: out = a * b;
-      default: out = 0;
+    case (aLUFN[2]) {
+    1: out = a/b;
+    default: out = 0;
     }
   }
 }

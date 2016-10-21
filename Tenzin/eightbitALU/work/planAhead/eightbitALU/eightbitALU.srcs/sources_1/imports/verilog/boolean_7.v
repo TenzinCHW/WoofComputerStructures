@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module boolean_4 (
+module boolean_7 (
     output reg [7:0] out,
     input [7:0] a,
     input [7:0] b,

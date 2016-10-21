@@ -4,8 +4,8 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module compare_5 (
-    output reg [0:0] out,
+module divisor_5 (
+    output reg [7:0] out,
     input [7:0] a,
     input [7:0] b,
     input [5:0] aLUFN
@@ -15,15 +15,9 @@ module compare_5 (
   
   always @* begin
     
-    case (aLUFN[1+1-:2])
+    case (aLUFN[2+0-:1])
       1'h1: begin
-        out = (a == b);
-      end
-      2'h2: begin
-        out = (a < b);
-      end
-      2'h3: begin
-        out = (a <= b);
+        out = a / b;
       end
       default: begin
         out = 1'h0;

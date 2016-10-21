@@ -4,8 +4,8 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module multiplier_2 (
-    output reg out,
+module multiplier_4 (
+    output reg [7:0] out,
     input [7:0] a,
     input [7:0] b,
     input [5:0] aLUFN
@@ -16,9 +16,6 @@ module multiplier_2 (
   always @* begin
     
     case (aLUFN[1+0-:1])
-      1'h0: begin
-        out = a / b;
-      end
       1'h1: begin
         out = a * b;
       end

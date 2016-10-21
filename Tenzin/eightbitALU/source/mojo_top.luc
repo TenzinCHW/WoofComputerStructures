@@ -22,11 +22,7 @@ module mojo_top (
   sig a[8];
   sig b[8];
   sig aLUFN[6];
-  adder adder;
-  multiplier mult;
-  shifter shifter;
-  boolean bool;
-  compare comparer;
+  alufn alufn;
   
   .clk(clk) {
     // The reset conditioner is used to synchronize the reset signal to the FPGA
@@ -51,42 +47,11 @@ module mojo_top (
     b = io_dip[1];
     aLUFN = io_dip[2][5:0];
     
-    adder.a = a;
-    adder.b = b;
-    adder.aLUFN = aLUFN;
+    alufn.a = a;
+    alufn.b = b;
+    alufn.aLUFN = aLUFN;
+    io_led[0] = alufn.out;
+    io_led[2][2:0] = alufn.zvn;
     
-    mult.a = a;
-    mult.b = b;
-    mult.aLUFN = aLUFN;
-    
-    shifter.a = a;
-    shifter.b = b[2:0];
-    shifter.aLUFN = aLUFN;
-    
-    bool.a = a;
-    bool.b = b;
-    bool.aLUFN = aLUFN;
-    
-    comparer.a = a;
-    comparer.b = b;
-    comparer.aLUFN = aLUFN;
-    
-    io_led[2][0] = adder.z;
-    io_led[2][1] = adder.v;
-    io_led[2][2] = adder.n;
-    
-    case (io_dip[2][5:4]) {
-      0: if (aLUFN[1]) {
-        io_led[0] = mult.out;
-          }else{
-          io_led[0] = adder.out;
-          }
-      //0: io_led[0] = adder.out;
-      1: io_led[0] = shifter.out;
-      2: io_led[0] = bool.out;
-      3: io_led[0] = 0;
-         io_led[0][0] = comparer.out;
-      default: io_led[0] = 0;
-    }
   }
 }
