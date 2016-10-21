@@ -55,7 +55,7 @@ module mojo_top (
     b = 0;
     aLUFN = io_dip[2][5:0];
     tester.aLUFN = aLUFN;
-    tester.ab = io_dip[2][7];
+    tester.ab = io_button[1];
     
     case (io_dip[2][7]){
       0:

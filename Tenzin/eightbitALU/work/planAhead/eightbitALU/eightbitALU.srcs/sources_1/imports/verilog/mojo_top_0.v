@@ -132,7 +132,7 @@ module mojo_top_0 (
     b = 1'h0;
     aLUFN = io_dip[16+0+5-:6];
     M_tester_aLUFN = aLUFN;
-    M_tester_ab = io_dip[16+7+0-:1];
+    M_tester_ab = io_button[1+0-:1];
     
     case (io_dip[16+7+0-:1])
       1'h0: begin

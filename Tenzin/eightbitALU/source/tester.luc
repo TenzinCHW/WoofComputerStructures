@@ -30,9 +30,6 @@ module tester (
     asig = generateAB.q[18:11];
     bsig = generateAB.q[23:16];
     // need to generate a and b based on aLUFN
-    // compare z v and n
-    
-    
     
     case (aLUFN[5:4]){
       0: case (aLUFN[0]){

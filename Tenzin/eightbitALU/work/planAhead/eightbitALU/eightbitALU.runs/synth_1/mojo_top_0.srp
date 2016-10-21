@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.21 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: mojo_top_0.prj
 
@@ -98,7 +98,8 @@ Elaborating module <tester_7>.
 
 Synthesizing Unit <mojo_top_0>.
     Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/eightbitALU/work/planAhead/eightbitALU/eightbitALU.srcs/sources_1/imports/verilog/mojo_top_0.v".
-WARNING:Xst:647 - Input <io_button> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_button<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_button<4:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <io_dip<22:22>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <cclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <spi_ss> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -419,8 +420,8 @@ Primitive and Black Box Usage:
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 70
-#      IBUF                        : 24
+# IO Buffers                       : 71
+#      IBUF                        : 25
 #      OBUF                        : 40
 #      OBUFT                       : 6
 # DSPs                             : 1
@@ -446,7 +447,7 @@ Slice Logic Distribution:
 
 IO Utilization: 
  Number of IOs:                          87
- Number of bonded IOBs:                  71  out of    102    69%  
+ Number of bonded IOBs:                  72  out of    102    70%  
     IOB Flip Flops/Latches:               9
 
 Specific Feature Utilization:
@@ -487,9 +488,9 @@ Timing Summary:
 Speed Grade: -2
 
    Minimum period: 2.742ns (Maximum Frequency: 364.764MHz)
-   Minimum input arrival time before clock: 36.643ns
+   Minimum input arrival time before clock: 36.410ns
    Maximum output required time after clock: 37.421ns
-   Maximum combinational path delay: 39.160ns
+   Maximum combinational path delay: 38.927ns
 
 Timing Details:
 ---------------
@@ -533,7 +534,7 @@ Delay:               2.742ns (Levels of Logic = 13)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'io_dip<23>'
   Total number of paths / destination ports: 6402080 / 9
 -------------------------------------------------------------------------
-Offset:              36.643ns (Levels of Logic = 32)
+Offset:              36.410ns (Levels of Logic = 32)
   Source:            io_dip<23> (PAD)
   Destination:       io_led_23 (LATCH)
   Destination Clock: io_dip<23> falling
@@ -542,7 +543,7 @@ Offset:              36.643ns (Levels of Logic = 32)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            88   1.328   2.546  io_dip_23_IBUF (io_dip_23_IBUF)
+     IBUF:I->O            58   1.328   2.313  io_dip_23_IBUF (io_dip_23_IBUF)
      LUT5:I0->O           19   0.254   1.691  Mmux_b41 (b<3>)
      begin scope: 'mult:b<3>'
      begin scope: 'mult/a[7]_b[7]_div_0:b<3>'
@@ -578,28 +579,29 @@ Offset:              36.643ns (Levels of Logic = 32)
      LUT3:I1->O            1   0.250   0.000  io_dip[21]_M_tester_out[7]_not_equal_4_o5 (io_dip[21]_M_tester_out[7]_not_equal_4_o)
      LD:D                      0.036          io_led_23
     ----------------------------------------
-    Total                     36.643ns (8.359ns logic, 28.284ns route)
-                                       (22.8% logic, 77.2% route)
+    Total                     36.410ns (8.359ns logic, 28.051ns route)
+                                       (23.0% logic, 77.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 34 / 34
 -------------------------------------------------------------------------
-Offset:              3.745ns (Levels of Logic = 2)
-  Source:            io_dip<23> (PAD)
-  Destination:       tester/M_generateAB_q_23 (FF)
+Offset:              3.526ns (Levels of Logic = 3)
+  Source:            rst_n (PAD)
+  Destination:       reset_cond/M_stage_q_3 (FF)
   Destination Clock: clk rising
 
-  Data Path: io_dip<23> to tester/M_generateAB_q_23
+  Data Path: rst_n to reset_cond/M_stage_q_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            88   1.328   2.115  io_dip_23_IBUF (io_dip_23_IBUF)
-     begin scope: 'tester:io_dip_23_IBUF'
-     FDRE:CE                   0.302          M_generateAB_q_0
+     IBUF:I->O             1   1.328   0.681  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O              4   0.255   0.803  M_reset_cond_in1_INV_0 (M_reset_cond_in)
+     begin scope: 'reset_cond:in'
+     FDS:S                     0.459          M_stage_q_0
     ----------------------------------------
-    Total                      3.745ns (1.630ns logic, 2.115ns route)
-                                       (43.5% logic, 56.5% route)
+    Total                      3.526ns (2.042ns logic, 1.484ns route)
+                                       (57.9% logic, 42.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'io_dip<23>'
@@ -676,7 +678,7 @@ Offset:              37.421ns (Levels of Logic = 32)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 6402190 / 17
 -------------------------------------------------------------------------
-Delay:               39.160ns (Levels of Logic = 32)
+Delay:               38.927ns (Levels of Logic = 32)
   Source:            io_dip<23> (PAD)
   Destination:       io_led<0> (PAD)
 
@@ -684,7 +686,7 @@ Delay:               39.160ns (Levels of Logic = 32)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            88   1.328   2.546  io_dip_23_IBUF (io_dip_23_IBUF)
+     IBUF:I->O            58   1.328   2.313  io_dip_23_IBUF (io_dip_23_IBUF)
      LUT5:I0->O           19   0.254   1.691  Mmux_b41 (b<3>)
      begin scope: 'mult:b<3>'
      begin scope: 'mult/a[7]_b[7]_div_0:b<3>'
@@ -719,8 +721,8 @@ Delay:               39.160ns (Levels of Logic = 32)
      LUT5:I4->O            2   0.254   0.725  Mmux_io_led<7:0>320 (io_led_0_OBUF)
      OBUF:I->O                 2.912          io_led_0_OBUF (io_led<0>)
     ----------------------------------------
-    Total                     39.160ns (10.985ns logic, 28.175ns route)
-                                       (28.1% logic, 71.9% route)
+    Total                     38.927ns (10.985ns logic, 27.942ns route)
+                                       (28.2% logic, 71.8% route)
 
 =========================================================================
 
@@ -746,14 +748,14 @@ clk            |         |         |   34.904|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 22.00 secs
-Total CPU time to Xst completion: 22.37 secs
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 16.60 secs
  
 --> 
 
-Total memory usage is 240464 kilobytes
+Total memory usage is 242896 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   27 (   0 filtered)
+Number of warnings :   28 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

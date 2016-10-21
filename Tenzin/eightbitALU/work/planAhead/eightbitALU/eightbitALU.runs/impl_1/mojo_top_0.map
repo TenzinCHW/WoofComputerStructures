@@ -8,7 +8,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Fri Oct 21 03:43:20 2016
+Mapped Date    : Fri Oct 21 04:08:03 2016
 
 Mapping design into LUTs...
 WARNING:MapLib:701 - Signal spi_channel[3] connected to top level port
@@ -29,17 +29,17 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 12 secs 
-Total CPU  time at the beginning of Placer: 7 secs 
+Total REAL time at the beginning of Placer: 6 secs 
+Total CPU  time at the beginning of Placer: 6 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:45b0fb01) REAL time: 14 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:460437ed) REAL time: 7 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:45b0fb01) REAL time: 14 secs 
+Phase 2.7  Design Feasibility Check (Checksum:460437ed) REAL time: 7 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:45b0fb01) REAL time: 14 secs 
+Phase 3.31  Local Placement Optimization (Checksum:460437ed) REAL time: 7 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
@@ -61,10 +61,10 @@ ERROR:Place:1108 - A clock IOB / BUFGMUX clock component pair have been found
    < NET "io_dip[23]" CLOCK_DEDICATED_ROUTE = FALSE; >
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:f3b9e687) REAL time: 16 secs 
+(Checksum:f40d2373) REAL time: 9 secs 
 
-Total REAL time to Placer completion: 16 secs 
-Total CPU  time to Placer completion: 9 secs 
+Total REAL time to Placer completion: 9 secs 
+Total CPU  time to Placer completion: 8 secs 
 ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
 
 Mapping completed.

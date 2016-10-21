@@ -8,7 +8,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Fri Oct 21 03:43:20 2016
+Mapped Date    : Fri Oct 21 04:08:03 2016
 
 Interim Summary
 ---------------
@@ -125,7 +125,7 @@ INFO:Map:284 - Map is running with the multi-threading option on. Map currently
    supports the use of up to 2 processors. Based on the the user options and
    machine load, Map will use 2 processors during this run.
 INFO:LIT:243 - Logical network avr_rx_busy_IBUF has no load.
-INFO:LIT:395 - The above info message is repeated 11 more times for the
+INFO:LIT:395 - The above info message is repeated 10 more times for the
    following (max. 5 shown):
    io_dip(22)_IBUF,
    spi_mosi_IBUF,

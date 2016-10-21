@@ -4,7 +4,7 @@
   (keywordmap (keywordlevel 0))
 (status
  (written
-  (timeStamp 2016 10 21 03 42 54)
+  (timeStamp 2016 10 21 04 07 47)
   (program "PlanAhead" (version "14.7"))
   (comment "Built on 'Fri Sep 27 19:29:51 MDT 2013'")
   (comment "Built by 'xbuild'")
@@ -1223,7 +1223,6 @@
      (view view_1 (viewtype NETLIST)
        (interface 
         (port clk (direction INPUT))
-        (port io_dip_23_IBUF (direction INPUT))
         (port rst (direction INPUT))
         (port M_generateAB_q_23 (direction OUTPUT))
         (port M_generateAB_q_22 (direction OUTPUT))
@@ -1231,6 +1230,7 @@
         (port M_generateAB_q_20 (direction OUTPUT))
         (port M_generateAB_q_19 (direction OUTPUT))
         (port (array (rename a "a[7:0]") 8) (direction OUTPUT))
+        (port (rename ab_0_ "ab[0]") (direction INPUT))
         (port (array (rename b "b[1:0]") 2) (direction OUTPUT))
         (port (array (rename aLUFN "aLUFN[5:0]") 6) (direction INPUT))
         (port (array (rename out "out[7:0]") 8) (direction OUTPUT))
@@ -2469,7 +2469,7 @@
           (portref clk)
           )
          )
-         (net io_dip_23_IBUF (joined
+         (net (rename ab_0_ "ab[0]") (joined
           (portref CE (instanceref M_generateAB_q_0))
           (portref CE (instanceref M_generateAB_q_1))
           (portref CE (instanceref M_generateAB_q_2))
@@ -2500,7 +2500,7 @@
           (portref CE (instanceref M_generateAB_q_14_1))
           (portref CE (instanceref M_generateAB_q_13_1))
           (portref CE (instanceref M_generateAB_q_15_1))
-          (portref io_dip_23_IBUF)
+          (portref ab_0_)
           )
          )
          (net rst (joined
@@ -5875,6 +5875,12 @@
            (property IBUF_DELAY_VALUE (string "0"))
            (property IFD_DELAY_VALUE (string "AUTO"))
          )
+         (instance io_button_1_IBUF (viewref netlist (cellref IBUF (libraryref hdi_primitives)))
+           (property XSTLIB (boolean (true)))
+           (property CAPACITANCE (string "DONT_CARE"))
+           (property IBUF_DELAY_VALUE (string "0"))
+           (property IFD_DELAY_VALUE (string "AUTO"))
+         )
          (instance io_dip_21_IBUF (viewref netlist (cellref IBUF (libraryref hdi_primitives)))
            (property XSTLIB (boolean (true)))
            (property CAPACITANCE (string "DONT_CARE"))
@@ -6341,6 +6347,11 @@
            (property INIT (string "2'h1"))
            (property XILINX_LEGACY_PRIM (string "INV"))
            (property XILINX_REPORT_XFORM (string "INV"))
+         )
+         (net io_button_1_IBUF (joined
+          (portref O (instanceref io_button_1_IBUF))
+          (portref ab_0_ (instanceref tester))
+          )
          )
          (net io_dip_7_IBUF (joined
           (portref I1 (instanceref Mmux_a11))
@@ -7559,14 +7570,19 @@
           (portref O (instanceref Mmux_io_led_7_0_94))
           )
          )
+         (net clk (joined
+          (portref I (instanceref clk_BUFGP))
+          (portref clk)
+          )
+         )
          (net (rename io_dip_23_ "io_dip[23]") (joined
           (portref I (instanceref io_dip_23_IBUF))
           (portref (member io_dip 0))
           )
          )
-         (net clk (joined
-          (portref I (instanceref clk_BUFGP))
-          (portref clk)
+         (net (rename io_button_1_ "io_button[1]") (joined
+          (portref I (instanceref io_button_1_IBUF))
+          (portref (member io_button 3))
           )
          )
          (net (rename io_dip_21_ "io_dip[21]") (joined
@@ -7970,7 +7986,6 @@
           (portref I0 (instanceref Mmux_io_led_7_0_3221))
           (portref io_dip_23_IBUF (instanceref adder))
           (portref io_dip_23_IBUF (instanceref mult))
-          (portref io_dip_23_IBUF (instanceref tester))
           )
          )
        )
