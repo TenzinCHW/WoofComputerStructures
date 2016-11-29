@@ -1,0 +1,207 @@
+
+*** Running xst
+    with args -ifn "mojo_top_0.xst" -ofn "mojo_top_0.srp" -intstyle ise
+
+Reading design: mojo_top_0.prj
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/TestLEDMatrix/work/planAhead/TestLEDMatrix/TestLEDMatrix.srcs/sources_1/imports/verilog/reset_conditioner_1.v" into library work
+Parsing module <reset_conditioner_1>.
+Analyzing Verilog file "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/TestLEDMatrix/work/planAhead/TestLEDMatrix/TestLEDMatrix.srcs/sources_1/imports/verilog/mojo_top_0.v" into library work
+Parsing module <mojo_top_0>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mojo_top_0>.
+
+Elaborating module <reset_conditioner_1>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mojo_top_0>.
+    Related source file is "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/TestLEDMatrix/work/planAhead/TestLEDMatrix/TestLEDMatrix.srcs/sources_1/imports/verilog/mojo_top_0.v".
+WARNING:Xst:647 - Input <io_button> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_dip> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_ss> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_mosi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_sck> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <avr_tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <avr_rx_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <M_j_q>.
+    Found 4-bit register for signal <M_k_q>.
+    Found 16-bit register for signal <M_time_q>.
+    Found 3-bit register for signal <M_state_q>.
+    Found 4-bit register for signal <M_i_q>.
+    Found finite state machine <FSM_0> for signal <M_state_q>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | M_reset_cond_out (positive)                    |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 110                                            |
+    | Power Up State     | 110                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit subtractor for signal <M_j_q[3]_GND_1_o_sub_3_OUT> created at line 84.
+    Found 4-bit subtractor for signal <M_i_q[3]_GND_1_o_sub_16_OUT> created at line 116.
+    Found 1-bit adder for signal <clk_GND_1_o_add_0_OUT<0>> created at line 74.
+    Found 8-bit adder for signal <M_i_q[3]_GND_1_o_add_5_OUT> created at line 94.
+    Found 16-bit adder for signal <M_time_q[15]_GND_1_o_add_12_OUT> created at line 110.
+    Found 4-bit adder for signal <M_k_q[3]_GND_1_o_add_16_OUT> created at line 117.
+    Found 511-bit shifter logical right for signal <n0078> created at line 94
+    Found 1-bit tristate buffer for signal <spi_miso> created at line 55
+    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 55
+    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 55
+    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 55
+    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 55
+    Found 1-bit tristate buffer for signal <avr_rx> created at line 55
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Combinational logic shifter(s).
+	inferred   6 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <mojo_top_0> synthesized.
+
+Synthesizing Unit <reset_conditioner_1>.
+    Related source file is "C:/Pinardy/SUTD/Term_4/Computation Structures/1D/TestLEDMatrix/work/planAhead/TestLEDMatrix/TestLEDMatrix.srcs/sources_1/imports/verilog/reset_conditioner_1.v".
+    Found 4-bit register for signal <M_stage_q>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <reset_conditioner_1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 1-bit adder                                           : 1
+ 16-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 2
+ 8-bit adder                                           : 1
+# Registers                                            : 5
+ 16-bit register                                       : 1
+ 4-bit register                                        : 4
+# Multiplexers                                         : 6
+ 16-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 5
+# Logic shifters                                       : 1
+ 511-bit shifter logical right                         : 1
+# Tristates                                            : 6
+ 1-bit tristate buffer                                 : 6
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 1-bit adder                                           : 1
+ 16-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 2
+ 8-bit adder                                           : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Multiplexers                                         : 6
+ 16-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 5
+# Logic shifters                                       : 1
+ 511-bit shifter logical right                         : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <M_state_q[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 110   | 00
+ 000   | 01
+ 010   | 11
+ 011   | 10
+-------------------
+
+Optimizing unit <mojo_top_0> ...
+WARNING:Xst:1293 - FF/Latch <M_time_q_15> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 1.
+
+Final Macro Processing ...
+
+Processing Unit <mojo_top_0> :
+INFO:Xst:741 - HDL ADVISOR - A 4-bit shift register was found for signal <reset_cond/M_stage_q_3> and currently occupies 4 logic cells (2 slices). Removing the set/reset logic would take advantage of SRL32 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+Unit <mojo_top_0> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 33
+ Flip-Flops                                            : 33
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | IBUF+BUFG              | 33    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.510ns (Maximum Frequency: 221.729MHz)
+   Minimum input arrival time before clock: 3.526ns
+   Maximum output required time after clock: 10.039ns
+   Maximum combinational path delay: 5.961ns
+
+=========================================================================

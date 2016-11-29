@@ -1,0 +1,141 @@
+module mojo_top (
+    input clk,              // 50MHz clock
+    input rst_n,            // reset button (active low)
+    output led [8],         // 8 user controllable LEDs
+    input cclk,             // configuration clock, AVR ready when high
+    output spi_miso,        // AVR SPI MISO
+    input spi_ss,           // AVR SPI Slave Select
+    input spi_mosi,         // AVR SPI MOSI
+    input spi_sck,          // AVR SPI Clock
+    output spi_channel [4], // AVR general purpose pins (used by default to select ADC channel)
+    input avr_tx,           // AVR TX (FPGA RX)
+    output avr_rx,          // AVR RX (FPGA TX)
+    input avr_rx_busy,      // AVR RX buffer full
+    output io_led [3][8],   // LEDs on IO Shield
+    output io_seg [8],      // 7-segment LEDs on IO Shield
+    output io_sel [4],      // Digit select on IO Shield
+    input io_button [5],    // 5 buttons on IO Shield
+    input io_dip [3][8],     // DIP switches on IO Shield
+    output inputsToCircuit[8]
+  ) {
+  
+  
+  sig rst;                  // reset signal
+  sig pattern[16][16];
+  .clk(clk) {
+    reset_conditioner reset_cond;
+    // The reset conditioner is used to synchronize the reset signal to the FPGA
+    // clock. This ensures the entire FPGA comes out of reset at the same time.
+    .rst(rst){
+    
+      fsm state(.clk(clk), #INIT(START)) = {ONE,TWO,THREE,FOUR,PO,PT,START};
+      //timechange changeState;
+      dff i[4];
+      dff j[4];
+      dff k[4];
+      dff time[16];
+      }
+  }
+  
+  always {
+    reset_cond.in = ~rst_n; // input raw inverted reset signal
+    rst = reset_cond.out;   // conditioned reset
+    
+    led = 8h00;             // turn LEDs off
+    spi_miso = bz;          // not using SPI
+    spi_channel = bzzzz;    // not using flags
+    avr_rx = bz;            // not using serial port
+    
+    io_led = 3x{{8h00}};    // turn LEDs off
+    io_seg = 8hff;          // turn segments off
+    io_sel = 4hf;           // select no digits
+    inputsToCircuit = c{0,0,0,0,0,0,0,0};
+    pattern = {c{0,0,1,0,0,0,0,0,0,1,1,1,1,1,0,0},c{0,1,1,0,0,0,0,0,1,0,0,0,0,0,1,0},c{0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0},c{0,0,1,0,0,0,0,0,0,1,1,1,1,1,0,0},c{0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0},c{0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0},c{0,1,1,1,0,0,0,0,1,1,1,1,1,1,1,0},c{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},c{0,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0},c{1,0,0,0,0,0,1,0,0,0,0,1,0,1,0,0},c{0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0},c{0,0,1,1,1,1,0,0,0,1,0,0,0,1,0,0},c{0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0},c{1,0,0,0,0,0,1,0,1,1,1,1,1,1,1,0},c{0,1,1,1,1,1,0,0,0,0,0,0,0,1,0,0},c{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}};
+    
+    //latch: 87 inputsToCircuit[7]
+    //clock: 84 inputsToCircuit[6]
+    //data: 82 inputsToCircuit[5]
+    //g: 80 inputsToCircuit[4]
+    //a: 78 inputsToCircuit[3]
+    //b: 74 inputsToCircuit[2]
+    //c: 66 inputsToCircuit[1]
+    //d: 57 inputsToCircuit[0]
+    case(state.q){
+      state.ONE:
+        inputsToCircuit[4] = 1;
+        inputsToCircuit[7] = 0;
+          
+        inputsToCircuit[5] = 0;
+        inputsToCircuit[6] = clk - 1;
+        if (j.q == 0){
+          state.d = state.THREE;
+          j.d = 15;
+          }
+        else{
+          j.d = j.q - 1;
+          }
+
+          
+      //state.TWO:
+        //inputsToCircuit[4] = 1;
+        //inputsToCircuit[7] = 0;
+        //inputsToCircuit[3] = b1;
+        //inputsToCircuit[2] = b1;
+        //inputsToCircuit[1] = b0;
+        //inputsToCircuit[0] = b0;
+        //state.d = state.THREE;
+        
+
+      state.THREE:
+        inputsToCircuit[3] = k.q[0];
+        inputsToCircuit[2] = k.q[1];
+        inputsToCircuit[1] = k.q[2];
+        inputsToCircuit[0] = k.q[3];
+        
+        inputsToCircuit[7] = 0;
+        inputsToCircuit[4] = 1;
+        
+        
+        
+        inputsToCircuit[5] = pattern[i.q][j.q];
+        inputsToCircuit[6] = clk - 1;
+        if (j.q == 0){
+          state.d = state.FOUR;
+          j.d = 15;
+          }
+        else{
+          j.d = j.q - 1;
+          }
+
+     
+    state.FOUR:
+        inputsToCircuit[3] = k.q[0];
+        inputsToCircuit[2] = k.q[1];
+        inputsToCircuit[1] = k.q[2];
+        inputsToCircuit[0] = k.q[3];
+        
+        inputsToCircuit[7] = 1;
+        inputsToCircuit[4] = 0;
+        time.d = time.q + 1;
+
+        if (time.q == b0110000110101000){
+          time.d = 0;
+          if (i.q == 0){
+            state.d = state.START;
+            }
+         else{
+          i.d = i.q - 1;
+          k.d = k.q + 1;
+          state.d = state.ONE;
+            }
+        }
+        
+      state.START:
+        i.d = 15;
+        j.d = 15;
+        k.d = 0;
+        time.d = 0;
+        state.d = state.ONE;
+    }
+  }
+  }
