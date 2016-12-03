@@ -51,6 +51,8 @@ module mojo_top (
     io_sel = 4hf;           // select no digits
     inputsToCircuit = c{0,0,0,0,0,0,0,0};
     pattern = {c{0,0,1,0,0,0,0,0,0,1,1,1,1,1,0,0},c{0,1,1,0,0,0,0,0,1,0,0,0,0,0,1,0},c{0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0},c{0,0,1,0,0,0,0,0,0,1,1,1,1,1,0,0},c{0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0},c{0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0},c{0,1,1,1,0,0,0,0,1,1,1,1,1,1,1,0},c{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},c{0,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0},c{1,0,0,0,0,0,1,0,0,0,0,1,0,1,0,0},c{0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0},c{0,0,1,1,1,1,0,0,0,1,0,0,0,1,0,0},c{0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0},c{1,0,0,0,0,0,1,0,1,1,1,1,1,1,1,0},c{0,1,1,1,1,1,0,0,0,0,0,0,0,1,0,0},c{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}};
+    // 8th bit thrown away, 1st bit always on
+    
     
     //latch: 87 inputsToCircuit[7]
     //clock: 84 inputsToCircuit[6]
@@ -68,8 +70,8 @@ module mojo_top (
         inputsToCircuit[5] = 0;
         inputsToCircuit[6] = clk - 1;
         if (j.q == 0){
-          state.d = state.THREE;
-          j.d = 15;
+          state.d = state.TWO;
+          j.d = 15; // j refers to current bit of array
           }
         else{
           j.d = j.q - 1;
@@ -86,6 +88,15 @@ module mojo_top (
         //state.d = state.THREE;
         
 
+      state.TWO:
+        inputsToCircuit[7] = 1;
+        inputsToCircuit[4] = 1;
+        inputsToCircuit[3] = k.q[0];
+        inputsToCircuit[2] = k.q[1];
+        inputsToCircuit[1] = k.q[2];
+        inputsToCircuit[0] = k.q[3];
+        state.d = state.THREE;
+      
       state.THREE:
         inputsToCircuit[3] = k.q[0];
         inputsToCircuit[2] = k.q[1];
@@ -97,7 +108,7 @@ module mojo_top (
         
         
         
-        inputsToCircuit[5] = pattern[i.q][j.q];
+        inputsToCircuit[5] = pattern[i.q][j.q]; //i.q is current array number. j.q is current LED in that row
         inputsToCircuit[6] = clk - 1;
         if (j.q == 0){
           state.d = state.FOUR;
@@ -110,22 +121,22 @@ module mojo_top (
      
     state.FOUR:
         inputsToCircuit[3] = k.q[0];
-        inputsToCircuit[2] = k.q[1];
+        inputsToCircuit[2] = k.q[1]; 
         inputsToCircuit[1] = k.q[2];
         inputsToCircuit[0] = k.q[3];
         
         inputsToCircuit[7] = 1;
         inputsToCircuit[4] = 0;
-        time.d = time.q + 1;
+        time.d = time.q + 1; // keep track of delayMicoSeconds
 
-        if (time.q == b0110000110101000){
+        if (time.q == b0110000110101000){ // 500 microseconds
           time.d = 0;
-          if (i.q == 0){
-            state.d = state.START;
+          if (i.q == 0){ // reached the end of LED
+            state.d = state.START; // go back to start and repeat
             }
          else{
-          i.d = i.q - 1;
-          k.d = k.q + 1;
+          i.d = i.q - 1; // array number (go to next)
+          k.d = k.q + 1; // row number
           state.d = state.ONE;
             }
         }
