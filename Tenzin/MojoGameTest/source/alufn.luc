@@ -1,0 +1,68 @@
+module alufn (
+    output out[8],
+    output zvn[3],
+    input a[8],
+    input b[8],
+    input aLUFN[6]
+  ) {
+
+  sig ay[8];
+  sig bee[8];
+  sig alufn[6];
+  adder adder;
+  multiplier mult;
+  divisor div;
+  shifter shifter;
+  boolean bool;
+  compare comparer;
+  
+  always {
+  
+    ay = a;
+    bee = b;
+    alufn = aLUFN;
+    
+    adder.a = ay;
+    adder.b = bee;
+    adder.aLUFN = alufn;
+    
+    mult.a = ay;
+    mult.b = bee;
+    mult.aLUFN = alufn;
+    
+    div.a = ay;
+    div.b = bee;
+    div.aLUFN = alufn;
+    
+    shifter.a = ay;
+    shifter.b = bee[2:0];
+    shifter.aLUFN = alufn;
+    
+    bool.a = ay;
+    bool.b = bee;
+    bool.aLUFN = alufn;
+    
+    comparer.a = ay;
+    comparer.b = bee;
+    comparer.aLUFN = alufn;
+    
+    zvn[0] = adder.z;
+    zvn[1] = adder.v;
+    zvn[2] = adder.n;
+    
+    case (aLUFN[5:4]) {
+      0: if (aLUFN[1]) {
+        out = mult.out;
+          }else if(aLUFN[2]){
+            out = div.out;
+          }else{
+          out = adder.out;
+          }
+      1: out = bool.out;
+      2: out = shifter.out;
+      3: out = comparer.out;
+      default: out = 0;
+    }
+    
+  }
+}

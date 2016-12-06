@@ -39,7 +39,7 @@ module mojo_top (
     io_led = 3x{{8h00}};    // turn LEDs off
     io_seg = 8hff;          // turn segments off
     io_sel = 4hf;           // select no digits
-    meow.aLUFN = io_dip[0];
+    meow.aLUFN = io_button[4:0];
     io_led[0] = meow.out;
   }
 }

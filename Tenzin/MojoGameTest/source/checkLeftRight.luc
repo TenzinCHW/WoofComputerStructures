@@ -1,0 +1,43 @@
+module checkLeftRight (
+    input map[20][20],
+    input position[20][20],
+    input leftRight[1],  // left is 0, right is 1
+    output out
+  ) {
+
+  var loop;
+  sig a[8];
+  sig b[8];
+  sig result1[8];
+  sig result2[8];
+  sig result3[8];
+  const OUTERWALL = {hFFFFF, hFFFFF, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hFFFFF, hFFFFF};
+  
+  always {
+    out = 1; // collision, don't move
+      // for each case statement, perform the appropriate xform
+      // or comparison call a diff alu function to check for 
+      // collision
+      // test = 0 + map[loop][3:0];  // Can assign the extra 4 bits
+      // like this. Also can use this method for the toDisplay
+      // module.    
+    for (loop = 2; loop < 18; loop = loop + 1) {
+      if (|position[loop]) {
+        if (leftRight) {
+          if (~|(position[loop] >> 1 & map[loop])) {  // compare w/ previous column
+            if (~|(position[loop] >> 1 & OUTERWALL[loop])){
+            out = 0;  // no collision, continue to move
+            }
+          }
+        }
+        else {
+          if (~|(position[loop] << 1 & map[loop])) {  // compare w/ next column
+            if (~|(position[loop] << 1 & OUTERWALL[loop])){
+            out = 0;  // no collision, continue to move
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+module move (
+    input movement[4],
+    input position[20][20],
+    output out[20][20]
+  ) {
+  
+  sig placehold[20][20];
+  var loop;
+  
+  always {
+    placehold = 20x{{h00000}};
+    for (loop = 2; loop < 18; loop = loop + 1) {
+      if (|position[loop]){
+        case (movement) {
+          0: placehold = position;
+          1: placehold[loop + 1] = position[loop];
+          2: placehold[loop - 1] = position[loop];
+          4: placehold[loop] = position[loop] << 1;
+          8: placehold[loop] = position[loop] >> 1;
+          }
+        }
+      }
+    out = placehold;
+  }
+}

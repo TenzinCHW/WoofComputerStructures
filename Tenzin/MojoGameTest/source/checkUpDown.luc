@@ -1,0 +1,63 @@
+module checkUpDown (
+    input upDown[1],  // 1 if up, 0 if down
+    input map[20][20],
+    input position[20][20],
+    output out
+  ) {
+
+  var loop;
+  sig a[8];
+  sig b[8];
+  sig result1[8];
+  sig result2[8];
+  sig result3[8];
+  const OUTERWALL = {hFFFFF, hFFFFF, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hC0003, hFFFFF, hFFFFF};
+  
+  always {
+    
+    out = 1; // collision, don't move
+      // for each case statement, perform the appropriate xform
+      // or comparison call a diff alu function to check for 
+      // collision
+      // test = 0 + map[loop][3:0];  // Can assign the extra 4 bits
+      // like this. Also can use this method for the toDisplay
+      // module.    
+    for (loop = 2; loop < 18; loop = loop + 1) {
+      if (|position[loop]) {
+        if (upDown) {
+          if (~|(position[loop] & map[loop + 1])) {  // compare w/ line above
+            if (~|(position[loop] & OUTERWALL[loop + 1])){
+            out = 0; // no collision, continue to move
+            }
+          }
+        }
+        else {
+          if (~|(position[loop] & map[loop + 1])) {  // compare w/ line below
+            if (~|(position[loop] & OUTERWALL[loop - 1])){
+            out = 0;  // no collision, continue to move
+            }
+          }
+        }
+      }
+      
+      
+    //    a = 0 + map[loop][3:0];
+    //    b = 0 + position[loop][3:0];
+    //    alu.a = a;
+    //    alu.b = b;
+    //    result1 = alu.result;
+    //    
+    //    a = map[loop][11:4];
+    //    b = position[loop][11:4];
+    //    alu.a = a;
+    //    alu.b = b;
+    //    result2 = alu.result;
+    //    
+    //    a = map[loop][19:12];
+    //    b = position[loop][19:12];
+    //    alu.a = a;
+    //    alu.b = b;
+    //    result3 = alu.result;
+    }
+  }
+}

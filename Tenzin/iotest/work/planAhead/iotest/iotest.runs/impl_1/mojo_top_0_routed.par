@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-PENGWIN-PC::  Tue Oct 18 21:14:41 2016
+PENGWIN-PC::  Mon Dec 05 21:08:54 2016
 
 par -intstyle pa -w -mt on mojo_top_0.ncd mojo_top_0_routed.ncd 
 
@@ -75,14 +75,17 @@ WARNING:Par:288 - The signal io_dip(18)_IBUF has no load.  PAR will not attempt 
 WARNING:Par:288 - The signal io_dip(19)_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal spi_sck_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal clk_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal io_dip(0)_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal avr_rx_busy_IBUF has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal io_button(0)_IBUF has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal io_button(1)_IBUF has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal io_button(2)_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal io_dip(1)_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal io_dip(2)_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal io_dip(3)_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal io_dip(4)_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal io_dip(5)_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal io_dip(6)_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal io_dip(7)_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal io_dip(8)_IBUF has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal io_button(3)_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal io_dip(9)_IBUF has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal io_button(4)_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal spi_mosi_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal spi_ss_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal avr_tx_IBUF has no load.  PAR will not attempt to route this signal.
@@ -102,13 +105,13 @@ WARNING:Par:288 - The signal io_dip(16)_IBUF has no load.  PAR will not attempt 
 Starting Router
 
 
-Phase  1  : 44 unrouted;      REAL time: 12 secs 
+Phase  1  : 44 unrouted;      REAL time: 13 secs 
 
 Phase  2  : 44 unrouted;      REAL time: 13 secs 
 
-Phase  3  : 21 unrouted;      REAL time: 13 secs 
+Phase  3  : 5 unrouted;      REAL time: 14 secs 
 
-Phase  4  : 21 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
+Phase  4  : 5 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
 
 Updating file: mojo_top_0_routed.ncd with current fully routed design.
 
@@ -143,18 +146,18 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-WARNING:Par:283 - There are 29 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+WARNING:Par:283 - There are 32 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 16 secs 
+Total REAL time to PAR completion: 17 secs 
 Total CPU time to PAR completion: 16 secs 
 
-Peak Memory Usage:  301 MB
+Peak Memory Usage:  297 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 32
+Number of warning messages: 35
 Number of info messages: 2
 
 Writing design to file mojo_top_0_routed.ncd

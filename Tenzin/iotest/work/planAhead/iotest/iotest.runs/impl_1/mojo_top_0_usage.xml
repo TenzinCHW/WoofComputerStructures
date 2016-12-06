@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <DeviceUsageSummary rev="2">
-<DesignStatistics TimeStamp="Tue Oct 18 21:15:52 2016"><group name="NetStatistics">
+<DesignStatistics TimeStamp="Mon Dec 05 21:10:04 2016"><group name="NetStatistics">
 <item name="NumNets_Active" rev="2">
 <attrib name="value" value="118"/></item>
 <item name="NumNets_Gnd" rev="2">
@@ -13,47 +13,45 @@
 <item name="NumNets_Vcc" rev="2">
 <attrib name="value" value="1"/></item>
 <item name="NumNodesOfType_Active_DOUBLE" rev="2">
-<attrib name="value" value="13"/></item>
+<attrib name="value" value="10"/></item>
 <item name="NumNodesOfType_Active_GENERIC" rev="2">
-<attrib name="value" value="24"/></item>
+<attrib name="value" value="15"/></item>
 <item name="NumNodesOfType_Active_IOBIN2OUT" rev="2">
-<attrib name="value" value="16"/></item>
+<attrib name="value" value="10"/></item>
 <item name="NumNodesOfType_Active_IOBOUTPUT" rev="2">
-<attrib name="value" value="16"/></item>
+<attrib name="value" value="10"/></item>
 <item name="NumNodesOfType_Active_OUTBOUND" rev="2">
-<attrib name="value" value="16"/></item>
+<attrib name="value" value="10"/></item>
 <item name="NumNodesOfType_Active_PADINPUT" rev="2">
-<attrib name="value" value="8"/></item>
+<attrib name="value" value="5"/></item>
 <item name="NumNodesOfType_Active_PADOUTPUT" rev="2">
-<attrib name="value" value="8"/></item>
-<item name="NumNodesOfType_Active_PINBOUNCE" rev="2">
-<attrib name="value" value="1"/></item>
+<attrib name="value" value="5"/></item>
 <item name="NumNodesOfType_Active_PINFEED" rev="2">
-<attrib name="value" value="8"/></item>
+<attrib name="value" value="5"/></item>
 <item name="NumNodesOfType_Active_QUAD" rev="2">
-<attrib name="value" value="44"/></item>
+<attrib name="value" value="37"/></item>
 <item name="NumNodesOfType_Active_SINGLE" rev="2">
-<attrib name="value" value="10"/></item>
+<attrib name="value" value="5"/></item>
 <item name="NumNodesOfType_Gnd_DOUBLE" rev="2">
-<attrib name="value" value="10"/></item>
+<attrib name="value" value="11"/></item>
 <item name="NumNodesOfType_Gnd_GENERIC" rev="2">
-<attrib name="value" value="24"/></item>
+<attrib name="value" value="27"/></item>
 <item name="NumNodesOfType_Gnd_IOBIN2OUT" rev="2">
-<attrib name="value" value="24"/></item>
+<attrib name="value" value="27"/></item>
 <item name="NumNodesOfType_Gnd_IOBOUTPUT" rev="2">
-<attrib name="value" value="24"/></item>
+<attrib name="value" value="27"/></item>
 <item name="NumNodesOfType_Gnd_OUTBOUND" rev="2">
-<attrib name="value" value="9"/></item>
+<attrib name="value" value="11"/></item>
 <item name="NumNodesOfType_Gnd_OUTPUT" rev="2">
-<attrib name="value" value="10"/></item>
+<attrib name="value" value="12"/></item>
 <item name="NumNodesOfType_Gnd_PADINPUT" rev="2">
-<attrib name="value" value="24"/></item>
+<attrib name="value" value="27"/></item>
 <item name="NumNodesOfType_Gnd_PINBOUNCE" rev="2">
 <attrib name="value" value="1"/></item>
 <item name="NumNodesOfType_Gnd_PINFEED" rev="2">
-<attrib name="value" value="24"/></item>
+<attrib name="value" value="27"/></item>
 <item name="NumNodesOfType_Gnd_SINGLE" rev="2">
-<attrib name="value" value="17"/></item>
+<attrib name="value" value="19"/></item>
 <item name="NumNodesOfType_Vcc_GENERIC" rev="2">
 <attrib name="value" value="12"/></item>
 <item name="NumNodesOfType_Vcc_HVCCOUT" rev="2">
@@ -86,7 +84,7 @@
 <attrib name="value" value="81"/></item>
 </group>
 </DesignStatistics>
-<DeviceUsage TimeStamp="Tue Oct 18 21:15:52 2016"><group name="SiteSummary">
+<DeviceUsage TimeStamp="Mon Dec 05 21:10:04 2016"><group name="SiteSummary">
 <item name="IOB" rev="2">
 <attrib name="total" value="1000000"/><attrib name="used" value="81"/></item>
 <item name="IOB_IMUX" rev="2">
@@ -101,7 +99,7 @@
 <attrib name="total" value="1000000"/><attrib name="used" value="29"/></item>
 </group>
 </DeviceUsage>
-<ReportConfigData TimeStamp="Tue Oct 18 21:15:52 2016"><group name="IOB_OUTBUF">
+<ReportConfigData TimeStamp="Mon Dec 05 21:10:04 2016"><group name="IOB_OUTBUF">
 <item name="DRIVEATTRBOX" rev="2">
 <attrib name="12" value="44"/></item>
 <item name="SLEW" rev="2">
@@ -114,7 +112,7 @@
 <attrib name="PULLDOWN" value="29"/></item>
 </group>
 </ReportConfigData>
-<ReportPinData TimeStamp="Tue Oct 18 21:15:52 2016"><group name="IOB_OUTBUF">
+<ReportPinData TimeStamp="Mon Dec 05 21:10:04 2016"><group name="IOB_OUTBUF">
 <item name="IN" rev="2">
 <attrib name="value" value="44"/></item>
 <item name="OUT" rev="2">

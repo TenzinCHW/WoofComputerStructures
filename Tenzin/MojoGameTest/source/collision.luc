@@ -1,0 +1,62 @@
+module collisionMove (
+    input clk,  // clock
+    input rst,  // reset
+    input movement[4],
+    input map[20][20],
+    input position[20][20],
+    output out[1]
+  ) {
+
+
+  
+//  sig test2[16][16]; cannot assign 2D array from another 2D array
+  
+  checkUpDown upDown;
+  checkLeftRight leftRight;
+  
+  .clk(clk) {
+    //reset_conditioner reset_cond;
+    // The reset conditioner is used to synchronize the reset signal to the FPGA
+    // clock. This ensures the entire FPGA comes out of reset at the same time.
+    .rst(rst){
+      fsm direction(.clk(clk), #INIT(STATIONARY)) = {STATIONARY,UP,DOWN,LEFT,RIGHT};
+      }
+  }
+  
+  always {
+    out = 1;  // don't move (usually) out indicates if there
+              // is a collision
+    
+    case (movement) {
+      0: direction.d = direction.STATIONARY;  // each button is
+      1: direction.d = direction.UP;          // concatenated
+      2: direction.d = direction.DOWN;        // to form movement[5]
+      4: direction.d = direction.LEFT;
+      8: direction.d = direction.RIGHT;
+      }
+
+    upDown.map = map;
+    upDown.position = position;
+    upDown.upDown = 0;
+    leftRight.map = map;
+    leftRight.position = position;
+    leftRight.leftRight = 0;
+
+    // use case statement to check state of movement
+    case (direction.q) {
+      direction.STATIONARY: out = 0;
+      direction.UP: 
+        upDown.upDown = 1;
+        out = upDown.out;
+      direction.DOWN: 
+        upDown.upDown = 0;
+        out = upDown.out;
+      direction.LEFT:
+        leftRight.leftRight = 0;
+        out = leftRight.out;
+      direction.RIGHT:
+        leftRight.leftRight = 1;
+        out = leftRight.out;
+    }    
+  }
+}

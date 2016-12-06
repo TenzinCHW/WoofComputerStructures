@@ -1,0 +1,18 @@
+module convertToDisplay (
+    input map[20][20],
+    input position[20][20],
+    output out[16][16]
+  ) {
+  
+  sig placehold[16][16];
+  var loop;
+  
+  always {
+    
+    for (loop = 2; loop < 18; loop = loop + 1) {
+      placehold[loop - 2] = map[loop][17:2] + position[loop][17:2];
+      }
+    
+    out = placehold;
+  }
+}

@@ -1,0 +1,16 @@
+NET "inputsToCircuit[0]" LOC = P57;
+NET "inputsToCircuit[0]" IOSTANDARD = LVTTL;
+NET "inputsToCircuit[1]" LOC = P66;
+NET "inputsToCircuit[1]" IOSTANDARD = LVTTL;
+NET "inputsToCircuit[2]" LOC = P74;
+NET "inputsToCircuit[2]" IOSTANDARD = LVTTL;
+NET "inputsToCircuit[3]" LOC = P78;
+NET "inputsToCircuit[3]" IOSTANDARD = LVTTL;
+NET "inputsToCircuit[4]" LOC = P80;
+NET "inputsToCircuit[4]" IOSTANDARD = LVTTL;
+NET "inputsToCircuit[5]" LOC = P82;
+NET "inputsToCircuit[5]" IOSTANDARD = LVTTL;
+NET "inputsToCircuit[6]" LOC = P84;
+NET "inputsToCircuit[6]" IOSTANDARD = LVTTL;
+NET "inputsToCircuit[7]" LOC = P87;
+NET "inputsToCircuit[7]" IOSTANDARD = LVTTL;

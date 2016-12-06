@@ -1,0 +1,22 @@
+module boolean (
+    output out[8],
+    input a[8],
+    input b[8],
+    input aLUFN[6]
+  ) {
+
+  sig zerozero[8];
+  sig zeroone[8];
+  sig onezero[8];
+  sig oneone[8];
+  
+  always {
+  // Implementation of a multiplexer from lab 3
+  // Just search for how to build a multiplexer online.
+    zerozero = ~a & ~b & 8x{aLUFN[0]};
+    zeroone = a & ~b & 8x{aLUFN[1]};
+    onezero = ~a & b & 8x{aLUFN[2]};
+    oneone = a & b & 8x{aLUFN[3]};
+    out = (zerozero | zeroone | onezero | oneone);
+  }
+}

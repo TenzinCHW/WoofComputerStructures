@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Tue Oct 18 21:14:52 2016">
+  <application stringID="par" timeStamp="Mon Dec 05 21:09:04 2016">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Users\HanWei\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Users\HanWei\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/EDK/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/EDK/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/ISE/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/ISE/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/common/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/common/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/bin;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/lib/win64.o;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/tps/win64/jre/bin/server;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/tps/win64/jre/bin;C:\Python27\Lib\site-packages\PyQt4;C:\Python27\;C:\Python27\Scripts;C:\MinGW\bin;C:\MinGW\libexec\gcc\x86_64-pc-mingw32\6.1.0;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Skype\Phone\;%USERPROFILE%\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Visual-Studio-gtkmm\output\v140\Debug\x64\bin;C:\Program Files\Calibre2\;C:\Program Files\Mercurial\;C:\Users\HanWei\AppData\Local\Enthought\Canopy\User;C:\Users\HanWei\AppData\Local\Enthought\Canopy\User\Scripts;C:\Program Files\Mojo IDE\java\bin"/>
+          <item stringID="value" value="C:\Users\HanWei\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Users\HanWei\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/EDK/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/EDK/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/ISE/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/ISE/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/common/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/common/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/bin;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/lib/win64.o;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/tps/win64/jre/bin/server;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/tps/win64/jre/bin;C:\Python27\Lib\site-packages\PyQt4;C:\Python27\;C:\Python27\Scripts;C:\MinGW\bin;C:\MinGW\libexec\gcc\x86_64-pc-mingw32\6.1.0;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Skype\Phone\;C:\Users\HanWei\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Visual-Studio-gtkmm\output\v140\Debug\x64\bin;C:\Program Files\Calibre2\;C:\Program Files\Mercurial\;C:\Program Files\nodejs\;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Users\HanWei\AppData\Local\Enthought\Canopy\User;C:\Users\HanWei\AppData\Local\Enthought\Canopy\User\Scripts;C:\Users\HanWei\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files\Mojo IDE\java\bin"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -66,7 +66,7 @@
         <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="15 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="16 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="17 secs "/>
         <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="16 secs "/>
       </section>
     </task>
@@ -1191,7 +1191,7 @@
           </row>
           <row stringID="row" value="114">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P114"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip[6]"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip(6)"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L65N_SCP2_0"/>
             <item stringID="Direction" value="INPUT"/>
@@ -1205,7 +1205,7 @@
           </row>
           <row stringID="row" value="115">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P115"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip[7]"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip(7)"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L65P_SCP3_0"/>
             <item stringID="Direction" value="INPUT"/>
@@ -1219,7 +1219,7 @@
           </row>
           <row stringID="row" value="116">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P116"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip[4]"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip(4)"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L64N_SCP4_0"/>
             <item stringID="Direction" value="INPUT"/>
@@ -1233,7 +1233,7 @@
           </row>
           <row stringID="row" value="117">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P117"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip[5]"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip(5)"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L64P_SCP5_0"/>
             <item stringID="Direction" value="INPUT"/>
@@ -1247,7 +1247,7 @@
           </row>
           <row stringID="row" value="118">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P118"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip[2]"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip(2)"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L63N_SCP6_0"/>
             <item stringID="Direction" value="INPUT"/>
@@ -1261,7 +1261,7 @@
           </row>
           <row stringID="row" value="119">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P119"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip[3]"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip(3)"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L63P_SCP7_0"/>
             <item stringID="Direction" value="INPUT"/>
@@ -1275,7 +1275,7 @@
           </row>
           <row stringID="row" value="120">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P120"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip[0]"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip(0)"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L62N_VREF_0"/>
             <item stringID="Direction" value="INPUT"/>
@@ -1289,7 +1289,7 @@
           </row>
           <row stringID="row" value="121">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P121"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip[1]"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_dip(1)"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L62P_0"/>
             <item stringID="Direction" value="INPUT"/>
@@ -1451,7 +1451,7 @@
           </row>
           <row stringID="row" value="137">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P137"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_button(0)"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_button[0]"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L4N_0"/>
             <item stringID="Direction" value="INPUT"/>
@@ -1465,7 +1465,7 @@
           </row>
           <row stringID="row" value="138">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P138"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_button(4)"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_button[4]"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L4P_0"/>
             <item stringID="Direction" value="INPUT"/>
@@ -1479,7 +1479,7 @@
           </row>
           <row stringID="row" value="139">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P139"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_button(2)"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_button[2]"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L3N_0"/>
             <item stringID="Direction" value="INPUT"/>
@@ -1493,7 +1493,7 @@
           </row>
           <row stringID="row" value="140">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P140"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_button(1)"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_button[1]"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L3P_0"/>
             <item stringID="Direction" value="INPUT"/>
@@ -1521,7 +1521,7 @@
           </row>
           <row stringID="row" value="142">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P142"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_button(3)"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="io_button[3]"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L2P_0"/>
             <item stringID="Direction" value="INPUT"/>
@@ -1571,19 +1571,19 @@
       <section stringID="PAR_UNROUTES_REPORT">
         <item dataType="int" stringID="PAR_UNROUTED_NETS" value="0"/>
         <item dataType="int" stringID="PAR_TOTAL_SOURCELESS_NETS" value="0"/>
-        <item dataType="int" stringID="PAR_TOTAL_LOADLESS_NETS" value="29"/>
+        <item dataType="int" stringID="PAR_TOTAL_LOADLESS_NETS" value="32"/>
       </section>
     </task>
   </application>
 
-  <application stringID="Par" timeStamp="Tue Oct 18 21:14:53 2016">
+  <application stringID="Par" timeStamp="Mon Dec 05 21:09:06 2016">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Users\HanWei\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Users\HanWei\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/EDK/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/EDK/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/ISE/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/ISE/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/common/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/common/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/bin;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/lib/win64.o;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/tps/win64/jre/bin/server;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/tps/win64/jre/bin;C:\Python27\Lib\site-packages\PyQt4;C:\Python27\;C:\Python27\Scripts;C:\MinGW\bin;C:\MinGW\libexec\gcc\x86_64-pc-mingw32\6.1.0;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Skype\Phone\;%USERPROFILE%\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Visual-Studio-gtkmm\output\v140\Debug\x64\bin;C:\Program Files\Calibre2\;C:\Program Files\Mercurial\;C:\Users\HanWei\AppData\Local\Enthought\Canopy\User;C:\Users\HanWei\AppData\Local\Enthought\Canopy\User\Scripts;C:\Program Files\Mojo IDE\java\bin"/>
+          <item stringID="value" value="C:\Users\HanWei\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Users\HanWei\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/EDK/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/EDK/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/ISE/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/ISE/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/common/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/common/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/bin;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/lib/win64.o;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/tps/win64/jre/bin/server;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/tps/win64/jre/bin;C:\Python27\Lib\site-packages\PyQt4;C:\Python27\;C:\Python27\Scripts;C:\MinGW\bin;C:\MinGW\libexec\gcc\x86_64-pc-mingw32\6.1.0;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Skype\Phone\;C:\Users\HanWei\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Visual-Studio-gtkmm\output\v140\Debug\x64\bin;C:\Program Files\Calibre2\;C:\Program Files\Mercurial\;C:\Program Files\nodejs\;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Users\HanWei\AppData\Local\Enthought\Canopy\User;C:\Users\HanWei\AppData\Local\Enthought\Canopy\User\Scripts;C:\Users\HanWei\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files\Mojo IDE\java\bin"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>

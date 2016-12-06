@@ -1,0 +1,588 @@
+
+*** Running xst
+    with args -ifn "mojo_top_0.xst" -ofn "mojo_top_0.srp" -intstyle ise
+
+Reading design: mojo_top_0.prj
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/MojoGameTest/work/planAhead/MojoGameTest/MojoGameTest.srcs/sources_1/imports/verilog/toDisplay_4.v" into library work
+Parsing module <toDisplay_4>.
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/MojoGameTest/work/planAhead/MojoGameTest/MojoGameTest.srcs/sources_1/imports/verilog/reset_conditioner_2.v" into library work
+Parsing module <reset_conditioner_2>.
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/MojoGameTest/work/planAhead/MojoGameTest/MojoGameTest.srcs/sources_1/imports/verilog/map_3.v" into library work
+Parsing module <map_3>.
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/MojoGameTest/work/planAhead/MojoGameTest/MojoGameTest.srcs/sources_1/imports/verilog/convertToDisplay_1.v" into library work
+Parsing module <convertToDisplay_1>.
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/MojoGameTest/work/planAhead/MojoGameTest/MojoGameTest.srcs/sources_1/imports/verilog/mojo_top_0.v" into library work
+Parsing module <mojo_top_0>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mojo_top_0>.
+
+Elaborating module <convertToDisplay_1>.
+
+Elaborating module <reset_conditioner_2>.
+
+Elaborating module <map_3>.
+WARNING:HDLCompiler:1127 - "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/MojoGameTest/work/planAhead/MojoGameTest/MojoGameTest.srcs/sources_1/imports/verilog/map_3.v" Line 49: Assignment to M_startPos_q ignored, since the identifier is never used
+
+Elaborating module <toDisplay_4>.
+WARNING:HDLCompiler:1127 - "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/MojoGameTest/work/planAhead/MojoGameTest/MojoGameTest.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 99: Assignment to M_i_q ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/MojoGameTest/work/planAhead/MojoGameTest/MojoGameTest.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 116: Assignment to M_state_q ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mojo_top_0>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/MojoGameTest/work/planAhead/MojoGameTest/MojoGameTest.srcs/sources_1/imports/verilog/mojo_top_0.v".
+WARNING:Xst:647 - Input <io_button<4:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_dip> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_ss> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_mosi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_sck> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <avr_tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <avr_rx_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit tristate buffer for signal <spi_miso> created at line 81
+    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 81
+    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 81
+    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 81
+    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 81
+    Found 1-bit tristate buffer for signal <avr_rx> created at line 81
+    Summary:
+	inferred   6 Tristate(s).
+Unit <mojo_top_0> synthesized.
+
+Synthesizing Unit <convertToDisplay_1>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/MojoGameTest/work/planAhead/MojoGameTest/MojoGameTest.srcs/sources_1/imports/verilog/convertToDisplay_1.v".
+WARNING:Xst:647 - Input <map<41:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <map<61:58>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <map<81:78>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <map<101:98>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <map<121:118>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <map<141:138>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <map<161:158>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <map<181:178>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <map<201:198>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <map<221:218>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <map<241:238>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <map<261:258>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <map<281:278>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <map<301:298>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <map<321:318>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <map<341:338>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <map<399:358>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <position<41:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <position<61:58>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <position<81:78>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <position<101:98>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <position<121:118>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <position<141:138>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <position<161:158>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <position<181:178>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <position<201:198>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <position<221:218>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <position<241:238>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <position<261:258>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <position<281:278>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <position<301:298>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <position<321:318>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <position<341:338>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <position<399:358>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <convertToDisplay_1> synthesized.
+
+Synthesizing Unit <reset_conditioner_2>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/MojoGameTest/work/planAhead/MojoGameTest/MojoGameTest.srcs/sources_1/imports/verilog/reset_conditioner_2.v".
+    Found 4-bit register for signal <M_stage_q>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <reset_conditioner_2> synthesized.
+
+Synthesizing Unit <map_3>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/MojoGameTest/work/planAhead/MojoGameTest/MojoGameTest.srcs/sources_1/imports/verilog/map_3.v".
+    Found 400-bit register for signal <M_map_q>.
+    Found 1-bit register for signal <M_start_q>.
+    Summary:
+	inferred 401 D-type flip-flop(s).
+Unit <map_3> synthesized.
+
+Synthesizing Unit <toDisplay_4>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/MojoGameTest/work/planAhead/MojoGameTest/MojoGameTest.srcs/sources_1/imports/verilog/toDisplay_4.v".
+    Found 4-bit register for signal <M_j_q>.
+    Found 4-bit register for signal <M_k_q>.
+    Found 16-bit register for signal <M_time_q>.
+    Found 3-bit register for signal <M_state_q>.
+    Found 4-bit register for signal <M_i_q>.
+    Found finite state machine <FSM_0> for signal <M_state_q>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 110                                            |
+    | Power Up State     | 110                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit subtractor for signal <M_j_q[3]_GND_5_o_sub_10_OUT> created at line 74.
+    Found 4-bit subtractor for signal <M_i_q[3]_GND_5_o_sub_16_OUT> created at line 90.
+    Found 8-bit adder for signal <M_i_q[3]_GND_5_o_add_5_OUT> created at line 68.
+    Found 1-bit adder for signal <clk_GND_5_o_add_7_OUT<0>> created at line 39.
+    Found 16-bit adder for signal <M_time_q[15]_GND_5_o_add_12_OUT> created at line 84.
+    Found 4-bit adder for signal <M_k_q[3]_GND_5_o_add_16_OUT> created at line 91.
+    Found 511-bit shifter logical right for signal <n0051> created at line 68
+    Found 8-bit 5-to-1 multiplexer for signal <inputsToCircuit> created at line 39.
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+	inferred   1 Combinational logic shifter(s).
+	inferred   1 Finite State Machine(s).
+Unit <toDisplay_4> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 1-bit adder                                           : 1
+ 16-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 2
+ 8-bit adder                                           : 1
+# Registers                                            : 7
+ 1-bit register                                        : 1
+ 16-bit register                                       : 1
+ 4-bit register                                        : 4
+ 400-bit register                                      : 1
+# Multiplexers                                         : 7
+ 16-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 4
+ 8-bit 5-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 511-bit shifter logical right                         : 1
+# Tristates                                            : 6
+ 1-bit tristate buffer                                 : 6
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <toDisplay_4>.
+The following registers are absorbed into counter <M_k_q>: 1 register on signal <M_k_q>.
+The following registers are absorbed into counter <M_i_q>: 1 register on signal <M_i_q>.
+Unit <toDisplay_4> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 1-bit adder                                           : 1
+ 16-bit adder                                          : 1
+ 4-bit subtractor                                      : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 2
+ 4-bit down counter                                    : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 425
+ Flip-Flops                                            : 425
+# Multiplexers                                         : 5
+ 16-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 2
+ 8-bit 5-to-1 multiplexer                              : 1
+# Logic shifters                                       : 1
+ 511-bit shifter logical right                         : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <M_map_q_298> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_281> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_280> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_279> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_278> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_277> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_276> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_275> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_274> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_271> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_270> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_269> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_268> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_267> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_266> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_263> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_262> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_261> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_319> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_318> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_317> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_316> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_315> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_313> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_312> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_311> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_310> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_309> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_308> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_307> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_305> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_304> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_303> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_301> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_300> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_299> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_236> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_235> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_234> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_233> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_232> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_231> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_230> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_229> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_228> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_226> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_225> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_224> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_223> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_222> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_221> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_220> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_219> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_218> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_260> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_259> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_258> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_257> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_255> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_253> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_252> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_251> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_249> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_247> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_245> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_244> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_243> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_241> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_240> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_239> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_238> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_237> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_381> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_380> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_379> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_378> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_377> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_376> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_375> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_374> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_373> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_372> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_371> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_370> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_369> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_368> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_367> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_366> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_365> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_364> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_399> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_398> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_397> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_396> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_395> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_394> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_393> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_392> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_391> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_390> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_389> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_388> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_387> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_386> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_385> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_384> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_383> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_382> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_339> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_338> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_337> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_336> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_335> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_334> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_333> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_332> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_330> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_329> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_328> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_327> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_326> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_325> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_324> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_322> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_321> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_320> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_363> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_362> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_361> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_360> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_359> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_358> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_357> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_356> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_354> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_352> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_351> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_350> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_349> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_346> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_344> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_343> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_342> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_341> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_340> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_65> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_64> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_63> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_62> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_61> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_60> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_59> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_58> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_51> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_47> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_45> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_44> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_41> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_40> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_39> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_38> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_37> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_36> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_87> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_85> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_84> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_83> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_81> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_80> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_79> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_78> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_76> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_75> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_74> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_73> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_72> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_71> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_69> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_68> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_67> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_66> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_17> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_16> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_15> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_14> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_13> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_12> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_11> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_10> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_9> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_8> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_7> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_6> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_5> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_4> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_3> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_2> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_1> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_0> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_35> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_34> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_33> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_32> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_31> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_30> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_29> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_28> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_27> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_26> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_25> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_24> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_23> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_22> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_21> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_20> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_19> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_18> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_179> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_178> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_176> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_175> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_174> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_173> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_172> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_170> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_169> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_168> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_167> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_166> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_165> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_164> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_162> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_161> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_160> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_159> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_201> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_200> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_199> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_198> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_197> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_196> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_194> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_192> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_191> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_190> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_189> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_188> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_186> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_184> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_183> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_182> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_181> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_180> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_118> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_114> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_111> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_110> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_109> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_108> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_107> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_106> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_103> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_102> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_101> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_100> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_99> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_98> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_93> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_92> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_91> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_89> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_158> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_157> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_156> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_155> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_153> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_152> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_151> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_147> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_145> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_144> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_143> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_142> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_141> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_140> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_139> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_138> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_121> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_120> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_q_119> has a constant value of 0 in block <map_3>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <M_map_q_42> in Unit <map_3> is equivalent to the following 38 FFs/Latches, which will be removed : <M_map_q_46> <M_map_q_48> <M_map_q_96> <M_map_q_122> <M_map_q_123> <M_map_q_125> <M_map_q_126> <M_map_q_127> <M_map_q_128> <M_map_q_130> <M_map_q_131> <M_map_q_133> <M_map_q_134> <M_map_q_135> <M_map_q_136> <M_map_q_185> <M_map_q_202> <M_map_q_204> <M_map_q_205> <M_map_q_206> <M_map_q_207> <M_map_q_208> <M_map_q_210> <M_map_q_212> <M_map_q_213> <M_map_q_214> <M_map_q_215> <M_map_q_216> <M_map_q_248> <M_map_q_282> <M_map_q_283> <M_map_q_285> <M_map_q_286> <M_map_q_287> <M_map_q_293> <M_map_q_294> <M_map_q_295> <M_map_q_296> 
+INFO:Xst:2261 - The FF/Latch <M_map_q_306> in Unit <map_3> is equivalent to the following 5 FFs/Latches, which will be removed : <M_map_q_314> <M_map_q_323> <M_map_q_331> <M_map_q_345> <M_map_q_347> 
+INFO:Xst:2261 - The FF/Latch <M_map_q_43> in Unit <map_3> is equivalent to the following 31 FFs/Latches, which will be removed : <M_map_q_49> <M_map_q_52> <M_map_q_53> <M_map_q_55> <M_map_q_57> <M_map_q_70> <M_map_q_77> <M_map_q_95> <M_map_q_97> <M_map_q_115> <M_map_q_116> <M_map_q_117> <M_map_q_124> <M_map_q_129> <M_map_q_132> <M_map_q_137> <M_map_q_148> <M_map_q_149> <M_map_q_150> <M_map_q_177> <M_map_q_203> <M_map_q_209> <M_map_q_211> <M_map_q_217> <M_map_q_227> <M_map_q_284> <M_map_q_289> <M_map_q_292> <M_map_q_297> <M_map_q_302> <M_map_q_348> 
+INFO:Xst:2261 - The FF/Latch <M_map_q_288> in Unit <map_3> is equivalent to the following 2 FFs/Latches, which will be removed : <M_map_q_290> <M_map_q_291> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <display/FSM_0> on signal <M_state_q[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 110   | 110
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 000   | 000
+-------------------
+
+Optimizing unit <mojo_top_0> ...
+
+Optimizing unit <map_3> ...
+INFO:Xst:2261 - The FF/Latch <M_map_q_50> in Unit <map_3> is equivalent to the following 29 FFs/Latches, which will be removed : <M_map_q_54> <M_map_q_56> <M_map_q_82> <M_map_q_86> <M_map_q_88> <M_map_q_90> <M_map_q_94> <M_map_q_104> <M_map_q_105> <M_map_q_112> <M_map_q_113> <M_map_q_146> <M_map_q_154> <M_map_q_163> <M_map_q_171> <M_map_q_187> <M_map_q_193> <M_map_q_195> <M_map_q_242> <M_map_q_246> <M_map_q_250> <M_map_q_254> <M_map_q_256> <M_map_q_264> <M_map_q_265> <M_map_q_272> <M_map_q_273> <M_map_q_353> <M_map_q_355> 
+INFO:Xst:2261 - The FF/Latch <M_map_q_50> in Unit <map_3> is equivalent to the following 29 FFs/Latches, which will be removed : <M_map_q_54> <M_map_q_56> <M_map_q_82> <M_map_q_86> <M_map_q_88> <M_map_q_90> <M_map_q_94> <M_map_q_104> <M_map_q_105> <M_map_q_112> <M_map_q_113> <M_map_q_146> <M_map_q_154> <M_map_q_163> <M_map_q_171> <M_map_q_187> <M_map_q_193> <M_map_q_195> <M_map_q_242> <M_map_q_246> <M_map_q_250> <M_map_q_254> <M_map_q_256> <M_map_q_264> <M_map_q_265> <M_map_q_272> <M_map_q_273> <M_map_q_353> <M_map_q_355> 
+
+Optimizing unit <toDisplay_4> ...
+WARNING:Xst:1293 - FF/Latch <display/M_time_q_15> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 2.
+
+Final Macro Processing ...
+
+Processing Unit <mojo_top_0> :
+INFO:Xst:741 - HDL ADVISOR - A 4-bit shift register was found for signal <reset_cond/M_stage_q_3> and currently occupies 4 logic cells (2 slices). Removing the set/reset logic would take advantage of SRL32 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+Unit <mojo_top_0> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 40
+ Flip-Flops                                            : 40
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | IBUF+BUFG              | 40    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.863ns (Maximum Frequency: 205.634MHz)
+   Minimum input arrival time before clock: 3.526ns
+   Maximum output required time after clock: 9.258ns
+   Maximum combinational path delay: 5.857ns
+
+=========================================================================

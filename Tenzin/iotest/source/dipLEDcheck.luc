@@ -1,8 +1,8 @@
 module dipLEDcheck (
     //input clk,  // clock
     //input rst,  // reset
-    output out[8],
-    input aLUFN[8]
+    output out[5],
+    input aLUFN[5]
   ) {
 
   always {

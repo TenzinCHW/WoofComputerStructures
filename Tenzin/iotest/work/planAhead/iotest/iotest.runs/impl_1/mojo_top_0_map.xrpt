@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Tue Oct 18 21:14:37 2016">
+  <application stringID="Map" timeStamp="Mon Dec 05 21:08:49 2016">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Users\HanWei\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Users\HanWei\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/EDK/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/EDK/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/ISE/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/ISE/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/common/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/common/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/bin;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/lib/win64.o;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/tps/win64/jre/bin/server;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/tps/win64/jre/bin;C:\Python27\Lib\site-packages\PyQt4;C:\Python27\;C:\Python27\Scripts;C:\MinGW\bin;C:\MinGW\libexec\gcc\x86_64-pc-mingw32\6.1.0;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Skype\Phone\;%USERPROFILE%\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Visual-Studio-gtkmm\output\v140\Debug\x64\bin;C:\Program Files\Calibre2\;C:\Program Files\Mercurial\;C:\Users\HanWei\AppData\Local\Enthought\Canopy\User;C:\Users\HanWei\AppData\Local\Enthought\Canopy\User\Scripts;C:\Program Files\Mojo IDE\java\bin"/>
+          <item stringID="value" value="C:\Users\HanWei\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Users\HanWei\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/EDK/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/EDK/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/ISE/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/ISE/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/common/bin/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/common/lib/nt64;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/bin;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/lib/win64.o;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/tps/win64/jre/bin/server;C:/Users/HanWei/Xilinx/14.7/ISE_DS/PlanAhead/tps/win64/jre/bin;C:\Python27\Lib\site-packages\PyQt4;C:\Python27\;C:\Python27\Scripts;C:\MinGW\bin;C:\MinGW\libexec\gcc\x86_64-pc-mingw32\6.1.0;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Skype\Phone\;C:\Users\HanWei\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Visual-Studio-gtkmm\output\v140\Debug\x64\bin;C:\Program Files\Calibre2\;C:\Program Files\Mercurial\;C:\Program Files\nodejs\;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Users\HanWei\AppData\Local\Enthought\Canopy\User;C:\Users\HanWei\AppData\Local\Enthought\Canopy\User\Scripts;C:\Users\HanWei\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_102\bin;C:\Program Files\Mojo IDE\java\bin"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -114,7 +114,7 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="6"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="337032"/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="333932"/>
         <item stringID="MAP_TOTAL_REAL_TIME" value="18 secs "/>
         <item stringID="MAP_TOTAL_CPU_TIME" value="17 secs "/>
       </section>
@@ -240,203 +240,203 @@
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
           </row>
           <row stringID="row" value="5">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_button(0)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_button[0]"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="6">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_button(1)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_button[1]"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="7">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_button(2)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_button[2]"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="8">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_button(3)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_button[3]"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="9">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_button(4)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_button[4]"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="10">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(8)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(0)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="11">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(9)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(1)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="12">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(10)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(2)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="13">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(11)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(3)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="14">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(12)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(4)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="15">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(13)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(5)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="16">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(14)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(6)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="17">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(15)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(7)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="18">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(16)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(8)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="19">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(17)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(9)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="20">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(18)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(10)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="21">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(19)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(11)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="22">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(20)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(12)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="23">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(21)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(13)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="24">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(22)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(14)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="25">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(23)"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(15)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="26">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip[0]"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(16)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="27">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip[1]"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(17)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="28">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip[2]"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(18)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="29">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip[3]"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(19)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="30">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip[4]"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(20)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="31">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip[5]"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(21)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="32">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip[6]"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(22)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
             <item stringID="Resistor" value="PULLDOWN"/>
           </row>
           <row stringID="row" value="33">
-            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip[7]"/>
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="io_dip(23)"/>
             <item stringID="Type" value="IOB"/>
             <item stringID="Direction" value="INPUT"/>
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVTTL"/>
