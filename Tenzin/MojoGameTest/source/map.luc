@@ -3,12 +3,14 @@ module map (
     input rst,  // reset
     input next,
     input level[3],
+    output pos[20][20],
     output out[20][20]
   ) {
   
   //fsm level(.clk(clk), #INIT(ONE)) = {ONE, TWO, THREE};
   
-  sig def[20][20];
+  sig mapHold[20][20];
+  sig startPosHold[20][20];
   
   .clk(clk) {
     // The reset conditioner is used to synchronize the reset signal to the FPGA
@@ -16,7 +18,7 @@ module map (
     .rst(rst){
       dff start[1];
       dff map[20][20];
-      dff startPos[16][16];
+      dff startPos[20][20];
       }
   }
   
@@ -24,19 +26,22 @@ module map (
   
   always {
     case (level) {
-      1: def = {h00000,h00000,h0A0A0,h00808,h04040,h1EDEC,h03030,h14544,h00000,h1F5F4,h0A0A0,h00808,h04040,h1EDEC,h03030,h14544,h00000,h14544,h00000,h00000};
-      2: def = { h00000, h00000, h0A1A0, h00808, h04044, h21210, h03030, h14444, h00080, h20A08, h0A080, h20808, h04740, h21210, h3B030, h2C544, h20400, h3F608, h00000, h00000 };
-      //3: def = {h38A9, h2394, h2048, h2340, hC239, hB392, h23D3, h234F, h2394, h349A, h2948, h019B, h1934, h103E, h2934, hBBA3};
-      //default: def = {h8201, h2000, h1100, h1000, h0400, h4000, h2040, h0044, h0024, h0810, h1040, h0840, h0820, h4002, h2010, h1004};      
-      default: def = {h00000,h00000,h0A000,h00000,h00000,h1E0EC,h03030,h14544,h00000,h1F5F4,h0A0A0,h00808,h04040,h1EDEC,h03030,h14544,h00000,h14544,h00000,h00000};
+      1: mapHold = {h00000,h00000,h0A0A0,h00808,h04040,h1EDEC,h03030,h14544,h00000,h1F5F4,h0A0A0,h00808,h04040,h1EDEC,h03030,h14544,h00000,h14544,h00000,h00000};
+        startPosHold = {h00000,h00000,h08000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000};
+      2: mapHold = {h00000,h00000,h0A1A0,h00808,h04044,h21210,h03030,h14444,h00080,h20A08,h0A080,h20808,h04740,h21210,h3B030,h2C544,h20400,h3F608,h00000,h00000};
+        startPosHold = {h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h10000,h00000,h00000,h00000,h00000,h00000};
+      default: mapHold = {h00000,h00000,h0A000,h00000,h00000,h1E0EC,h03030,h14544,h00000,h1F5F4,h0A0A0,h00808,h04040,h1EDEC,h03030,h14544,h00000,h14544,h00000,h00000};
+        startPosHold = c{3x{{h00000}},{h02000},16x{{h00000}}};
       }
     
     if (~start.q) {
-      map.d = def;
+      map.d = mapHold;
+      startPos.d = startPosHold;
       start.d = 1;
       }
     
     out = map.q;
+    pos = startPos.q;
     
     if (next) {
       start.d = 0;  // the only time next can be assigned 1 is when

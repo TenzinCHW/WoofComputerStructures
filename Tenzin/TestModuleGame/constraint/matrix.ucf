@@ -1,0 +1,8 @@
+NET "matrix<0>" LOC = P57 | IOSTANDARD = LVTTL;
+NET "matrix<1>" LOC = P66 | IOSTANDARD = LVTTL;
+NET "matrix<2>" LOC = P74 | IOSTANDARD = LVTTL;
+NET "matrix<3>" LOC = P78 | IOSTANDARD = LVTTL;
+NET "matrix<4>" LOC = P80 | IOSTANDARD = LVTTL;
+NET "matrix<5>" LOC = P82 | IOSTANDARD = LVTTL;
+NET "matrix<6>" LOC = P84 | IOSTANDARD = LVTTL;
+NET "matrix<7>" LOC = P87 | IOSTANDARD = LVTTL;

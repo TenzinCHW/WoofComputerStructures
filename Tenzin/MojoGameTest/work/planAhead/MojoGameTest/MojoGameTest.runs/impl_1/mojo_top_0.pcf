@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Dec 07 02:50:11 2016
+// Written by: Map P.20131013 on Wed Dec 07 16:45:48 2016
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -26,7 +26,6 @@ COMP "io_dip(6)" LOCATE = SITE "P114" LEVEL 1;
 COMP "io_dip(7)" LOCATE = SITE "P115" LEVEL 1;
 COMP "io_dip(8)" LOCATE = SITE "P112" LEVEL 1;
 COMP "io_dip(9)" LOCATE = SITE "P111" LEVEL 1;
-COMP "io_button(4)" LOCATE = SITE "P138" LEVEL 1;
 COMP "io_led[11]" LOCATE = SITE "P83" LEVEL 1;
 COMP "io_led[20]" LOCATE = SITE "P22" LEVEL 1;
 COMP "spi_mosi" LOCATE = SITE "P44" LEVEL 1;
@@ -76,6 +75,7 @@ COMP "io_button[1]" LOCATE = SITE "P140" LEVEL 1;
 COMP "io_button[2]" LOCATE = SITE "P139" LEVEL 1;
 COMP "io_button[3]" LOCATE = SITE "P142" LEVEL 1;
 COMP "io_dip(10)" LOCATE = SITE "P105" LEVEL 1;
+COMP "io_button[4]" LOCATE = SITE "P138" LEVEL 1;
 COMP "io_dip(11)" LOCATE = SITE "P104" LEVEL 1;
 COMP "io_dip(12)" LOCATE = SITE "P102" LEVEL 1;
 COMP "io_dip(20)" LOCATE = SITE "P67" LEVEL 1;
@@ -85,7 +85,33 @@ COMP "io_dip(22)" LOCATE = SITE "P58" LEVEL 1;
 COMP "cclk" LOCATE = SITE "P70" LEVEL 1;
 COMP "io_dip(15)" LOCATE = SITE "P99" LEVEL 1;
 COMP "io_dip(16)" LOCATE = SITE "P79" LEVEL 1;
-TIMEGRP clk = BEL "clk_IBUF_BUFG" BEL "display/M_i_q_3" BEL "display/M_i_q_2"
+TIMEGRP clk = BEL "M_position_q_102" BEL "M_position_q_103" BEL
+        "clk_IBUF_BUFG" BEL "move_condition_gen_0[2].move_condition/M_ctr_q_1"
+        BEL "move_condition_gen_0[2].move_condition/M_ctr_q_2" BEL
+        "move_condition_gen_0[2].move_condition/M_ctr_q_3" BEL
+        "move_condition_gen_0[2].move_condition/M_ctr_q_4" BEL
+        "move_condition_gen_0[2].move_condition/M_ctr_q_5" BEL
+        "move_condition_gen_0[2].move_condition/M_ctr_q_6" BEL
+        "move_condition_gen_0[2].move_condition/M_ctr_q_7" BEL
+        "move_condition_gen_0[2].move_condition/M_ctr_q_8" BEL
+        "move_condition_gen_0[2].move_condition/M_ctr_q_9" BEL
+        "move_condition_gen_0[2].move_condition/M_ctr_q_10" BEL
+        "move_condition_gen_0[2].move_condition/M_ctr_q_11" BEL
+        "move_condition_gen_0[2].move_condition/M_ctr_q_12" BEL
+        "move_condition_gen_0[2].move_condition/M_ctr_q_13" BEL
+        "move_condition_gen_0[2].move_condition/M_ctr_q_14" BEL
+        "move_condition_gen_0[2].move_condition/M_ctr_q_15" BEL
+        "move_condition_gen_0[2].move_condition/M_ctr_q_16" BEL
+        "move_condition_gen_0[2].move_condition/M_ctr_q_17" BEL
+        "move_condition_gen_0[2].move_condition/M_ctr_q_18" BEL
+        "move_condition_gen_0[2].move_condition/M_ctr_q_19" BEL
+        "move_condition_gen_0[2].move_condition/M_ctr_q_0" BEL
+        "move_condition_gen_0[2].move_condition/sync/M_pipe_q_1" BEL
+        "move_condition_gen_0[2].move_condition/sync/Mshreg_M_pipe_q_1" BEL
+        "movement_gen_0[2].movement/M_last_q" BEL
+        "movement_gen_0[3].movement/M_last_q" BEL "reset_cond/M_stage_q_3" BEL
+        "reset_cond/M_stage_q_2" BEL "reset_cond/M_stage_q_1" BEL
+        "reset_cond/M_stage_q_0" BEL "display/M_i_q_3" BEL "display/M_i_q_2"
         BEL "display/M_i_q_1" BEL "display/M_i_q_0" BEL
         "display/M_state_q_FSM_FFd1" BEL "display/M_k_q_3" BEL
         "display/M_k_q_2" BEL "display/M_k_q_1" BEL "display/M_k_q_0" BEL
@@ -97,11 +123,30 @@ TIMEGRP clk = BEL "clk_IBUF_BUFG" BEL "display/M_i_q_3" BEL "display/M_i_q_2"
         BEL "display/M_time_q_5" BEL "display/M_time_q_4" BEL
         "display/M_time_q_3" BEL "display/M_time_q_2" BEL "display/M_time_q_1"
         BEL "display/M_time_q_0" BEL "display/M_j_q_3" BEL "display/M_j_q_2"
-        BEL "display/M_j_q_1" BEL "display/M_j_q_0" BEL "map/M_map_q_306" BEL
-        "map/M_map_q_288" BEL "map/M_map_q_50" BEL "map/M_map_q_43" BEL
-        "map/M_map_q_42" BEL "map/M_start_q_0" BEL "reset_cond/M_stage_q_3"
-        BEL "reset_cond/M_stage_q_2" BEL "reset_cond/M_stage_q_1" BEL
-        "reset_cond/M_stage_q_0" BEL "inputsToCircuit[6]";
+        BEL "display/M_j_q_1" BEL "display/M_j_q_0" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_1" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_2" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_3" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_4" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_5" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_6" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_7" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_8" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_9" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_10" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_11" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_12" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_13" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_14" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_15" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_16" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_17" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_18" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_19" BEL
+        "move_condition_gen_0[3].move_condition/M_ctr_q_0" BEL
+        "move_condition_gen_0[3].move_condition/sync/M_pipe_q_1" BEL
+        "move_condition_gen_0[3].move_condition/sync/Mshreg_M_pipe_q_1" BEL
+        "inputsToCircuit[6]";
 TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
 SCHEMATIC END;
 

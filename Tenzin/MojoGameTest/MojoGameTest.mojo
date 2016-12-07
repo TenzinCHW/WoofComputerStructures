@@ -15,6 +15,7 @@
     <src>map.luc</src>
     <src>checkUpDown.luc</src>
     <src>adder.luc</src>
+    <src>checkWin.luc</src>
     <src>checkLeftRight.luc</src>
     <ucf>matrix.ucf</ucf>
     <ucf lib="true">io_shield.ucf</ucf>

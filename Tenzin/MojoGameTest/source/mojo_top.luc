@@ -12,8 +12,8 @@ module mojo_top (
     output avr_rx,          // AVR RX (FPGA TX)
     input avr_rx_busy,      // AVR RX buffer full
     output io_led [3][8],   // LEDs on IO Shield
-    output io_seg [8],      // 7-segment LEDs on IO Shield
-    output io_sel [4],      // Digit select on IO Shield
+    //output io_seg [8],      // 7-segment LEDs on IO Shield
+    //output io_sel [4],      // Digit select on IO Shield
     input io_button [5],    // 5 buttons on IO Shield
     input io_dip [3][8],     // DIP switches on IO Shield
     output inputsToCircuit[8]        
@@ -22,23 +22,22 @@ module mojo_top (
   
   sig rst;                  // reset signal
   convertToDisplay convert;
+  //move move;
   
   .clk(clk) {
     reset_conditioner reset_cond;
+    edge_detector movement[4];
+    button_conditioner move_condition[4];
     //button_conditioner up;
     //edge_detector up_edge(#RISE(1), #FALL(0));
     // The reset conditioner is used to synchronize the reset signal to the FPGA
     // clock. This ensures the entire FPGA comes out of reset at the same time.
     .rst(rst){
-      map map;
-      toDisplay display;
-      fsm state(.clk(clk), #INIT(START)) = {ONE,TWO,THREE,FOUR,PO,PT,START};
-      //timechange changeState;
-      dff i[4];
-      dff j[4];
-      dff k[4];
+      //map map;
+      //collision collide;
       dff start[1];
-      dff time[16][16];
+      toDisplay display;
+      dff position[20][20];
       }
   }
   
@@ -51,23 +50,36 @@ module mojo_top (
     avr_rx = bz;            // not using serial port
     
     io_led = 3x{{8h00}};    // turn LEDs off
-    io_seg = 8hff;          // turn segments off
-    io_sel = 4hf;           // select no digits
+    //io_seg = 8hff;          // turn segments off
+    //io_sel = 4hf;           // select no digits
     
-    map.level = io_button[2:0];
-    map.next = io_button[3];
+    //move_condition.in = c{io_button[0], io_button[2+:3]};  // is this 0, 2, 3, 4?
+    move_condition.in[0] = io_button[0];  // UP
+    move_condition.in[1] = io_button[2];  // DOWN
+    move_condition.in[2] = io_button[3];  // LEFT
+    move_condition.in[3] = io_button[4];  // RIGHT
+    movement.in = move_condition.out;  // these are your buttons
     
-    //up.in = io_button[0];
-    //up_edge.in = up.out;
-    
-    //if (up_edge.out){
-    //  time.d[0] = time.q[0] + 1;
+    //if (~start.q) {
+    //  position.d = {h00000,h00000,h08000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000,h00000};
+    //  start.d = 1;
     //  }
     
-    //display.pattern = ~time.q;
+    // plug in movement buttons to move, collision
+    //move.movement = movement.out;
+    //move.position = position.q;
+    //position.d = move.out;
     
-    convert.map = ~map.out;
-    convert.position = 20x{{h00000}};
+    // if no collision then get the output from move
+    // otherwise just dun do anything.
+    // if move, then check for win condition.
+    
+    io_led[1][6:2] = io_button[4:0];
+    
+    position.d[5] = movement.out;
+    convert.map = 20x{{h00000}};
+    convert.position = position.q;
+    //convert.position = position.q;
     
     display.pattern = convert.out;
     inputsToCircuit = display.inputsToCircuit;

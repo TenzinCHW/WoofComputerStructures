@@ -5,7 +5,7 @@ C:\Users\HanWei\Xilinx\14.7\ISE_DS\ISE\.
    "mojo_top_0" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -2
 Opened constraints file mojo_top_0.pcf.
 
-Fri Oct 21 17:36:01 2016
+Wed Dec 07 16:52:37 2016
 
 C:\Users\HanWei\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -g Binary:Yes -g Compress -w -intstyle pa mojo_top_0_routed.ncd mojo_top_0.bit mojo_top_0.pcf 
 

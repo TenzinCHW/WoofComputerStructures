@@ -1,0 +1,87 @@
+module mojo_top (
+    input clk,              // 50MHz clock
+    input rst_n,            // reset button (active low)
+    output led [8],         // 8 user controllable LEDs
+    input cclk,             // configuration clock, AVR ready when high
+    output spi_miso,        // AVR SPI MISO
+    input spi_ss,           // AVR SPI Slave Select
+    input spi_mosi,         // AVR SPI MOSI
+    input spi_sck,          // AVR SPI Clock
+    output spi_channel [4], // AVR general purpose pins (used by default to select ADC channel)
+    input avr_tx,           // AVR TX (FPGA RX)
+    output avr_rx,          // AVR RX (FPGA TX)
+    input avr_rx_busy,      // AVR RX buffer full
+    output io_led [3][8],   // LEDs on IO Shield
+    output io_seg [8],      // 7-segment LEDs on IO Shield
+    output io_sel [4],      // Digit select on IO Shield
+    input io_button [5],    // 5 buttons on IO Shield
+    input io_dip [3][8],     // DIP switches on IO Shield
+    output matrix[8]
+  ) {
+  
+  sig rst;                  // reset signal
+  move move;
+  convertToDisplay convert;
+  sig buttons[4];
+  sig temp[25];
+  
+  .clk(clk) {
+    // The reset conditioner is used to synchronize the reset signal to the FPGA
+    // clock. This ensures the entire FPGA comes out of reset at the same time.
+    reset_conditioner reset_cond;
+    dff position[20][20];
+    dff direction[4];
+    .rst(rst){
+      dff start[1];
+      dff timer[25];
+      toDisplay display;
+      }
+  }
+  
+  always {
+    reset_cond.in = ~rst_n; // input raw inverted reset signal
+    rst = reset_cond.out;   // conditioned reset
+    
+    led = 8h00;             // turn LEDs off
+    spi_miso = bz;          // not using SPI
+    spi_channel = bzzzz;    // not using flags
+    avr_rx = bz;            // not using serial port
+    
+    io_led = 3x{{8h00}};    // turn LEDs off
+    io_seg = 8hff;          // turn segments off
+    io_sel = 4hf;           // select no digits
+    
+    buttons[0] = io_button[0];
+    buttons[3:1] = io_button[4:2];
+    
+    case (buttons) {
+    1: direction.d = h1;
+    2: direction.d = h2;
+    4: direction.d = h4;
+    8: direction.d = h8;
+    default: direction.d = h0;
+    }
+    
+    timer.d = timer.q + 1;
+    temp = timer.q - 1;
+    if (timer.q[24] ^ temp[24]){
+      move.movement = direction.q;  // this will make it move only if the button is being pressed.
+      }
+    else {
+      move.movement = h0;
+      }
+    
+    move.position = position.q; //c{16x{{h00000}}, {h08000}, 3x{{h00000}}};
+    position.d = move.out;
+    
+    convert.position = move.out;
+    convert.map = 20x{{h00000}};
+    display.pattern = convert.out;
+    matrix = display.inputsToCircuit;
+    
+    if (~start.q) {
+      position.d = {h00000, h00000, h08000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000,h00000, h00000, h00000, h00000, h00000};
+      start.d = 1;
+      }
+  }
+}

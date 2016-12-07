@@ -45,40 +45,46 @@ module mojo_top_0 (
     .in(M_reset_cond_in),
     .out(M_reset_cond_out)
   );
-  wire [400-1:0] M_map_out;
-  reg [1-1:0] M_map_next;
-  reg [3-1:0] M_map_level;
-  map_3 map (
-    .clk(clk),
-    .rst(rst),
-    .next(M_map_next),
-    .level(M_map_level),
-    .out(M_map_out)
-  );
+  wire [(3'h4+0)-1:0] M_movement_out;
+  reg [(3'h4+0)-1:0] M_movement_in;
+  
+  genvar GEN_movement0;
+  generate
+  for (GEN_movement0=0;GEN_movement0<3'h4;GEN_movement0=GEN_movement0+1) begin: movement_gen_0
+    edge_detector_3 movement (
+      .clk(clk),
+      .in(M_movement_in[GEN_movement0*(1)+(1)-1-:(1)]),
+      .out(M_movement_out[GEN_movement0*(1)+(1)-1-:(1)])
+    );
+  end
+  endgenerate
+  wire [(3'h4+0)-1:0] M_move_condition_out;
+  reg [(3'h4+0)-1:0] M_move_condition_in;
+  
+  genvar GEN_move_condition0;
+  generate
+  for (GEN_move_condition0=0;GEN_move_condition0<3'h4;GEN_move_condition0=GEN_move_condition0+1) begin: move_condition_gen_0
+    button_conditioner_4 move_condition (
+      .clk(clk),
+      .in(M_move_condition_in[GEN_move_condition0*(1)+(1)-1-:(1)]),
+      .out(M_move_condition_out[GEN_move_condition0*(1)+(1)-1-:(1)])
+    );
+  end
+  endgenerate
+  reg [0:0] M_start_d, M_start_q = 1'h0;
   wire [8-1:0] M_display_inputsToCircuit;
   reg [256-1:0] M_display_pattern;
-  toDisplay_4 display (
+  toDisplay_5 display (
     .clk(clk),
     .rst(rst),
     .pattern(M_display_pattern),
     .inputsToCircuit(M_display_inputsToCircuit)
   );
-  localparam ONE_state = 3'd0;
-  localparam TWO_state = 3'd1;
-  localparam THREE_state = 3'd2;
-  localparam FOUR_state = 3'd3;
-  localparam PO_state = 3'd4;
-  localparam PT_state = 3'd5;
-  localparam START_state = 3'd6;
-  
-  reg [2:0] M_state_d, M_state_q = START_state;
-  reg [3:0] M_i_d, M_i_q = 1'h0;
-  reg [3:0] M_j_d, M_j_q = 1'h0;
-  reg [3:0] M_k_d, M_k_q = 1'h0;
-  reg [0:0] M_start_d, M_start_q = 1'h0;
-  reg [255:0] M_time_d, M_time_q = 1'h0;
+  reg [399:0] M_position_d, M_position_q = 1'h0;
   
   always @* begin
+    M_position_d = M_position_q;
+    
     M_reset_cond_in = ~rst_n;
     rst = M_reset_cond_out;
     led = 8'h00;
@@ -88,36 +94,26 @@ module mojo_top_0 (
     io_led = 24'h000000;
     io_seg = 8'hff;
     io_sel = 4'hf;
-    M_map_level = io_button[0+2-:3];
-    M_map_next = io_button[3+0-:1];
-    M_convert_map = ~M_map_out;
-    M_convert_position = 400'h0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+    M_move_condition_in[0+0-:1] = io_button[0+0-:1];
+    M_move_condition_in[1+0-:1] = io_button[2+0-:1];
+    M_move_condition_in[2+0-:1] = io_button[3+0-:1];
+    M_move_condition_in[3+0-:1] = io_button[4+0-:1];
+    M_movement_in = M_move_condition_out;
+    io_led[8+2+4-:5] = io_button[0+4-:5];
+    M_position_d[100+19-:20] = M_movement_out;
+    M_convert_map = 400'h0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+    M_convert_position = M_position_q;
     M_display_pattern = M_convert_out;
     inputsToCircuit = M_display_inputsToCircuit;
   end
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
-      M_i_q <= 1'h0;
-      M_j_q <= 1'h0;
-      M_k_q <= 1'h0;
       M_start_q <= 1'h0;
-      M_time_q <= 1'h0;
+      M_position_q <= 1'h0;
     end else begin
-      M_i_q <= M_i_d;
-      M_j_q <= M_j_d;
-      M_k_q <= M_k_d;
       M_start_q <= M_start_d;
-      M_time_q <= M_time_d;
-    end
-  end
-  
-  
-  always @(posedge clk) begin
-    if (rst == 1'b1) begin
-      M_state_q <= 3'h6;
-    end else begin
-      M_state_q <= M_state_d;
+      M_position_q <= M_position_d;
     end
   end
   

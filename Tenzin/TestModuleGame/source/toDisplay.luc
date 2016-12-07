@@ -1,0 +1,114 @@
+module toDisplay (
+    input clk,  // clock
+    input rst,  // reset
+    input pattern[16][16],
+    output inputsToCircuit[8]
+  ) {
+  
+  //sig pattern[16][16];
+  .clk(clk) {
+    //reset_conditioner reset_cond;
+    // The reset conditioner is used to synchronize the reset signal to the FPGA
+    // clock. This ensures the entire FPGA comes out of reset at the same time.
+    .rst(rst){
+    
+      fsm state(.clk(clk), #INIT(START)) = {ONE,TWO,THREE,FOUR,PO,PT,START};
+      //timechange changeState;
+      dff i[4];
+      dff j[4];
+      dff k[4];
+      dff time[16];
+      }
+  }
+  
+  always {
+  
+    inputsToCircuit = 8x{0};
+    //pattern = {c{0,0,1,0,0,0,0,0,0,1,1,1,1,1,0,0},c{0,1,1,0,0,0,0,0,1,0,0,0,0,0,1,0},c{0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0},c{0,0,1,0,0,0,0,0,0,1,1,1,1,1,0,0},c{0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0},c{0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0},c{0,1,1,1,0,0,0,0,1,1,1,1,1,1,1,0},c{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},c{0,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0},c{1,0,0,0,0,0,1,0,0,0,0,1,0,1,0,0},c{0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0},c{0,0,1,1,1,1,0,0,0,1,0,0,0,1,0,0},c{0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0},c{1,0,0,0,0,0,1,0,1,1,1,1,1,1,1,0},c{0,1,1,1,1,1,0,0,0,0,0,0,0,1,0,0},c{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}};
+    
+    
+    //latch: 87 inputsToCircuit[7]
+    //clock: 84 inputsToCircuit[6]
+    //data: 82 inputsToCircuit[5]
+    //g: 80 inputsToCircuit[4]
+    //a: 78 inputsToCircuit[3]
+    //b: 74 inputsToCircuit[2]
+    //c: 66 inputsToCircuit[1]
+    //d: 57 inputsToCircuit[0]
+    case(state.q){
+      state.ONE:
+        inputsToCircuit[4] = 1;
+        inputsToCircuit[7] = 0;
+          
+        inputsToCircuit[5] = 0;
+        inputsToCircuit[6] = clk - 1;
+        if (j.q == 0){
+          state.d = state.TWO;
+          j.d = 15; // j refers to current bit of array
+          }
+        else{
+          j.d = j.q - 1;
+          }        
+
+      state.TWO:
+        inputsToCircuit[7] = 1;
+        inputsToCircuit[4] = 1;
+        inputsToCircuit[3] = k.q[0];
+        inputsToCircuit[2] = k.q[1];
+        inputsToCircuit[1] = k.q[2];
+        inputsToCircuit[0] = k.q[3];
+        state.d = state.THREE;
+      
+      state.THREE:
+        inputsToCircuit[3] = k.q[0];
+        inputsToCircuit[2] = k.q[1];
+        inputsToCircuit[1] = k.q[2];
+        inputsToCircuit[0] = k.q[3];
+        
+        inputsToCircuit[7] = 0;
+        inputsToCircuit[4] = 1;
+        
+        
+        
+        inputsToCircuit[5] = pattern[i.q][j.q]; //i.q is current array number. j.q is current LED in that row
+        inputsToCircuit[6] = clk - 1;
+        if (j.q == 0){
+          state.d = state.FOUR;
+          j.d = 15;
+          }
+        else{
+          j.d = j.q - 1;
+          }
+
+     
+    state.FOUR:
+        inputsToCircuit[3] = k.q[0];
+        inputsToCircuit[2] = k.q[1]; 
+        inputsToCircuit[1] = k.q[2];
+        inputsToCircuit[0] = k.q[3];
+        
+        inputsToCircuit[7] = 1;
+        inputsToCircuit[4] = 0;
+        time.d = time.q + 1; // keep track of delayMicoSeconds
+
+        if (time.q == b0110000110101000){ // 500 microseconds
+          time.d = 0;
+          if (i.q == 0){ // reached the end of LED
+            state.d = state.START; // go back to start and repeat
+            }
+         else{
+          i.d = i.q - 1; // array number (go to next)
+          k.d = k.q + 1; // row number
+          state.d = state.ONE;
+            }
+        }
+        
+      state.START:
+        i.d = 15;
+        j.d = 15;
+        k.d = 0;
+        time.d = 0;
+        state.d = state.ONE;
+    }
+  }
+}

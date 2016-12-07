@@ -1,0 +1,62 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line:
+C:\Users\HanWei\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -intstyle
+ise -p xc6slx9tqg144-2 -dd _ngo -uc mojo_top_0.ucf mojo_top_0.edf
+
+Executing edif2ngd -quiet "mojo_top_0.edf" "_ngo\mojo_top_0.ngo"
+Release 14.7 - edif2ngd P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading NGO file
+"C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzi
+n/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.runs/impl_1/_ngo/m
+ojo_top_0.ngo" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "mojo_top_0.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:119 - Constraint <NET "io_dip[23]" IOSTANDARD = LVTTL;>
+   [mojo_top_0.ucf(122)]: This constraint cannot be distributed from the design
+   objects matching 'NET "io_dip[23]"' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "io_dip[21]" IOSTANDARD = LVTTL;>
+   [mojo_top_0.ucf(127)]: This constraint cannot be distributed from the design
+   objects matching 'NET "io_dip[21]"' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "io_dip[19]" IOSTANDARD = LVTTL;>
+   [mojo_top_0.ucf(132)]: This constraint cannot be distributed from the design
+   objects matching 'NET "io_dip[19]"' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "io_dip[17]" IOSTANDARD = LVTTL;>
+   [mojo_top_0.ucf(137)]: This constraint cannot be distributed from the design
+   objects matching 'NET "io_dip[17]"' because those design objects do not
+   contain or drive any instances of the correct type.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   4
+
+Total memory usage is 181952 kilobytes
+
+Writing NGD file "mojo_top_0.ngd" ...
+Total REAL time to NGDBUILD completion:  35 sec
+Total CPU time to NGDBUILD completion:   16 sec
+
+Writing NGDBUILD log file "mojo_top_0.bld"...

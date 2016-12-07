@@ -1,4 +1,4 @@
-module collisionMove (
+module collision (
     input clk,  // clock
     input rst,  // reset
     input movement[4],
