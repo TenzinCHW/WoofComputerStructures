@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module move_1 (
+module move_4 (
     input [3:0] movement,
     input [399:0] position,
     output reg [399:0] out

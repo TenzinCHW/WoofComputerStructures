@@ -5,6 +5,8 @@
     <src>toDisplay.luc</src>
     <src top="true">mojo_top.luc</src>
     <src>convertToDisplay.luc</src>
+    <src>controller.luc</src>
+    <src>map.luc</src>
     <ucf>matrix.ucf</ucf>
     <ucf lib="true">io_shield.ucf</ucf>
     <ucf lib="true">mojo.ucf</ucf>

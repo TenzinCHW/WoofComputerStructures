@@ -17,9 +17,9 @@ module move (
           2: placehold[loop - 1] = position[loop];
           4: placehold[loop] = position[loop] << 1;
           8: placehold[loop] = position[loop] >> 1;
-          }
         }
       }
+    }
     out = placehold;
   }
 }

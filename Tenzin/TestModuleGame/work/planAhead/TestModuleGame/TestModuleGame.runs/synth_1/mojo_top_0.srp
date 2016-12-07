@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.33 secs
+Total CPU time to Xst completion: 0.27 secs
  
 --> Reading design: mojo_top_0.prj
 
@@ -53,14 +53,16 @@ Netlist Hierarchy                  : rebuilt
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/toDisplay_4.v" into library work
-Parsing module <toDisplay_4>.
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/reset_conditioner_3.v" into library work
-Parsing module <reset_conditioner_3>.
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/move_1.v" into library work
-Parsing module <move_1>.
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/convertToDisplay_2.v" into library work
-Parsing module <convertToDisplay_2>.
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/toDisplay_5.v" into library work
+Parsing module <toDisplay_5>.
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/move_4.v" into library work
+Parsing module <move_4>.
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/convertToDisplay_3.v" into library work
+Parsing module <convertToDisplay_3>.
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/reset_conditioner_1.v" into library work
+Parsing module <reset_conditioner_1>.
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/controller_2.v" into library work
+Parsing module <controller_2>.
 Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/mojo_top_0.v" into library work
 Parsing module <mojo_top_0>.
 
@@ -70,13 +72,15 @@ Parsing module <mojo_top_0>.
 
 Elaborating module <mojo_top_0>.
 
-Elaborating module <move_1>.
+Elaborating module <reset_conditioner_1>.
 
-Elaborating module <convertToDisplay_2>.
+Elaborating module <controller_2>.
 
-Elaborating module <reset_conditioner_3>.
+Elaborating module <convertToDisplay_3>.
 
-Elaborating module <toDisplay_4>.
+Elaborating module <move_4>.
+
+Elaborating module <toDisplay_5>.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -92,32 +96,39 @@ WARNING:Xst:647 - Input <spi_mosi> is never used. This port will be preserved an
 WARNING:Xst:647 - Input <spi_sck> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <avr_tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <avr_rx_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 400-bit register for signal <M_position_q>.
-    Found 4-bit register for signal <M_direction_q>.
-    Found 25-bit register for signal <M_timer_q>.
-    Found 1-bit register for signal <M_start_q>.
-    Found 25-bit subtractor for signal <temp> created at line 92.
-    Found 25-bit adder for signal <M_timer_d> created at line 89.
-    Found 1-bit tristate buffer for signal <spi_miso> created at line 74
-    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 74
-    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 74
-    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 74
-    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 74
-    Found 1-bit tristate buffer for signal <avr_rx> created at line 74
+    Found 1-bit tristate buffer for signal <spi_miso> created at line 50
+    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 50
+    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 50
+    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 50
+    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 50
+    Found 1-bit tristate buffer for signal <avr_rx> created at line 50
     Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred 430 D-type flip-flop(s).
 	inferred   6 Tristate(s).
 Unit <mojo_top_0> synthesized.
 
-Synthesizing Unit <move_1>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/move_1.v".
+Synthesizing Unit <reset_conditioner_1>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/reset_conditioner_1.v".
+    Found 4-bit register for signal <M_stage_q>.
     Summary:
-	no macro.
-Unit <move_1> synthesized.
+	inferred   4 D-type flip-flop(s).
+Unit <reset_conditioner_1> synthesized.
 
-Synthesizing Unit <convertToDisplay_2>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/convertToDisplay_2.v".
+Synthesizing Unit <controller_2>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/controller_2.v".
+    Found 400-bit register for signal <M_position_q>.
+    Found 25-bit register for signal <M_timer_q>.
+    Found 3-bit register for signal <M_state_q>.
+    Found 1-bit register for signal <M_start_q>.
+    Found 25-bit subtractor for signal <temp> created at line 97.
+    Found 25-bit adder for signal <M_timer_d> created at line 96.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 429 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <controller_2> synthesized.
+
+Synthesizing Unit <convertToDisplay_3>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/convertToDisplay_3.v".
 WARNING:Xst:647 - Input <map<41:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <map<61:58>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <map<81:78>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -154,22 +165,21 @@ WARNING:Xst:647 - Input <position<341:338>> is never used. This port will be pre
 WARNING:Xst:647 - Input <position<399:358>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
-Unit <convertToDisplay_2> synthesized.
+Unit <convertToDisplay_3> synthesized.
 
-Synthesizing Unit <reset_conditioner_3>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/reset_conditioner_3.v".
-    Found 4-bit register for signal <M_stage_q>.
+Synthesizing Unit <move_4>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/move_4.v".
     Summary:
-	inferred   4 D-type flip-flop(s).
-Unit <reset_conditioner_3> synthesized.
+	no macro.
+Unit <move_4> synthesized.
 
-Synthesizing Unit <toDisplay_4>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/toDisplay_4.v".
-    Found 4-bit register for signal <M_i_q>.
+Synthesizing Unit <toDisplay_5>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/toDisplay_5.v".
     Found 4-bit register for signal <M_j_q>.
     Found 4-bit register for signal <M_k_q>.
     Found 16-bit register for signal <M_time_q>.
     Found 3-bit register for signal <M_state_q>.
+    Found 4-bit register for signal <M_i_q>.
     Found finite state machine <FSM_0> for signal <M_state_q>.
     -----------------------------------------------------------------------
     | States             | 5                                              |
@@ -184,12 +194,12 @@ Synthesizing Unit <toDisplay_4>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 4-bit subtractor for signal <M_j_q[3]_GND_5_o_sub_10_OUT> created at line 74.
-    Found 4-bit subtractor for signal <M_i_q[3]_GND_5_o_sub_16_OUT> created at line 90.
-    Found 8-bit adder for signal <M_i_q[3]_GND_5_o_add_5_OUT> created at line 68.
-    Found 1-bit adder for signal <clk_GND_5_o_add_7_OUT<0>> created at line 39.
-    Found 16-bit adder for signal <M_time_q[15]_GND_5_o_add_12_OUT> created at line 84.
-    Found 4-bit adder for signal <M_k_q[3]_GND_5_o_add_16_OUT> created at line 91.
+    Found 4-bit subtractor for signal <M_j_q[3]_GND_6_o_sub_10_OUT> created at line 74.
+    Found 4-bit subtractor for signal <M_i_q[3]_GND_6_o_sub_16_OUT> created at line 90.
+    Found 8-bit adder for signal <M_i_q[3]_GND_6_o_add_5_OUT> created at line 68.
+    Found 1-bit adder for signal <clk_GND_6_o_add_7_OUT<0>> created at line 39.
+    Found 16-bit adder for signal <M_time_q[15]_GND_6_o_add_12_OUT> created at line 84.
+    Found 4-bit adder for signal <M_k_q[3]_GND_6_o_add_16_OUT> created at line 91.
     Found 511-bit shifter logical right for signal <n0051> created at line 68
     Found 8-bit 5-to-1 multiplexer for signal <inputsToCircuit> created at line 39.
     Summary:
@@ -198,7 +208,7 @@ Synthesizing Unit <toDisplay_4>.
 	inferred   7 Multiplexer(s).
 	inferred   1 Combinational logic shifter(s).
 	inferred   1 Finite State Machine(s).
-Unit <toDisplay_4> synthesized.
+Unit <toDisplay_5> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -216,11 +226,12 @@ Macro Statistics
  1-bit register                                        : 1
  16-bit register                                       : 1
  25-bit register                                       : 1
- 4-bit register                                        : 5
+ 3-bit register                                        : 1
+ 4-bit register                                        : 4
  400-bit register                                      : 1
-# Multiplexers                                         : 7
+# Multiplexers                                         : 8
  16-bit 2-to-1 multiplexer                             : 2
- 4-bit 2-to-1 multiplexer                              : 4
+ 4-bit 2-to-1 multiplexer                              : 5
  8-bit 5-to-1 multiplexer                              : 1
 # Logic shifters                                       : 1
  511-bit shifter logical right                         : 1
@@ -237,14 +248,14 @@ Macro Statistics
 =========================================================================
 
 
-Synthesizing (advanced) Unit <mojo_top_0>.
+Synthesizing (advanced) Unit <controller_2>.
 The following registers are absorbed into counter <M_timer_q>: 1 register on signal <M_timer_q>.
-Unit <mojo_top_0> synthesized (advanced).
+Unit <controller_2> synthesized (advanced).
 
-Synthesizing (advanced) Unit <toDisplay_4>.
-The following registers are absorbed into counter <M_i_q>: 1 register on signal <M_i_q>.
+Synthesizing (advanced) Unit <toDisplay_5>.
 The following registers are absorbed into counter <M_k_q>: 1 register on signal <M_k_q>.
-Unit <toDisplay_4> synthesized (advanced).
+The following registers are absorbed into counter <M_i_q>: 1 register on signal <M_i_q>.
+Unit <toDisplay_5> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -260,11 +271,11 @@ Macro Statistics
  25-bit up counter                                     : 1
  4-bit down counter                                    : 1
  4-bit up counter                                      : 1
-# Registers                                            : 429
- Flip-Flops                                            : 429
-# Multiplexers                                         : 5
+# Registers                                            : 428
+ Flip-Flops                                            : 428
+# Multiplexers                                         : 6
  16-bit 2-to-1 multiplexer                             : 2
- 4-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 3
  8-bit 5-to-1 multiplexer                              : 1
 # Logic shifters                                       : 1
  511-bit shifter logical right                         : 1
@@ -278,7 +289,7 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <display/FSM_0> on signal <M_state_q[1:3]> with user encoding.
+Optimizing FSM <control/display/FSM_0> on signal <M_state_q[1:3]> with user encoding.
 -------------------
  State | Encoding
 -------------------
@@ -291,100 +302,97 @@ Optimizing FSM <display/FSM_0> on signal <M_state_q[1:3]> with user encoding.
 
 Optimizing unit <mojo_top_0> ...
 
-Optimizing unit <toDisplay_4> ...
+Optimizing unit <controller_2> ...
 
-Optimizing unit <move_1> ...
-WARNING:Xst:2677 - Node <M_position_q_0> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_1> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_2> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_3> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_4> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_5> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_6> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_7> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_8> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_9> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_10> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_11> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_12> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_13> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_14> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_15> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_16> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_17> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_18> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_19> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_20> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_21> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_22> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_23> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_24> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_25> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_26> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_27> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_28> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_29> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_30> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_31> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_32> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_33> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_34> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_35> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_36> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_37> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_38> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_39> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_360> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_361> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_362> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_363> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_364> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_365> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_366> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_367> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_368> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_369> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_370> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_371> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_372> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_373> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_374> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_375> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_376> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_377> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_378> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_379> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_380> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_381> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_382> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_383> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_384> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_385> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_386> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_387> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_388> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_389> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_390> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_391> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_392> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_393> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_394> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_395> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_396> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_397> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_398> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:2677 - Node <M_position_q_399> of sequential type is unconnected in block <mojo_top_0>.
-WARNING:Xst:1293 - FF/Latch <display/M_time_q_15> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
+Optimizing unit <toDisplay_5> ...
+
+Optimizing unit <move_4> ...
+WARNING:Xst:2677 - Node <control/M_position_q_399> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_398> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_397> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_396> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_395> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_394> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_393> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_392> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_391> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_390> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_389> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_388> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_387> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_386> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_385> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_384> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_383> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_382> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_381> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_380> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_379> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_378> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_377> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_376> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_375> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_374> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_373> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_372> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_371> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_370> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_369> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_368> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_367> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_366> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_365> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_364> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_363> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_362> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_361> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_360> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_39> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_38> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_37> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_36> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_35> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_34> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_33> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_32> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_31> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_30> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_29> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_28> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_27> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_26> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_25> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_24> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_23> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_22> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_21> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_20> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_19> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_18> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_17> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_16> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_15> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_14> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_13> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_12> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_11> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_10> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_9> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_8> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_7> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_6> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_5> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_4> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_3> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_2> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_1> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:2677 - Node <control/M_position_q_0> of sequential type is unconnected in block <mojo_top_0>.
+WARNING:Xst:1293 - FF/Latch <control/display/M_time_q_15> has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 27.
-WARNING:Xst:1426 - The value init of the FF/Latch M_start_q_0 hinder the constant cleaning in the block mojo_top_0.
-   You should achieve better results by setting this init to 1.
-FlipFlop M_direction_q_0 has been replicated 1 time(s)
-FlipFlop M_direction_q_1 has been replicated 1 time(s)
-FlipFlop M_direction_q_2 has been replicated 1 time(s)
-FlipFlop M_direction_q_3 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 28.
+FlipFlop control/M_timer_q_24 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -396,8 +404,8 @@ Unit <mojo_top_0> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 388
- Flip-Flops                                            : 388
+# Registers                                            : 384
+ Flip-Flops                                            : 384
 
 =========================================================================
 
@@ -420,23 +428,21 @@ Top Level Output File Name         : mojo_top_0.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1730
-#      GND                         : 3
-#      INV                         : 28
+# BELS                             : 1947
+#      GND                         : 4
+#      INV                         : 27
 #      LUT1                        : 39
-#      LUT2                        : 7
-#      LUT3                        : 41
-#      LUT4                        : 304
-#      LUT5                        : 333
-#      LUT6                        : 819
+#      LUT2                        : 5
+#      LUT3                        : 60
+#      LUT4                        : 273
+#      LUT5                        : 438
+#      LUT6                        : 936
 #      MUXCY                       : 62
-#      MUXF7                       : 50
-#      VCC                         : 3
+#      MUXF7                       : 58
+#      VCC                         : 4
 #      XORCY                       : 41
-# FlipFlops/Latches                : 388
-#      FD                          : 2
-#      FDE                         : 8
-#      FDR                         : 345
+# FlipFlops/Latches                : 384
+#      FDR                         : 351
 #      FDRE                        : 27
 #      FDS                         : 6
 # Clock Buffers                    : 1
@@ -453,16 +459,16 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             388  out of  11440     3%  
- Number of Slice LUTs:                 1571  out of   5720    27%  
-    Number used as Logic:              1571  out of   5720    27%  
+ Number of Slice Registers:             384  out of  11440     3%  
+ Number of Slice LUTs:                 1778  out of   5720    31%  
+    Number used as Logic:              1778  out of   5720    31%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1897
-   Number with an unused Flip Flop:    1509  out of   1897    79%  
-   Number with an unused LUT:           326  out of   1897    17%  
-   Number of fully used LUT-FF pairs:    62  out of   1897     3%  
-   Number of unique control sets:         9
+ Number of LUT Flip Flop pairs used:   2104
+   Number with an unused Flip Flop:    1720  out of   2104    81%  
+   Number with an unused LUT:           326  out of   2104    15%  
+   Number of fully used LUT-FF pairs:    58  out of   2104     2%  
+   Number of unique control sets:         7
 
 IO Utilization: 
  Number of IOs:                          95
@@ -492,7 +498,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | IBUF+BUFG              | 388   |
+clk                                | IBUF+BUFG              | 384   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -503,9 +509,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 8.733ns (Maximum Frequency: 114.508MHz)
+   Minimum period: 9.473ns (Maximum Frequency: 105.566MHz)
    Minimum input arrival time before clock: 3.526ns
-   Maximum output required time after clock: 17.543ns
+   Maximum output required time after clock: 18.648ns
    Maximum combinational path delay: 5.857ns
 
 Timing Details:
@@ -514,36 +520,60 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 8.733ns (frequency: 114.508MHz)
-  Total number of paths / destination ports: 204717 / 787
+  Clock period: 9.473ns (frequency: 105.566MHz)
+  Total number of paths / destination ports: 275209 / 789
 -------------------------------------------------------------------------
-Delay:               8.733ns (Levels of Logic = 7)
-  Source:            M_position_q_342 (FF)
-  Destination:       M_position_q_201 (FF)
+Delay:               9.473ns (Levels of Logic = 31)
+  Source:            control/M_timer_q_0 (FF)
+  Destination:       control/M_position_q_199 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: M_position_q_342 to M_position_q_201
+  Data Path: control/M_timer_q_0 to control/M_position_q_199
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              5   0.525   1.296  M_position_q_342 (M_position_q_342)
-     begin scope: 'move:position<342>'
-     LUT6:I0->O            5   0.254   1.069  out151 (out15)
-     LUT5:I2->O            1   0.235   0.958  out154_1 (out154)
-     LUT4:I0->O           12   0.254   1.069  placehold<260>21 (placehold<260>2)
-     LUT5:I4->O           19   0.254   1.261  placehold<200>11 (placehold<200>1)
-     LUT5:I4->O            9   0.254   0.976  placehold<201>1_1 (placehold<201>11)
-     LUT6:I5->O            2   0.254   0.000  placehold<209>3 (out<209>)
-     end scope: 'move:out<209>'
-     FDR:D                     0.074          M_position_q_209
+     FDR:C->Q              2   0.525   0.726  M_timer_q_0 (M_timer_q_0)
+     LUT1:I0->O            1   0.254   0.000  Msub_temp_cy<0>_rt (Msub_temp_cy<0>_rt)
+     MUXCY:S->O            1   0.215   0.000  Msub_temp_cy<0> (Msub_temp_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<1> (Msub_temp_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<2> (Msub_temp_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<3> (Msub_temp_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<4> (Msub_temp_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<5> (Msub_temp_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<6> (Msub_temp_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<7> (Msub_temp_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<8> (Msub_temp_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<9> (Msub_temp_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<10> (Msub_temp_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<11> (Msub_temp_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<12> (Msub_temp_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<13> (Msub_temp_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<14> (Msub_temp_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<15> (Msub_temp_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<16> (Msub_temp_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<17> (Msub_temp_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<18> (Msub_temp_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<19> (Msub_temp_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<20> (Msub_temp_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<21> (Msub_temp_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<22> (Msub_temp_cy<22>)
+     MUXCY:CI->O           0   0.023   0.000  Msub_temp_cy<23> (Msub_temp_cy<23>)
+     XORCY:CI->O         360   0.206   2.443  Msub_temp_xor<24> (temp<24>)
+     begin scope: 'control/move:temp<24>'
+     LUT5:I4->O            4   0.254   0.912  placehold<160>111_1 (placehold<160>111)
+     LUT6:I4->O           21   0.250   1.310  placehold<160>12 (placehold<160>1)
+     LUT5:I4->O           19   0.254   1.261  placehold<161>1 (placehold<161>1)
+     LUT6:I5->O            1   0.254   0.000  placehold<178>3 (out<178>)
+     end scope: 'control/move:out<178>'
+     FDR:D                     0.074          M_position_q_178
     ----------------------------------------
-    Total                      8.733ns (2.104ns logic, 6.629ns route)
-                                       (24.1% logic, 75.9% route)
+    Total                      9.473ns (2.821ns logic, 6.652ns route)
+                                       (29.8% logic, 70.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 36 / 12
+  Total number of paths / destination ports: 16 / 7
 -------------------------------------------------------------------------
 Offset:              3.526ns (Levels of Logic = 3)
   Source:            rst_n (PAD)
@@ -564,43 +594,68 @@ Offset:              3.526ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 162525 / 8
+  Total number of paths / destination ports: 222718 / 8
 -------------------------------------------------------------------------
-Offset:              17.543ns (Levels of Logic = 14)
-  Source:            M_position_q_238 (FF)
+Offset:              18.648ns (Levels of Logic = 39)
+  Source:            control/M_timer_q_0 (FF)
   Destination:       matrix<5> (PAD)
   Source Clock:      clk rising
 
-  Data Path: M_position_q_238 to matrix<5>
+  Data Path: control/M_timer_q_0 to matrix<5>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              6   0.525   1.306  M_position_q_238 (M_position_q_238)
-     begin scope: 'move:position<238>'
-     LUT6:I1->O            2   0.254   0.954  out91 (out9)
-     LUT5:I2->O            3   0.235   0.994  out94_1 (out94)
-     LUT3:I0->O           10   0.235   1.116  placehold<60>2111_1 (placehold<60>2111)
-     LUT6:I4->O           10   0.250   1.008  placehold<140>21_1 (placehold<140>21)
-     LUT5:I4->O            9   0.254   0.976  placehold<141>11_1 (placehold<141>11)
-     LUT6:I5->O            2   0.254   1.002  placehold<147>3 (out<147>)
-     end scope: 'move:out<147>'
-     begin scope: 'display:M_move_out<147>'
-     LUT6:I2->O            1   0.254   0.958  Mmux_inputsToCircuit639 (Mmux_inputsToCircuit638)
-     LUT6:I2->O            1   0.254   0.790  Mmux_inputsToCircuit642 (Mmux_inputsToCircuit641)
-     LUT3:I1->O            1   0.250   0.682  Mmux_inputsToCircuit643 (Mmux_inputsToCircuit642)
-     LUT6:I5->O            1   0.254   0.910  Mmux_inputsToCircuit644 (Mmux_inputsToCircuit643)
-     LUT6:I3->O            1   0.235   0.681  Mmux_inputsToCircuit689 (inputsToCircuit<5>)
-     end scope: 'display:inputsToCircuit<5>'
+     FDR:C->Q              2   0.525   0.726  M_timer_q_0 (M_timer_q_0)
+     LUT1:I0->O            1   0.254   0.000  Msub_temp_cy<0>_rt (Msub_temp_cy<0>_rt)
+     MUXCY:S->O            1   0.215   0.000  Msub_temp_cy<0> (Msub_temp_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<1> (Msub_temp_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<2> (Msub_temp_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<3> (Msub_temp_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<4> (Msub_temp_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<5> (Msub_temp_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<6> (Msub_temp_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<7> (Msub_temp_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<8> (Msub_temp_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<9> (Msub_temp_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<10> (Msub_temp_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<11> (Msub_temp_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<12> (Msub_temp_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<13> (Msub_temp_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<14> (Msub_temp_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<15> (Msub_temp_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<16> (Msub_temp_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<17> (Msub_temp_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<18> (Msub_temp_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<19> (Msub_temp_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<20> (Msub_temp_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<21> (Msub_temp_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Msub_temp_cy<22> (Msub_temp_cy<22>)
+     MUXCY:CI->O           0   0.023   0.000  Msub_temp_cy<23> (Msub_temp_cy<23>)
+     XORCY:CI->O         360   0.206   2.443  Msub_temp_xor<24> (temp<24>)
+     begin scope: 'control/move:temp<24>'
+     LUT5:I4->O            4   0.254   0.912  placehold<160>111_1 (placehold<160>111)
+     LUT6:I4->O           21   0.250   1.310  placehold<180>11 (placehold<180>1)
+     LUT5:I4->O           19   0.254   1.261  placehold<181>1 (placehold<181>1)
+     LUT6:I5->O            2   0.254   0.834  placehold<183>3 (out<183>)
+     end scope: 'control/move:out<183>'
+     begin scope: 'control/display:M_move_out<183>'
+     LUT4:I2->O            1   0.250   0.682  Mmux_inputsToCircuit634 (Mmux_inputsToCircuit633)
+     LUT6:I5->O            1   0.254   0.958  Mmux_inputsToCircuit635 (Mmux_inputsToCircuit634)
+     LUT6:I2->O            1   0.254   0.958  Mmux_inputsToCircuit640 (Mmux_inputsToCircuit639)
+     LUT6:I2->O            1   0.254   0.958  Mmux_inputsToCircuit641 (Mmux_inputsToCircuit640)
+     LUT6:I2->O            1   0.254   0.681  Mmux_inputsToCircuit6165 (inputsToCircuit<5>)
+     end scope: 'control/display:inputsToCircuit<5>'
+     end scope: 'control:out<5>'
      OBUF:I->O                 2.912          matrix_5_OBUF (matrix<5>)
     ----------------------------------------
-    Total                     17.543ns (6.166ns logic, 11.377ns route)
-                                       (35.1% logic, 64.9% route)
+    Total                     18.648ns (6.925ns logic, 11.723ns route)
+                                       (37.1% logic, 62.9% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               5.857ns (Levels of Logic = 4)
+Delay:               5.857ns (Levels of Logic = 5)
   Source:            clk (PAD)
   Destination:       matrix<6> (PAD)
 
@@ -609,9 +664,11 @@ Delay:               5.857ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   1.328   0.682  clk_IBUF (clk_IBUF)
-     begin scope: 'display:clk_IBUF'
+     begin scope: 'control:clk_IBUF'
+     begin scope: 'control/display:clk_IBUF'
      LUT3:I2->O            1   0.254   0.681  Mmux_inputsToCircuit71 (inputsToCircuit<6>)
-     end scope: 'display:inputsToCircuit<6>'
+     end scope: 'control/display:inputsToCircuit<6>'
+     end scope: 'control:out<6>'
      OBUF:I->O                 2.912          matrix_6_OBUF (matrix<6>)
     ----------------------------------------
     Total                      5.857ns (4.494ns logic, 1.363ns route)
@@ -627,20 +684,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    8.733|         |         |         |
+clk            |    9.473|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 208.00 secs
-Total CPU time to Xst completion: 208.29 secs
+Total REAL time to Xst completion: 228.00 secs
+Total CPU time to Xst completion: 227.90 secs
  
 --> 
 
-Total memory usage is 386556 kilobytes
+Total memory usage is 393660 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  124 (   0 filtered)
+Number of warnings :  123 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

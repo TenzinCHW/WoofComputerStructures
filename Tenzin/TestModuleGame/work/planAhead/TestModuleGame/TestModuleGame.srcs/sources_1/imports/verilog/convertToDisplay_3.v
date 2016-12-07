@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module convertToDisplay_2 (
+module convertToDisplay_3 (
     input [399:0] map,
     input [399:0] position,
     output reg [255:0] out

@@ -29,54 +29,25 @@ module mojo_top_0 (
   
   reg rst;
   
-  wire [400-1:0] M_move_out;
-  reg [4-1:0] M_move_movement;
-  reg [400-1:0] M_move_position;
-  move_1 move (
-    .movement(M_move_movement),
-    .position(M_move_position),
-    .out(M_move_out)
-  );
-  
-  wire [256-1:0] M_convert_out;
-  reg [400-1:0] M_convert_map;
-  reg [400-1:0] M_convert_position;
-  convertToDisplay_2 convert (
-    .map(M_convert_map),
-    .position(M_convert_position),
-    .out(M_convert_out)
-  );
-  
-  reg [3:0] buttons;
-  
   reg [24:0] temp;
   
   wire [1-1:0] M_reset_cond_out;
   reg [1-1:0] M_reset_cond_in;
-  reset_conditioner_3 reset_cond (
+  reset_conditioner_1 reset_cond (
     .clk(clk),
     .in(M_reset_cond_in),
     .out(M_reset_cond_out)
   );
-  reg [0:0] M_start_d, M_start_q = 1'h0;
-  reg [399:0] M_position_d, M_position_q = 1'h0;
-  reg [3:0] M_direction_d, M_direction_q = 1'h0;
-  reg [24:0] M_timer_d, M_timer_q = 1'h0;
-  wire [8-1:0] M_display_inputsToCircuit;
-  reg [256-1:0] M_display_pattern;
-  toDisplay_4 display (
+  wire [8-1:0] M_control_out;
+  reg [4-1:0] M_control_buttons;
+  controller_2 control (
     .clk(clk),
     .rst(rst),
-    .pattern(M_display_pattern),
-    .inputsToCircuit(M_display_inputsToCircuit)
+    .buttons(M_control_buttons),
+    .out(M_control_out)
   );
   
   always @* begin
-    M_position_d = M_position_q;
-    M_start_d = M_start_q;
-    M_direction_d = M_direction_q;
-    M_timer_d = M_timer_q;
-    
     M_reset_cond_in = ~rst_n;
     rst = M_reset_cond_out;
     led = 8'h00;
@@ -86,53 +57,10 @@ module mojo_top_0 (
     io_led = 24'h000000;
     io_seg = 8'hff;
     io_sel = 4'hf;
-    M_timer_d = M_timer_q + 1'h1;
-    buttons[0+0-:1] = io_button[0+0-:1];
-    buttons[1+2-:3] = io_button[2+2-:3];
-    temp = M_timer_q - 1'h1;
-    if (M_timer_q[24+0-:1] ^ temp[24+0-:1]) begin
-      
-      case (buttons)
-        1'h1: begin
-          M_direction_d = 4'h1;
-        end
-        2'h2: begin
-          M_direction_d = 4'h2;
-        end
-        3'h4: begin
-          M_direction_d = 4'h4;
-        end
-        4'h8: begin
-          M_direction_d = 4'h8;
-        end
-        default: begin
-          M_direction_d = 4'h0;
-        end
-      endcase
-    end
-    M_move_movement = M_direction_q;
-    M_move_position = M_position_q;
-    M_position_d = M_move_out;
-    M_convert_position = M_move_out;
-    M_convert_map = 400'h0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
-    M_display_pattern = M_convert_out;
-    matrix = M_display_inputsToCircuit;
-    if (~M_start_q) begin
-      M_position_d = 400'h0000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
-      M_start_d = 1'h1;
-    end
+    M_control_buttons[0+0-:1] = io_button[0+0-:1];
+    M_control_buttons[1+0-:1] = io_button[2+0-:1];
+    M_control_buttons[2+0-:1] = io_button[3+0-:1];
+    M_control_buttons[3+0-:1] = io_button[4+0-:1];
+    matrix = M_control_out;
   end
-  
-  always @(posedge clk) begin
-    M_start_q <= M_start_d;
-    M_position_q <= M_position_d;
-    M_direction_q <= M_direction_d;
-    
-    if (rst == 1'b1) begin
-      M_timer_q <= 1'h0;
-    end else begin
-      M_timer_q <= M_timer_d;
-    end
-  end
-  
 endmodule

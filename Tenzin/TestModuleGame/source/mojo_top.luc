@@ -20,22 +20,15 @@ module mojo_top (
   ) {
   
   sig rst;                  // reset signal
-  move move;
-  convertToDisplay convert;
-  sig buttons[4];
   sig temp[25];
   
   .clk(clk) {
     // The reset conditioner is used to synchronize the reset signal to the FPGA
     // clock. This ensures the entire FPGA comes out of reset at the same time.
     reset_conditioner reset_cond;
-    dff position[20][20];
-    dff direction[4];
     .rst(rst){
-      dff start[1];
-      dff timer[25];
-      toDisplay display;
-      }
+      controller control;      
+    }
   }
   
   always {
@@ -51,37 +44,11 @@ module mojo_top (
     io_seg = 8hff;          // turn segments off
     io_sel = 4hf;           // select no digits
     
-    buttons[0] = io_button[0];
-    buttons[3:1] = io_button[4:2];
+    control.buttons[0] = io_button[0];
+    control.buttons[1] = io_button[2];
+    control.buttons[2] = io_button[3];
+    control.buttons[3] = io_button[4];
     
-    case (buttons) {
-    1: direction.d = h1;
-    2: direction.d = h2;
-    4: direction.d = h4;
-    8: direction.d = h8;
-    default: direction.d = h0;
-    }
-    
-    timer.d = timer.q + 1;
-    temp = timer.q - 1;
-    if (timer.q[24] ^ temp[24]){
-      move.movement = direction.q;  // this will make it move only if the button is being pressed.
-      }
-    else {
-      move.movement = h0;
-      }
-    
-    move.position = position.q; //c{16x{{h00000}}, {h08000}, 3x{{h00000}}};
-    position.d = move.out;
-    
-    convert.position = move.out;
-    convert.map = 20x{{h00000}};
-    display.pattern = convert.out;
-    matrix = display.inputsToCircuit;
-    
-    if (~start.q) {
-      position.d = {h00000, h00000, h08000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000,h00000, h00000, h00000, h00000, h00000};
-      start.d = 1;
-      }
+    matrix = control.out;
   }
 }

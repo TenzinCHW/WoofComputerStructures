@@ -1,0 +1,75 @@
+module controller (
+    input clk,  // clock
+    input rst,  // reset
+    input buttons[4],
+    output out[8]
+  ) {
+  
+  convertToDisplay convert;
+  sig temp[25];
+  move move;
+  sig moveHold[4];
+  
+  .clk(clk) {
+    .rst(rst) {
+      dff start[1];
+      dff position[20][20];
+      fsm state(.clk(clk), #INIT(STATIONARY)) = {STATIONARY,UP,DOWN,LEFT,RIGHT};
+      toDisplay display;
+      dff timer[25];
+      }
+    }
+  
+  always {
+    
+    case (buttons) {  // add if block so that buttons only change the state if it is currently stationary
+    1: state.d = state.UP;
+    2: state.d = state.DOWN;
+    4: state.d = state.LEFT;
+    8: state.d = state.RIGHT;
+    }
+    
+    case (state.q) {
+      state.UP: moveHold = h1;
+      state.DOWN: moveHold = h2;
+      state.LEFT: moveHold = h4;
+      state.RIGHT: moveHold = h8;
+      default: moveHold = h0;
+    }
+    
+    timer.d = timer.q + 1;
+    temp = timer.q - 1;
+    if (timer.q[24] ^ temp[24]){
+      move.movement = moveHold;
+    }
+    else {
+      move.movement = h0;
+    }
+    
+    move.position = position.q;
+    position.d = move.out;
+    
+    if (timer.q[24] && state.q == state.STATIONARY) {
+      convert.position = move.out;
+    }
+    else {
+      convert.position = 20x{{h00000}};
+    }
+    convert.map = 20x{{h00000}};
+    display.pattern = convert.out;
+    out = display.inputsToCircuit;
+    
+    // insert the displaying of win state here
+    // i.e. if (checkWinPositionbutton) {
+    //        convert.map = 20x{{h00000}};
+    //        convert.position = winStateMatrix;
+    //  }
+    
+    // check if current pos is win position
+    
+    if (~start.q) {
+      position.d = {h00000, h00000, h08000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000,h00000, h00000, h00000, h00000, h00000};
+      start.d = 1;
+      }
+  }
+}

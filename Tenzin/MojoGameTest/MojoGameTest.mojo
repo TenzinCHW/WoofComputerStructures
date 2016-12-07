@@ -10,6 +10,7 @@
     <src>collision.luc</src>
     <src top="true">mojo_top.luc</src>
     <src>convertToDisplay.luc</src>
+    <src>controller.luc</src>
     <src>shifter.luc</src>
     <src>alufn.luc</src>
     <src>map.luc</src>
