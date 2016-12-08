@@ -2,31 +2,47 @@ module controller (
     input clk,  // clock
     input rst,  // reset
     input buttons[4],
+    input winButton[1],
     output out[8]
   ) {
   
-  convertToDisplay convert;
+  sig moveHold[4];
   sig temp[25];
   move move;
-  sig moveHold[4];
+  map mapMod;
+  convertToDisplay convert;
+  checkWin win;
   
   .clk(clk) {
     .rst(rst) {
       dff start[1];
+      dff level[2];  // the level that you are currently on
+      dff difficulty[1];  // 1 for hard, 0 for easy
       dff position[20][20];
+      dff currentMap[20][20];
+      dff winPos[20][20];
+      dff timer[25];
       fsm state(.clk(clk), #INIT(STATIONARY)) = {STATIONARY,UP,DOWN,LEFT,RIGHT};
       toDisplay display;
-      dff timer[25];
+      collision collide;
       }
     }
   
   always {
     
-    case (buttons) {  // add if block so that buttons only change the state if it is currently stationary
-    1: state.d = state.UP;
-    2: state.d = state.DOWN;
-    4: state.d = state.LEFT;
-    8: state.d = state.RIGHT;
+    if (state.q == state.STATIONARY){
+      case (buttons) {  // add if block so that buttons only change the state if it is currently stationary
+      1: state.d = state.UP;
+      2: state.d = state.DOWN;
+      4: state.d = state.LEFT;
+      8: state.d = state.RIGHT;
+      }
+    }
+    
+    // check for collisions now, if there is collision then
+    // change state to STATIONARY
+    if (collide.out) {
+      state.d = state.STATIONARY;
     }
     
     case (state.q) {
@@ -49,27 +65,47 @@ module controller (
     move.position = position.q;
     position.d = move.out;
     
-    if (timer.q[24] && state.q == state.STATIONARY) {
-      convert.position = move.out;
+    collide.position = position.q; // Assign collision input
+    collide.movement = moveHold;   // after moveHold is assigned
+    collide.map = currentMap.q;
+    
+    if (state.q == state.STATIONARY) {
+      if (timer.q[24]) {  // blink if stationary
+        convert.position = move.out;
+      }
+      else {
+        convert.position = 20x{{h00000}};
+      }
     }
     else {
-      convert.position = 20x{{h00000}};
+      convert.position = move.out;  // else just move
     }
-    convert.map = 20x{{h00000}};
+    convert.map = currentMap.q;
+    
+    // insert the displaying of win state here
+    if (winButton) {
+      convert.map = 20x{{h00000}};
+      convert.position = winPos.q;
+    }
+    
     display.pattern = convert.out;
     out = display.inputsToCircuit;
     
-    // insert the displaying of win state here
-    // i.e. if (checkWinPositionbutton) {
-    //        convert.map = 20x{{h00000}};
-    //        convert.position = winStateMatrix;
-    //  }
+    // check if current pos is win position - change level, set state to STATIONARY then set start.d to 1
+    win.position = position.q;
+    win.winPos = winPos.q;
+    if (win.out) {
+      level.d = level.q + 1;
+      state.d = state.STATIONARY;
+      start.d = 0;
+    }
     
-    // check if current pos is win position
-    
+    mapMod.level = level.q;
     if (~start.q) {
-      position.d = {h00000, h00000, h08000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000, h00000,h00000, h00000, h00000, h00000, h00000};
+      currentMap.d = mapMod.map;
+      position.d = mapMod.start;
+      winPos.d = mapMod.winPos;
       start.d = 1;
-      }
+    }
   }
 }

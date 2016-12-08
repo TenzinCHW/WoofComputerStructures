@@ -40,10 +40,12 @@ module mojo_top_0 (
   );
   wire [8-1:0] M_control_out;
   reg [4-1:0] M_control_buttons;
+  reg [1-1:0] M_control_winButton;
   controller_2 control (
     .clk(clk),
     .rst(rst),
     .buttons(M_control_buttons),
+    .winButton(M_control_winButton),
     .out(M_control_out)
   );
   
@@ -57,10 +59,11 @@ module mojo_top_0 (
     io_led = 24'h000000;
     io_seg = 8'hff;
     io_sel = 4'hf;
-    M_control_buttons[0+0-:1] = io_button[0+0-:1];
-    M_control_buttons[1+0-:1] = io_button[2+0-:1];
+    M_control_buttons[0+0-:1] = io_button[2+0-:1];
+    M_control_buttons[1+0-:1] = io_button[0+0-:1];
     M_control_buttons[2+0-:1] = io_button[3+0-:1];
     M_control_buttons[3+0-:1] = io_button[4+0-:1];
+    M_control_winButton = io_button[1+0-:1];
     matrix = M_control_out;
   end
 endmodule

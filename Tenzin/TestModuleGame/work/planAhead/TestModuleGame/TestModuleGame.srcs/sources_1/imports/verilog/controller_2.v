@@ -8,35 +8,61 @@ module controller_2 (
     input clk,
     input rst,
     input [3:0] buttons,
+    input [0:0] winButton,
     output reg [7:0] out
   );
   
   
   
-  wire [256-1:0] M_convert_out;
-  reg [400-1:0] M_convert_map;
-  reg [400-1:0] M_convert_position;
-  convertToDisplay_3 convert (
-    .map(M_convert_map),
-    .position(M_convert_position),
-    .out(M_convert_out)
-  );
+  reg [3:0] moveHold;
   
   reg [24:0] temp;
   
   wire [400-1:0] M_move_out;
   reg [4-1:0] M_move_movement;
   reg [400-1:0] M_move_position;
-  move_4 move (
+  move_3 move (
     .movement(M_move_movement),
     .position(M_move_position),
     .out(M_move_out)
   );
   
-  reg [3:0] moveHold;
+  wire [400-1:0] M_mapMod_map;
+  wire [400-1:0] M_mapMod_start;
+  wire [400-1:0] M_mapMod_winPos;
+  reg [2-1:0] M_mapMod_level;
+  map_4 mapMod (
+    .level(M_mapMod_level),
+    .map(M_mapMod_map),
+    .start(M_mapMod_start),
+    .winPos(M_mapMod_winPos)
+  );
+  
+  wire [256-1:0] M_convert_out;
+  reg [400-1:0] M_convert_map;
+  reg [400-1:0] M_convert_position;
+  convertToDisplay_5 convert (
+    .map(M_convert_map),
+    .position(M_convert_position),
+    .out(M_convert_out)
+  );
+  
+  wire [1-1:0] M_win_out;
+  reg [400-1:0] M_win_position;
+  reg [400-1:0] M_win_winPos;
+  checkWin_6 win (
+    .position(M_win_position),
+    .winPos(M_win_winPos),
+    .out(M_win_out)
+  );
   
   reg [0:0] M_start_d, M_start_q = 1'h0;
+  reg [1:0] M_level_d, M_level_q = 1'h0;
+  reg [0:0] M_difficulty_d, M_difficulty_q = 1'h0;
   reg [399:0] M_position_d, M_position_q = 1'h0;
+  reg [399:0] M_currentMap_d, M_currentMap_q = 1'h0;
+  reg [399:0] M_winPos_d, M_winPos_q = 1'h0;
+  reg [24:0] M_timer_d, M_timer_q = 1'h0;
   localparam STATIONARY_state = 3'd0;
   localparam UP_state = 3'd1;
   localparam DOWN_state = 3'd2;
@@ -46,35 +72,54 @@ module controller_2 (
   reg [2:0] M_state_d, M_state_q = STATIONARY_state;
   wire [8-1:0] M_display_inputsToCircuit;
   reg [256-1:0] M_display_pattern;
-  toDisplay_5 display (
+  toDisplay_7 display (
     .clk(clk),
     .rst(rst),
     .pattern(M_display_pattern),
     .inputsToCircuit(M_display_inputsToCircuit)
   );
-  reg [24:0] M_timer_d, M_timer_q = 1'h0;
+  wire [1-1:0] M_collide_out;
+  reg [4-1:0] M_collide_movement;
+  reg [400-1:0] M_collide_map;
+  reg [400-1:0] M_collide_position;
+  collision_8 collide (
+    .clk(clk),
+    .rst(rst),
+    .movement(M_collide_movement),
+    .map(M_collide_map),
+    .position(M_collide_position),
+    .out(M_collide_out)
+  );
   
   always @* begin
     M_state_d = M_state_q;
     M_position_d = M_position_q;
+    M_level_d = M_level_q;
     M_start_d = M_start_q;
     M_timer_d = M_timer_q;
+    M_currentMap_d = M_currentMap_q;
+    M_winPos_d = M_winPos_q;
     
-    
-    case (buttons)
-      1'h1: begin
-        M_state_d = UP_state;
-      end
-      2'h2: begin
-        M_state_d = DOWN_state;
-      end
-      3'h4: begin
-        M_state_d = LEFT_state;
-      end
-      4'h8: begin
-        M_state_d = RIGHT_state;
-      end
-    endcase
+    if (M_state_q == STATIONARY_state) begin
+      
+      case (buttons)
+        1'h1: begin
+          M_state_d = UP_state;
+        end
+        2'h2: begin
+          M_state_d = DOWN_state;
+        end
+        3'h4: begin
+          M_state_d = LEFT_state;
+        end
+        4'h8: begin
+          M_state_d = RIGHT_state;
+        end
+      endcase
+    end
+    if (M_collide_out) begin
+      M_state_d = STATIONARY_state;
+    end
     
     case (M_state_q)
       UP_state: begin
@@ -102,16 +147,37 @@ module controller_2 (
     end
     M_move_position = M_position_q;
     M_position_d = M_move_out;
-    if (M_timer_q[24+0-:1]) begin
-      M_convert_position = M_move_out;
+    M_collide_position = M_position_q;
+    M_collide_movement = moveHold;
+    M_collide_map = M_currentMap_q;
+    if (M_state_q == STATIONARY_state) begin
+      if (M_timer_q[24+0-:1]) begin
+        M_convert_position = M_move_out;
+      end else begin
+        M_convert_position = 400'h0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+      end
     end else begin
-      M_convert_position = 400'h0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+      M_convert_position = M_move_out;
     end
-    M_convert_map = 400'h0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+    M_convert_map = M_currentMap_q;
+    if (winButton) begin
+      M_convert_map = 400'h0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+      M_convert_position = M_winPos_q;
+    end
     M_display_pattern = M_convert_out;
     out = M_display_inputsToCircuit;
+    M_win_position = M_position_q;
+    M_win_winPos = M_winPos_q;
+    if (M_win_out) begin
+      M_level_d = M_level_q + 1'h1;
+      M_state_d = STATIONARY_state;
+      M_start_d = 1'h0;
+    end
+    M_mapMod_level = M_level_q;
     if (~M_start_q) begin
-      M_position_d = 400'h0000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+      M_currentMap_d = M_mapMod_map;
+      M_position_d = M_mapMod_start;
+      M_winPos_d = M_mapMod_winPos;
       M_start_d = 1'h1;
     end
   end
@@ -119,11 +185,19 @@ module controller_2 (
   always @(posedge clk) begin
     if (rst == 1'b1) begin
       M_start_q <= 1'h0;
+      M_level_q <= 1'h0;
+      M_difficulty_q <= 1'h0;
       M_position_q <= 1'h0;
+      M_currentMap_q <= 1'h0;
+      M_winPos_q <= 1'h0;
       M_timer_q <= 1'h0;
     end else begin
       M_start_q <= M_start_d;
+      M_level_q <= M_level_d;
+      M_difficulty_q <= M_difficulty_d;
       M_position_q <= M_position_d;
+      M_currentMap_q <= M_currentMap_d;
+      M_winPos_q <= M_winPos_d;
       M_timer_q <= M_timer_d;
     end
   end

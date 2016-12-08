@@ -1,0 +1,19 @@
+module checkWin (
+    input position[20][20],
+    input winPos[20][20],
+    output out
+  ) {
+  
+  var loop;
+  
+  always {
+    out = 0;
+    for (loop = 2; loop < 18; loop = loop + 1) {
+      if (|position[loop]){
+        if (|(position[loop] & winPos[loop])){
+          out = 1;
+        }
+      }
+    }
+  }
+}

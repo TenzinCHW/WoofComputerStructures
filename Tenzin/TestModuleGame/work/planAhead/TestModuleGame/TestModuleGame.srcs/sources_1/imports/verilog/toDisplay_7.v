@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module toDisplay_5 (
+module toDisplay_7 (
     input clk,
     input rst,
     input [255:0] pattern,
