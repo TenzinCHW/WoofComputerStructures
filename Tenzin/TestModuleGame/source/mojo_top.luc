@@ -15,17 +15,25 @@ module mojo_top (
     output io_seg [8],      // 7-segment LEDs on IO Shield
     output io_sel [4],      // Digit select on IO Shield
     input io_button [5],    // 5 buttons on IO Shield
+    input direction[4],     // my direction input
+    input showwin[1],          // show winning spot
+    input myreset[1],          // custom reset button
     input io_dip [3][8],     // DIP switches on IO Shield
     output matrix[8]
   ) {
   
   sig rst;                  // reset signal
-  sig temp[25];
+  sig newrst;
+  sig dir[4];
+  sig win;
   
   .clk(clk) {
     // The reset conditioner is used to synchronize the reset signal to the FPGA
     // clock. This ensures the entire FPGA comes out of reset at the same time.
     reset_conditioner reset_cond;
+    reset_conditioner myreset_cond;
+    button_conditioner directions[4];
+    button_conditioner win_cond;
     .rst(rst){
       controller control;      
     }
@@ -34,6 +42,9 @@ module mojo_top (
   always {
     reset_cond.in = ~rst_n; // input raw inverted reset signal
     rst = reset_cond.out;   // conditioned reset
+    
+    myreset_cond.in = ~myreset;
+    newrst = myreset_cond.out;        
     
     led = 8h00;             // turn LEDs off
     spi_miso = bz;          // not using SPI
@@ -44,11 +55,19 @@ module mojo_top (
     io_seg = 8hff;          // turn segments off
     io_sel = 4hf;           // select no digits
     
-    control.buttons[0] = io_button[2];
-    control.buttons[1] = io_button[0];
-    control.buttons[2] = io_button[3];
-    control.buttons[3] = io_button[4];
-    control.winButton = io_button[1];
+    directions.in = ~direction;
+    win_cond.in = ~showwin;
+    dir[0] = directions.out[0];
+    dir[1] = directions.out[1];
+    dir[2] = directions.out[2];
+    dir[3] = directions.out[3];
+    win = win_cond.out;
+    
+    control.buttons[0] = dir[0];
+    control.buttons[1] = dir[1];
+    control.buttons[2] = dir[2];
+    control.buttons[3] = dir[3];
+    control.winButton = win;
     
     matrix = control.out;
   }

@@ -4,24 +4,22 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module checkWin_6 (
+module convertToDisplay_10 (
+    input [399:0] map,
     input [399:0] position,
-    input [399:0] winPos,
-    output reg out
+    output reg [255:0] out
   );
   
   
   
+  reg [255:0] placehold;
+  
   integer loop;
   
   always @* begin
-    out = 1'h0;
     for (loop = 2'h2; loop < 5'h12; loop = loop + 1'h1) begin
-      if ((|position[(loop)*20+19-:20])) begin
-        if ((|(position[(loop)*20+19-:20] & winPos[(loop)*20+19-:20]))) begin
-          out = 1'h1;
-        end
-      end
+      placehold[(loop - 2'h2)*16+15-:16] = map[(loop)*20+2+15-:16] + position[(loop)*20+2+15-:16];
     end
+    out = ~placehold;
   end
 endmodule

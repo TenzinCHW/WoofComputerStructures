@@ -4,10 +4,10 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module checkLeftRight_10 (
+module checkUpDown_14 (
+    input [0:0] upDown,
     input [399:0] map,
     input [399:0] position,
-    input [0:0] leftRight,
     output reg out
   );
   
@@ -33,15 +33,21 @@ module checkLeftRight_10 (
     out = 1'h1;
     for (loop = 2'h2; loop < 5'h12; loop = loop + 1'h1) begin
       if ((|position[(loop)*20+19-:20])) begin
-        if (leftRight) begin
-          if ((~|((position[(loop)*20+19-:20] >> 1'h1) & map[(loop)*20+19-:20]))) begin
-            if ((~|((position[(loop)*20+19-:20] >> 1'h1) & OUTERWALL[(loop)*20+19-:20]))) begin
+        if (upDown) begin
+          a = position[(loop)*20+10+7-:8];
+          b = map[(loop + 1'h1)*20+10+7-:8];
+          c = OUTERWALL[(loop + 1'h1)*20+10+7-:8];
+          if ((~|(position[(loop)*20+19-:20] & map[(loop + 1'h1)*20+19-:20]))) begin
+            if ((~|(position[(loop)*20+19-:20] & OUTERWALL[(loop + 1'h1)*20+19-:20]))) begin
               out = 1'h0;
             end
           end
         end else begin
-          if ((~|((position[(loop)*20+19-:20] << 1'h1) & map[(loop)*20+19-:20]))) begin
-            if ((~|((position[(loop)*20+19-:20] << 1'h1) & OUTERWALL[(loop)*20+19-:20]))) begin
+          a = position[(loop)*20+12+5-:6];
+          b = map[(loop - 1'h1)*20+12+5-:6];
+          c = OUTERWALL[(loop - 1'h1)*20+12+5-:6];
+          if ((~|(position[(loop)*20+19-:20] & map[(loop - 1'h1)*20+19-:20]))) begin
+            if ((~|(position[(loop)*20+19-:20] & OUTERWALL[(loop - 1'h1)*20+19-:20]))) begin
               out = 1'h0;
             end
           end

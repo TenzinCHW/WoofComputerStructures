@@ -21,6 +21,9 @@ module mojo_top_0 (
     output reg [7:0] io_seg,
     output reg [3:0] io_sel,
     input [4:0] io_button,
+    input [3:0] direction,
+    input [0:0] showwin,
+    input [0:0] myreset,
     input [23:0] io_dip,
     output reg [7:0] matrix
   );
@@ -29,7 +32,11 @@ module mojo_top_0 (
   
   reg rst;
   
-  reg [24:0] temp;
+  reg newrst;
+  
+  reg [3:0] dir;
+  
+  reg win;
   
   wire [1-1:0] M_reset_cond_out;
   reg [1-1:0] M_reset_cond_in;
@@ -38,10 +45,37 @@ module mojo_top_0 (
     .in(M_reset_cond_in),
     .out(M_reset_cond_out)
   );
+  wire [1-1:0] M_myreset_cond_out;
+  reg [1-1:0] M_myreset_cond_in;
+  reset_conditioner_1 myreset_cond (
+    .clk(clk),
+    .in(M_myreset_cond_in),
+    .out(M_myreset_cond_out)
+  );
+  wire [(3'h4+0)-1:0] M_directions_out;
+  reg [(3'h4+0)-1:0] M_directions_in;
+  
+  genvar GEN_directions0;
+  generate
+  for (GEN_directions0=0;GEN_directions0<3'h4;GEN_directions0=GEN_directions0+1) begin: directions_gen_0
+    button_conditioner_3 directions (
+      .clk(clk),
+      .in(M_directions_in[GEN_directions0*(1)+(1)-1-:(1)]),
+      .out(M_directions_out[GEN_directions0*(1)+(1)-1-:(1)])
+    );
+  end
+  endgenerate
+  wire [1-1:0] M_win_cond_out;
+  reg [1-1:0] M_win_cond_in;
+  button_conditioner_3 win_cond (
+    .clk(clk),
+    .in(M_win_cond_in),
+    .out(M_win_cond_out)
+  );
   wire [8-1:0] M_control_out;
   reg [4-1:0] M_control_buttons;
   reg [1-1:0] M_control_winButton;
-  controller_2 control (
+  controller_5 control (
     .clk(clk),
     .rst(rst),
     .buttons(M_control_buttons),
@@ -52,6 +86,8 @@ module mojo_top_0 (
   always @* begin
     M_reset_cond_in = ~rst_n;
     rst = M_reset_cond_out;
+    M_myreset_cond_in = ~myreset;
+    newrst = M_myreset_cond_out;
     led = 8'h00;
     spi_miso = 1'bz;
     spi_channel = 4'bzzzz;
@@ -59,11 +95,18 @@ module mojo_top_0 (
     io_led = 24'h000000;
     io_seg = 8'hff;
     io_sel = 4'hf;
-    M_control_buttons[0+0-:1] = io_button[2+0-:1];
-    M_control_buttons[1+0-:1] = io_button[0+0-:1];
-    M_control_buttons[2+0-:1] = io_button[3+0-:1];
-    M_control_buttons[3+0-:1] = io_button[4+0-:1];
-    M_control_winButton = io_button[1+0-:1];
+    M_directions_in = ~direction;
+    M_win_cond_in = ~showwin;
+    dir[0+0-:1] = M_directions_out[0+0-:1];
+    dir[1+0-:1] = M_directions_out[1+0-:1];
+    dir[2+0-:1] = M_directions_out[2+0-:1];
+    dir[3+0-:1] = M_directions_out[3+0-:1];
+    win = M_win_cond_out;
+    M_control_buttons[0+0-:1] = dir[0+0-:1];
+    M_control_buttons[1+0-:1] = dir[1+0-:1];
+    M_control_buttons[2+0-:1] = dir[2+0-:1];
+    M_control_buttons[3+0-:1] = dir[3+0-:1];
+    M_control_winButton = win;
     matrix = M_control_out;
   end
 endmodule

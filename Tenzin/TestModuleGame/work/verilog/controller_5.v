@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module controller_2 (
+module controller_5 (
     input clk,
     input rst,
     input [3:0] buttons,
@@ -21,7 +21,7 @@ module controller_2 (
   wire [400-1:0] M_move_out;
   reg [4-1:0] M_move_movement;
   reg [400-1:0] M_move_position;
-  move_3 move (
+  move_8 move (
     .movement(M_move_movement),
     .position(M_move_position),
     .out(M_move_out)
@@ -31,7 +31,7 @@ module controller_2 (
   wire [400-1:0] M_mapMod_start;
   wire [400-1:0] M_mapMod_winPos;
   reg [2-1:0] M_mapMod_level;
-  map_4 mapMod (
+  map_9 mapMod (
     .level(M_mapMod_level),
     .map(M_mapMod_map),
     .start(M_mapMod_start),
@@ -41,7 +41,7 @@ module controller_2 (
   wire [256-1:0] M_convert_out;
   reg [400-1:0] M_convert_map;
   reg [400-1:0] M_convert_position;
-  convertToDisplay_5 convert (
+  convertToDisplay_10 convert (
     .map(M_convert_map),
     .position(M_convert_position),
     .out(M_convert_out)
@@ -50,7 +50,7 @@ module controller_2 (
   wire [1-1:0] M_win_out;
   reg [400-1:0] M_win_position;
   reg [400-1:0] M_win_winPos;
-  checkWin_6 win (
+  checkWin_11 win (
     .position(M_win_position),
     .winPos(M_win_winPos),
     .out(M_win_out)
@@ -72,7 +72,7 @@ module controller_2 (
   reg [2:0] M_state_d, M_state_q = STATIONARY_state;
   wire [8-1:0] M_display_inputsToCircuit;
   reg [256-1:0] M_display_pattern;
-  toDisplay_7 display (
+  toDisplay_12 display (
     .clk(clk),
     .rst(rst),
     .pattern(M_display_pattern),
@@ -82,7 +82,7 @@ module controller_2 (
   reg [4-1:0] M_collide_movement;
   reg [400-1:0] M_collide_map;
   reg [400-1:0] M_collide_position;
-  collision_8 collide (
+  collision_13 collide (
     .clk(clk),
     .rst(rst),
     .movement(M_collide_movement),

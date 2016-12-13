@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module map_4 (
+module map_9 (
     input [1:0] level,
     output reg [399:0] map,
     output reg [399:0] start,

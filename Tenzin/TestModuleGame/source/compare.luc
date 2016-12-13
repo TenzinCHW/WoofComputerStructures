@@ -1,0 +1,49 @@
+module compare (
+    output out[8],
+    input a[8],
+    input b[8],
+    input aLUFN[6]
+  ) {
+
+  //sig p[8];
+  //sig z;
+  //sig v;
+  //sig n;
+  //sig zero[8];
+  //sig one[8];
+  //sig alufnIszero[8];
+  //sig alufnIsone[8];
+  //sig lsblt;
+  //sig lsblte;
+  //sig zerozero[1];
+  //sig zeroone[1];
+  //sig onezero[1];
+  //sig oneone[1];
+  
+  always {
+    //zero = a - b;
+    //one = a + b;
+    //alufnIszero = ~(zero & ~8x{aLUFN[0]});
+    //alufnIsone = ~(one & 8x{aLUFN[1]});
+    //p = ~(alufnIszero & alufnIsone);  // a 2-bit multiplexer
+    //z = ~(~(0 & ~p[0]) & ~(1 & p[0]));  // 2-bit multiplexer shortened
+    //v = (a[7] & (b[7] ^ aLUFN[0]) & !p[7]) | (!a[7] & !(b[7] ^ aLUFN[0]) & p[7]);
+    //n = p[7];
+    
+    //out = 0;
+    //lsblt = n ^ v;
+    //lsblte = z | (n ^ v);
+    
+    //zerozero = 0;
+    //zeroone = aLUFN[1] & ~aLUFN[2] & z;
+    //onezero = ~aLUFN[1] & aLUFN[2] & lsblt;
+    //oneone = aLUFN[1] & aLUFN[2] & lsblte;
+    
+    case (aLUFN[2:1]){
+      1: out = (a == b);
+      2: out = (a < b);
+      3: out = (a <= b);
+      default: out = 0;
+    }
+  }
+}

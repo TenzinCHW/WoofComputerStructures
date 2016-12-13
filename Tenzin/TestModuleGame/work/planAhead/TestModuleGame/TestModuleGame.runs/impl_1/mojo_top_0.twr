@@ -28,16 +28,16 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
 Timing constraint: TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 325217 paths analyzed, 2598 endpoints analyzed, 0 failing endpoints
+ 328910 paths analyzed, 3133 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  13.305ns.
+ Minimum period is  13.476ns.
 --------------------------------------------------------------------------------
-Slack:                  6.695ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_124 (FF)
-  Destination:          control/M_position_q_111 (FF)
+Slack:                  6.524ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_209 (FF)
+  Destination:          control/M_position_q_274 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      13.285ns (Levels of Logic = 6)
-  Clock Path Skew:      0.015ns (0.629 - 0.614)
+  Data Path Delay:      13.364ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.077ns (0.605 - 0.682)
   Source Clock:         clk_IBUF_BUFG rising at 0.000ns
   Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -48,134 +48,42 @@ Slack:                  6.695ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: control/M_position_q_124 to control/M_position_q_111
+  Maximum Data Path at Slow Process Corner: control/M_position_q_209 to control/M_position_q_274
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y22.AQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_124
-    SLICE_X8Y29.B2       net (fanout=9)        1.989   control/M_position_q[124]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X4Y26.B2       net (fanout=21)       1.382   control/placehold<100>2
-    SLICE_X4Y26.B        Tilo                  0.254   control/placehold<111>1
-                                                       control/move/placehold<111>2
-    SLICE_X7Y26.C2       net (fanout=2)        1.218   control/placehold<111>1
-    SLICE_X7Y26.CLK      Tas                   0.373   control/M_position_q[112]
-                                                       control/M_position_d<111>1
-                                                       control/M_position_q_111
+    SLICE_X21Y9.AQ       Tcko                  0.430   control/M_position_q[212]
+                                                       control/M_position_q_209
+    SLICE_X19Y12.B2      net (fanout=8)        1.603   control/M_position_q[209]
+    SLICE_X19Y12.B       Tilo                  0.259   control/M_move_out[206]
+                                                       control/collide/upDown/out93
+    SLICE_X18Y15.A4      net (fanout=1)        0.838   control/collide/upDown/out82
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X21Y29.D2      net (fanout=20)       2.316   control/placehold<261>1
+    SLICE_X21Y29.D       Tilo                  0.259   control/placehold[274]
+                                                       control/move/placehold<274>1
+    SLICE_X20Y29.A2      net (fanout=2)        0.724   control/placehold[274]
+    SLICE_X20Y29.CLK     Tas                   0.339   control/M_position_q[277]
+                                                       control/M_position_d<274>1
+                                                       control/M_position_q_274
     -------------------------------------------------  ---------------------------
-    Total                                     13.285ns (2.016ns logic, 11.269ns route)
-                                                       (15.2% logic, 84.8% route)
-
---------------------------------------------------------------------------------
-Slack:                  6.912ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_126 (FF)
-  Destination:          control/M_position_q_111 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      13.068ns (Levels of Logic = 6)
-  Clock Path Skew:      0.015ns (0.629 - 0.614)
-  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
-  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: control/M_position_q_126 to control/M_position_q_111
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X13Y22.CQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_126
-    SLICE_X8Y29.B1       net (fanout=10)       1.772   control/M_position_q[126]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X4Y26.B2       net (fanout=21)       1.382   control/placehold<100>2
-    SLICE_X4Y26.B        Tilo                  0.254   control/placehold<111>1
-                                                       control/move/placehold<111>2
-    SLICE_X7Y26.C2       net (fanout=2)        1.218   control/placehold<111>1
-    SLICE_X7Y26.CLK      Tas                   0.373   control/M_position_q[112]
-                                                       control/M_position_d<111>1
-                                                       control/M_position_q_111
-    -------------------------------------------------  ---------------------------
-    Total                                     13.068ns (2.016ns logic, 11.052ns route)
-                                                       (15.4% logic, 84.6% route)
-
---------------------------------------------------------------------------------
-Slack:                  6.917ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_124 (FF)
-  Destination:          control/M_position_q_118 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      13.068ns (Levels of Logic = 6)
-  Clock Path Skew:      0.020ns (0.634 - 0.614)
-  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
-  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: control/M_position_q_124 to control/M_position_q_118
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X13Y22.AQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_124
-    SLICE_X8Y29.B2       net (fanout=9)        1.989   control/M_position_q[124]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X6Y26.A1       net (fanout=21)       1.437   control/placehold<100>2
-    SLICE_X6Y26.A        Tilo                  0.235   control/M_position_q[104]
-                                                       control/move/placehold<101>13_1
-    SLICE_X6Y28.B2       net (fanout=17)       0.989   control/placehold<101>13
-    SLICE_X6Y28.CLK      Tas                   0.349   control/M_position_q[120]
-                                                       control/M_position_d<118>4
-                                                       control/M_position_q_118
-    -------------------------------------------------  ---------------------------
-    Total                                     13.068ns (1.973ns logic, 11.095ns route)
+    Total                                     13.364ns (2.016ns logic, 11.348ns route)
                                                        (15.1% logic, 84.9% route)
 
 --------------------------------------------------------------------------------
-Slack:                  7.031ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_139 (FF)
-  Destination:          control/M_position_q_111 (FF)
+Slack:                  6.540ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_330 (FF)
+  Destination:          control/M_position_q_253 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      12.923ns (Levels of Logic = 6)
-  Clock Path Skew:      -0.011ns (0.324 - 0.335)
+  Data Path Delay:      13.330ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.095ns (0.684 - 0.779)
   Source Clock:         clk_IBUF_BUFG rising at 0.000ns
   Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -186,42 +94,88 @@ Slack:                  7.031ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: control/M_position_q_139 to control/M_position_q_111
+  Maximum Data Path at Slow Process Corner: control/M_position_q_330 to control/M_position_q_253
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X10Y27.DQ      Tcko                  0.476   control/M_position_q[139]
-                                                       control/M_position_q_139
-    SLICE_X11Y33.D4      net (fanout=7)        1.924   control/M_position_q[139]
-    SLICE_X11Y33.D       Tilo                  0.259   control/out4
-                                                       control/collide/upDown/out51
-    SLICE_X6Y32.A3       net (fanout=2)        0.848   control/out4
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X4Y26.B2       net (fanout=21)       1.382   control/placehold<100>2
-    SLICE_X4Y26.B        Tilo                  0.254   control/placehold<111>1
-                                                       control/move/placehold<111>2
-    SLICE_X7Y26.C2       net (fanout=2)        1.218   control/placehold<111>1
-    SLICE_X7Y26.CLK      Tas                   0.373   control/M_position_q[112]
-                                                       control/M_position_d<111>1
-                                                       control/M_position_q_111
+    SLICE_X14Y49.AQ      Tcko                  0.476   control/M_position_q[333]
+                                                       control/M_position_q_330
+    SLICE_X13Y41.D2      net (fanout=9)        2.625   control/M_position_q[330]
+    SLICE_X13Y41.D       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/collide/upDown/out152
+    SLICE_X13Y41.A5      net (fanout=1)        0.435   control/collide/upDown/out141
+    SLICE_X13Y41.A       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/collide/upDown/out154
+    SLICE_X19Y15.B3      net (fanout=71)       4.533   control/position[339]_reduce_or_156_o
+    SLICE_X19Y15.B       Tilo                  0.259   control/move/placehold[230]
+                                                       control/move/placehold<260>21
+    SLICE_X23Y18.A1      net (fanout=6)        1.138   control/move/placehold<260>2
+    SLICE_X23Y18.A       Tilo                  0.259   control/placehold<251>1
+                                                       control/move/placehold<240>11
+    SLICE_X19Y22.B3      net (fanout=21)       1.650   control/placehold<240>1
+    SLICE_X19Y22.B       Tilo                  0.259   control/N499
+                                                       control/move/placehold<253>2
+    SLICE_X21Y22.A5      net (fanout=2)        0.805   control/placehold<253>1
+    SLICE_X21Y22.CLK     Tas                   0.373   control/M_position_q[256]
+                                                       control/M_position_d<253>1
+                                                       control/M_position_q_253
     -------------------------------------------------  ---------------------------
-    Total                                     12.923ns (2.067ns logic, 10.856ns route)
+    Total                                     13.330ns (2.144ns logic, 11.186ns route)
+                                                       (16.1% logic, 83.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  6.595ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_330 (FF)
+  Destination:          control/M_position_q_255 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      13.275ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.095ns (0.684 - 0.779)
+  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
+  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: control/M_position_q_330 to control/M_position_q_255
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y49.AQ      Tcko                  0.476   control/M_position_q[333]
+                                                       control/M_position_q_330
+    SLICE_X13Y41.D2      net (fanout=9)        2.625   control/M_position_q[330]
+    SLICE_X13Y41.D       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/collide/upDown/out152
+    SLICE_X13Y41.A5      net (fanout=1)        0.435   control/collide/upDown/out141
+    SLICE_X13Y41.A       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/collide/upDown/out154
+    SLICE_X19Y15.B3      net (fanout=71)       4.533   control/position[339]_reduce_or_156_o
+    SLICE_X19Y15.B       Tilo                  0.259   control/move/placehold[230]
+                                                       control/move/placehold<260>21
+    SLICE_X23Y18.A1      net (fanout=6)        1.138   control/move/placehold<260>2
+    SLICE_X23Y18.A       Tilo                  0.259   control/placehold<251>1
+                                                       control/move/placehold<240>11
+    SLICE_X18Y22.B3      net (fanout=21)       1.682   control/placehold<240>1
+    SLICE_X18Y22.B       Tilo                  0.235   control/placehold<255>1
+                                                       control/move/placehold<255>2
+    SLICE_X21Y22.C4      net (fanout=2)        0.742   control/placehold<255>1
+    SLICE_X21Y22.CLK     Tas                   0.373   control/M_position_q[256]
+                                                       control/M_position_d<255>1
+                                                       control/M_position_q_255
+    -------------------------------------------------  ---------------------------
+    Total                                     13.275ns (2.120ns logic, 11.155ns route)
                                                        (16.0% logic, 84.0% route)
 
 --------------------------------------------------------------------------------
-Slack:                  7.076ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_124 (FF)
-  Destination:          control/M_position_q_106 (FF)
+Slack:                  6.694ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_330 (FF)
+  Destination:          control/M_position_q_256 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      12.900ns (Levels of Logic = 6)
-  Clock Path Skew:      0.011ns (0.625 - 0.614)
+  Data Path Delay:      13.176ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.095ns (0.684 - 0.779)
   Source Clock:         clk_IBUF_BUFG rising at 0.000ns
   Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -232,42 +186,42 @@ Slack:                  7.076ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: control/M_position_q_124 to control/M_position_q_106
+  Maximum Data Path at Slow Process Corner: control/M_position_q_330 to control/M_position_q_256
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y22.AQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_124
-    SLICE_X8Y29.B2       net (fanout=9)        1.989   control/M_position_q[124]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X6Y26.A1       net (fanout=21)       1.437   control/placehold<100>2
-    SLICE_X6Y26.A        Tilo                  0.235   control/M_position_q[104]
-                                                       control/move/placehold<101>13_1
-    SLICE_X6Y24.B2       net (fanout=17)       0.821   control/placehold<101>13
-    SLICE_X6Y24.CLK      Tas                   0.349   control/M_position_q[108]
-                                                       control/M_position_d<106>1
-                                                       control/M_position_q_106
+    SLICE_X14Y49.AQ      Tcko                  0.476   control/M_position_q[333]
+                                                       control/M_position_q_330
+    SLICE_X13Y41.D2      net (fanout=9)        2.625   control/M_position_q[330]
+    SLICE_X13Y41.D       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/collide/upDown/out152
+    SLICE_X13Y41.A5      net (fanout=1)        0.435   control/collide/upDown/out141
+    SLICE_X13Y41.A       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/collide/upDown/out154
+    SLICE_X19Y15.B3      net (fanout=71)       4.533   control/position[339]_reduce_or_156_o
+    SLICE_X19Y15.B       Tilo                  0.259   control/move/placehold[230]
+                                                       control/move/placehold<260>21
+    SLICE_X23Y18.A1      net (fanout=6)        1.138   control/move/placehold<260>2
+    SLICE_X23Y18.A       Tilo                  0.259   control/placehold<251>1
+                                                       control/move/placehold<240>11
+    SLICE_X19Y20.B4      net (fanout=21)       1.252   control/placehold<240>1
+    SLICE_X19Y20.B       Tilo                  0.259   control/placehold<256>1
+                                                       control/move/placehold<256>2
+    SLICE_X21Y22.D4      net (fanout=2)        1.049   control/placehold<256>1
+    SLICE_X21Y22.CLK     Tas                   0.373   control/M_position_q[256]
+                                                       control/M_position_d<256>1
+                                                       control/M_position_q_256
     -------------------------------------------------  ---------------------------
-    Total                                     12.900ns (1.973ns logic, 10.927ns route)
-                                                       (15.3% logic, 84.7% route)
+    Total                                     13.176ns (2.144ns logic, 11.032ns route)
+                                                       (16.3% logic, 83.7% route)
 
 --------------------------------------------------------------------------------
-Slack:                  7.081ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_124 (FF)
-  Destination:          control/M_position_q_107 (FF)
+Slack:                  6.712ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_219 (FF)
+  Destination:          control/M_position_q_274 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      12.895ns (Levels of Logic = 6)
-  Clock Path Skew:      0.011ns (0.625 - 0.614)
+  Data Path Delay:      13.178ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.075ns (0.605 - 0.680)
   Source Clock:         clk_IBUF_BUFG rising at 0.000ns
   Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -278,272 +232,42 @@ Slack:                  7.081ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: control/M_position_q_124 to control/M_position_q_107
+  Maximum Data Path at Slow Process Corner: control/M_position_q_219 to control/M_position_q_274
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y22.AQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_124
-    SLICE_X8Y29.B2       net (fanout=9)        1.989   control/M_position_q[124]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X6Y26.A1       net (fanout=21)       1.437   control/placehold<100>2
-    SLICE_X6Y26.A        Tilo                  0.235   control/M_position_q[104]
-                                                       control/move/placehold<101>13_1
-    SLICE_X6Y24.C1       net (fanout=17)       0.816   control/placehold<101>13
-    SLICE_X6Y24.CLK      Tas                   0.349   control/M_position_q[108]
-                                                       control/M_position_d<107>1
-                                                       control/M_position_q_107
+    SLICE_X18Y10.DQ      Tcko                  0.476   control/M_position_q[219]
+                                                       control/M_position_q_219
+    SLICE_X16Y14.C2      net (fanout=7)        1.446   control/M_position_q[219]
+    SLICE_X16Y14.C       Tilo                  0.255   control/collide/upDown/out8
+                                                       control/collide/upDown/out91
+    SLICE_X18Y15.A1      net (fanout=1)        0.767   control/collide/upDown/out8
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X21Y29.D2      net (fanout=20)       2.316   control/placehold<261>1
+    SLICE_X21Y29.D       Tilo                  0.259   control/placehold[274]
+                                                       control/move/placehold<274>1
+    SLICE_X20Y29.A2      net (fanout=2)        0.724   control/placehold[274]
+    SLICE_X20Y29.CLK     Tas                   0.339   control/M_position_q[277]
+                                                       control/M_position_d<274>1
+                                                       control/M_position_q_274
     -------------------------------------------------  ---------------------------
-    Total                                     12.895ns (1.973ns logic, 10.922ns route)
-                                                       (15.3% logic, 84.7% route)
-
---------------------------------------------------------------------------------
-Slack:                  7.101ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_128 (FF)
-  Destination:          control/M_position_q_111 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      12.881ns (Levels of Logic = 6)
-  Clock Path Skew:      0.017ns (0.629 - 0.612)
-  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
-  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: control/M_position_q_128 to control/M_position_q_111
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X13Y23.AQ      Tcko                  0.430   control/M_position_q[131]
-                                                       control/M_position_q_128
-    SLICE_X8Y29.B3       net (fanout=11)       1.585   control/M_position_q[128]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X4Y26.B2       net (fanout=21)       1.382   control/placehold<100>2
-    SLICE_X4Y26.B        Tilo                  0.254   control/placehold<111>1
-                                                       control/move/placehold<111>2
-    SLICE_X7Y26.C2       net (fanout=2)        1.218   control/placehold<111>1
-    SLICE_X7Y26.CLK      Tas                   0.373   control/M_position_q[112]
-                                                       control/M_position_d<111>1
-                                                       control/M_position_q_111
-    -------------------------------------------------  ---------------------------
-    Total                                     12.881ns (2.016ns logic, 10.865ns route)
-                                                       (15.7% logic, 84.3% route)
-
---------------------------------------------------------------------------------
-Slack:                  7.133ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_125 (FF)
-  Destination:          control/M_position_q_111 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      12.847ns (Levels of Logic = 6)
-  Clock Path Skew:      0.015ns (0.629 - 0.614)
-  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
-  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: control/M_position_q_125 to control/M_position_q_111
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X13Y22.BQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_125
-    SLICE_X8Y29.B4       net (fanout=11)       1.551   control/M_position_q[125]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X4Y26.B2       net (fanout=21)       1.382   control/placehold<100>2
-    SLICE_X4Y26.B        Tilo                  0.254   control/placehold<111>1
-                                                       control/move/placehold<111>2
-    SLICE_X7Y26.C2       net (fanout=2)        1.218   control/placehold<111>1
-    SLICE_X7Y26.CLK      Tas                   0.373   control/M_position_q[112]
-                                                       control/M_position_d<111>1
-                                                       control/M_position_q_111
-    -------------------------------------------------  ---------------------------
-    Total                                     12.847ns (2.016ns logic, 10.831ns route)
-                                                       (15.7% logic, 84.3% route)
-
---------------------------------------------------------------------------------
-Slack:                  7.134ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_126 (FF)
-  Destination:          control/M_position_q_118 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      12.851ns (Levels of Logic = 6)
-  Clock Path Skew:      0.020ns (0.634 - 0.614)
-  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
-  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: control/M_position_q_126 to control/M_position_q_118
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X13Y22.CQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_126
-    SLICE_X8Y29.B1       net (fanout=10)       1.772   control/M_position_q[126]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X6Y26.A1       net (fanout=21)       1.437   control/placehold<100>2
-    SLICE_X6Y26.A        Tilo                  0.235   control/M_position_q[104]
-                                                       control/move/placehold<101>13_1
-    SLICE_X6Y28.B2       net (fanout=17)       0.989   control/placehold<101>13
-    SLICE_X6Y28.CLK      Tas                   0.349   control/M_position_q[120]
-                                                       control/M_position_d<118>4
-                                                       control/M_position_q_118
-    -------------------------------------------------  ---------------------------
-    Total                                     12.851ns (1.973ns logic, 10.878ns route)
-                                                       (15.4% logic, 84.6% route)
-
---------------------------------------------------------------------------------
-Slack:                  7.142ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_123 (FF)
-  Destination:          control/M_position_q_111 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      12.838ns (Levels of Logic = 6)
-  Clock Path Skew:      0.015ns (0.629 - 0.614)
-  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
-  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: control/M_position_q_123 to control/M_position_q_111
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X15Y25.DQ      Tcko                  0.430   control/M_position_q[123]
-                                                       control/M_position_q_123
-    SLICE_X11Y33.D2      net (fanout=9)        1.885   control/M_position_q[123]
-    SLICE_X11Y33.D       Tilo                  0.259   control/out4
-                                                       control/collide/upDown/out51
-    SLICE_X6Y32.A3       net (fanout=2)        0.848   control/out4
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X4Y26.B2       net (fanout=21)       1.382   control/placehold<100>2
-    SLICE_X4Y26.B        Tilo                  0.254   control/placehold<111>1
-                                                       control/move/placehold<111>2
-    SLICE_X7Y26.C2       net (fanout=2)        1.218   control/placehold<111>1
-    SLICE_X7Y26.CLK      Tas                   0.373   control/M_position_q[112]
-                                                       control/M_position_d<111>1
-                                                       control/M_position_q_111
-    -------------------------------------------------  ---------------------------
-    Total                                     12.838ns (2.021ns logic, 10.817ns route)
-                                                       (15.7% logic, 84.3% route)
-
---------------------------------------------------------------------------------
-Slack:                  7.176ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_124 (FF)
-  Destination:          control/M_position_q_112 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      12.804ns (Levels of Logic = 6)
-  Clock Path Skew:      0.015ns (0.629 - 0.614)
-  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
-  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: control/M_position_q_124 to control/M_position_q_112
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X13Y22.AQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_124
-    SLICE_X8Y29.B2       net (fanout=9)        1.989   control/M_position_q[124]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X6Y26.A1       net (fanout=21)       1.437   control/placehold<100>2
-    SLICE_X6Y26.A        Tilo                  0.235   control/M_position_q[104]
-                                                       control/move/placehold<101>13_1
-    SLICE_X7Y26.D1       net (fanout=17)       0.701   control/placehold<101>13
-    SLICE_X7Y26.CLK      Tas                   0.373   control/M_position_q[112]
-                                                       control/M_position_d<112>1
-                                                       control/M_position_q_112
-    -------------------------------------------------  ---------------------------
-    Total                                     12.804ns (1.997ns logic, 10.807ns route)
+    Total                                     13.178ns (2.058ns logic, 11.120ns route)
                                                        (15.6% logic, 84.4% route)
 
 --------------------------------------------------------------------------------
-Slack:                  7.184ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_124 (FF)
-  Destination:          control/M_position_q_107 (FF)
+Slack:                  6.759ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_330 (FF)
+  Destination:          control/M_position_q_248 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      12.792ns (Levels of Logic = 6)
-  Clock Path Skew:      0.011ns (0.625 - 0.614)
+  Data Path Delay:      13.116ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.090ns (0.689 - 0.779)
   Source Clock:         clk_IBUF_BUFG rising at 0.000ns
   Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -554,42 +278,88 @@ Slack:                  7.184ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: control/M_position_q_124 to control/M_position_q_107
+  Maximum Data Path at Slow Process Corner: control/M_position_q_330 to control/M_position_q_248
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y22.AQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_124
-    SLICE_X8Y29.B2       net (fanout=9)        1.989   control/M_position_q[124]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X8Y25.B4       net (fanout=21)       1.284   control/placehold<100>2
-    SLICE_X8Y25.B        Tilo                  0.254   control/M_move_out[105]
-                                                       control/move/placehold<107>2
-    SLICE_X6Y24.C3       net (fanout=2)        0.847   control/placehold<107>1
-    SLICE_X6Y24.CLK      Tas                   0.349   control/M_position_q[108]
-                                                       control/M_position_d<107>1
-                                                       control/M_position_q_107
+    SLICE_X14Y49.AQ      Tcko                  0.476   control/M_position_q[333]
+                                                       control/M_position_q_330
+    SLICE_X13Y41.D2      net (fanout=9)        2.625   control/M_position_q[330]
+    SLICE_X13Y41.D       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/collide/upDown/out152
+    SLICE_X13Y41.A5      net (fanout=1)        0.435   control/collide/upDown/out141
+    SLICE_X13Y41.A       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/collide/upDown/out154
+    SLICE_X19Y15.B3      net (fanout=71)       4.533   control/position[339]_reduce_or_156_o
+    SLICE_X19Y15.B       Tilo                  0.259   control/move/placehold[230]
+                                                       control/move/placehold<260>21
+    SLICE_X23Y18.A1      net (fanout=6)        1.138   control/move/placehold<260>2
+    SLICE_X23Y18.A       Tilo                  0.259   control/placehold<251>1
+                                                       control/move/placehold<240>11
+    SLICE_X14Y20.B4      net (fanout=21)       1.264   control/placehold<240>1
+    SLICE_X14Y20.B       Tilo                  0.235   control/placehold<248>1
+                                                       control/move/placehold<248>2
+    SLICE_X21Y20.D4      net (fanout=2)        1.001   control/placehold<248>1
+    SLICE_X21Y20.CLK     Tas                   0.373   control/M_position_q[248]
+                                                       control/M_position_d<248>1
+                                                       control/M_position_q_248
     -------------------------------------------------  ---------------------------
-    Total                                     12.792ns (1.992ns logic, 10.800ns route)
+    Total                                     13.116ns (2.120ns logic, 10.996ns route)
+                                                       (16.2% logic, 83.8% route)
+
+--------------------------------------------------------------------------------
+Slack:                  6.767ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_209 (FF)
+  Destination:          control/M_position_q_262 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      13.115ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.083ns (0.599 - 0.682)
+  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
+  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: control/M_position_q_209 to control/M_position_q_262
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y9.AQ       Tcko                  0.430   control/M_position_q[212]
+                                                       control/M_position_q_209
+    SLICE_X19Y12.B2      net (fanout=8)        1.603   control/M_position_q[209]
+    SLICE_X19Y12.B       Tilo                  0.259   control/M_move_out[206]
+                                                       control/collide/upDown/out93
+    SLICE_X18Y15.A4      net (fanout=1)        0.838   control/collide/upDown/out82
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X21Y26.B1      net (fanout=20)       2.044   control/placehold<261>1
+    SLICE_X21Y26.B       Tilo                  0.259   control/placehold[262]
+                                                       control/move/placehold<262>1
+    SLICE_X23Y26.A4      net (fanout=2)        0.713   control/placehold[262]
+    SLICE_X23Y26.CLK     Tas                   0.373   control/M_position_q[265]
+                                                       control/M_position_d<262>1
+                                                       control/M_position_q_262
+    -------------------------------------------------  ---------------------------
+    Total                                     13.115ns (2.050ns logic, 11.065ns route)
                                                        (15.6% logic, 84.4% route)
 
 --------------------------------------------------------------------------------
-Slack:                  7.233ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_124 (FF)
-  Destination:          control/M_position_q_116 (FF)
+Slack:                  6.785ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_200 (FF)
+  Destination:          control/M_position_q_274 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      12.750ns (Levels of Logic = 6)
-  Clock Path Skew:      0.018ns (0.632 - 0.614)
+  Data Path Delay:      13.106ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.074ns (0.605 - 0.679)
   Source Clock:         clk_IBUF_BUFG rising at 0.000ns
   Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -600,42 +370,42 @@ Slack:                  7.233ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: control/M_position_q_124 to control/M_position_q_116
+  Maximum Data Path at Slow Process Corner: control/M_position_q_200 to control/M_position_q_274
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y22.AQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_124
-    SLICE_X8Y29.B2       net (fanout=9)        1.989   control/M_position_q[124]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X6Y26.A1       net (fanout=21)       1.437   control/placehold<100>2
-    SLICE_X6Y26.A        Tilo                  0.235   control/M_position_q[104]
-                                                       control/move/placehold<101>13_1
-    SLICE_X7Y27.D3       net (fanout=17)       0.647   control/placehold<101>13
-    SLICE_X7Y27.CLK      Tas                   0.373   control/M_position_q[116]
-                                                       control/M_position_d<116>1
-                                                       control/M_position_q_116
+    SLICE_X14Y10.DQ      Tcko                  0.476   control/M_position_q[200]
+                                                       control/M_position_q_200
+    SLICE_X16Y14.C1      net (fanout=7)        1.374   control/M_position_q[200]
+    SLICE_X16Y14.C       Tilo                  0.255   control/collide/upDown/out8
+                                                       control/collide/upDown/out91
+    SLICE_X18Y15.A1      net (fanout=1)        0.767   control/collide/upDown/out8
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X21Y29.D2      net (fanout=20)       2.316   control/placehold<261>1
+    SLICE_X21Y29.D       Tilo                  0.259   control/placehold[274]
+                                                       control/move/placehold<274>1
+    SLICE_X20Y29.A2      net (fanout=2)        0.724   control/placehold[274]
+    SLICE_X20Y29.CLK     Tas                   0.339   control/M_position_q[277]
+                                                       control/M_position_d<274>1
+                                                       control/M_position_q_274
     -------------------------------------------------  ---------------------------
-    Total                                     12.750ns (1.997ns logic, 10.753ns route)
+    Total                                     13.106ns (2.058ns logic, 11.048ns route)
                                                        (15.7% logic, 84.3% route)
 
 --------------------------------------------------------------------------------
-Slack:                  7.253ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_139 (FF)
-  Destination:          control/M_position_q_118 (FF)
+Slack:                  6.835ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_209 (FF)
+  Destination:          control/M_position_q_271 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      12.706ns (Levels of Logic = 6)
-  Clock Path Skew:      -0.006ns (0.329 - 0.335)
+  Data Path Delay:      13.051ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.079ns (0.603 - 0.682)
   Source Clock:         clk_IBUF_BUFG rising at 0.000ns
   Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -646,88 +416,42 @@ Slack:                  7.253ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: control/M_position_q_139 to control/M_position_q_118
+  Maximum Data Path at Slow Process Corner: control/M_position_q_209 to control/M_position_q_271
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X10Y27.DQ      Tcko                  0.476   control/M_position_q[139]
-                                                       control/M_position_q_139
-    SLICE_X11Y33.D4      net (fanout=7)        1.924   control/M_position_q[139]
-    SLICE_X11Y33.D       Tilo                  0.259   control/out4
-                                                       control/collide/upDown/out51
-    SLICE_X6Y32.A3       net (fanout=2)        0.848   control/out4
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X6Y26.A1       net (fanout=21)       1.437   control/placehold<100>2
-    SLICE_X6Y26.A        Tilo                  0.235   control/M_position_q[104]
-                                                       control/move/placehold<101>13_1
-    SLICE_X6Y28.B2       net (fanout=17)       0.989   control/placehold<101>13
-    SLICE_X6Y28.CLK      Tas                   0.349   control/M_position_q[120]
-                                                       control/M_position_d<118>4
-                                                       control/M_position_q_118
+    SLICE_X21Y9.AQ       Tcko                  0.430   control/M_position_q[212]
+                                                       control/M_position_q_209
+    SLICE_X19Y12.B2      net (fanout=8)        1.603   control/M_position_q[209]
+    SLICE_X19Y12.B       Tilo                  0.259   control/M_move_out[206]
+                                                       control/collide/upDown/out93
+    SLICE_X18Y15.A4      net (fanout=1)        0.838   control/collide/upDown/out82
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X23Y28.B4      net (fanout=20)       1.895   control/placehold<261>1
+    SLICE_X23Y28.B       Tilo                  0.259   control/placehold[271]
+                                                       control/move/placehold<271>1
+    SLICE_X21Y28.B5      net (fanout=2)        0.798   control/placehold[271]
+    SLICE_X21Y28.CLK     Tas                   0.373   control/M_position_q[273]
+                                                       control/M_position_d<271>1
+                                                       control/M_position_q_271
     -------------------------------------------------  ---------------------------
-    Total                                     12.706ns (2.024ns logic, 10.682ns route)
-                                                       (15.9% logic, 84.1% route)
-
---------------------------------------------------------------------------------
-Slack:                  7.266ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_124 (FF)
-  Destination:          control/M_position_q_115 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      12.717ns (Levels of Logic = 6)
-  Clock Path Skew:      0.018ns (0.632 - 0.614)
-  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
-  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: control/M_position_q_124 to control/M_position_q_115
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X13Y22.AQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_124
-    SLICE_X8Y29.B2       net (fanout=9)        1.989   control/M_position_q[124]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X6Y26.A1       net (fanout=21)       1.437   control/placehold<100>2
-    SLICE_X6Y26.A        Tilo                  0.235   control/M_position_q[104]
-                                                       control/move/placehold<101>13_1
-    SLICE_X7Y27.C3       net (fanout=17)       0.614   control/placehold<101>13
-    SLICE_X7Y27.CLK      Tas                   0.373   control/M_position_q[116]
-                                                       control/M_position_d<115>1
-                                                       control/M_position_q_115
-    -------------------------------------------------  ---------------------------
-    Total                                     12.717ns (1.997ns logic, 10.720ns route)
+    Total                                     13.051ns (2.050ns logic, 11.001ns route)
                                                        (15.7% logic, 84.3% route)
 
 --------------------------------------------------------------------------------
-Slack:                  7.293ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_126 (FF)
-  Destination:          control/M_position_q_106 (FF)
+Slack:                  6.871ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_330 (FF)
+  Destination:          control/M_position_q_249 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      12.683ns (Levels of Logic = 6)
-  Clock Path Skew:      0.011ns (0.625 - 0.614)
+  Data Path Delay:      13.006ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.088ns (0.691 - 0.779)
   Source Clock:         clk_IBUF_BUFG rising at 0.000ns
   Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -738,42 +462,42 @@ Slack:                  7.293ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: control/M_position_q_126 to control/M_position_q_106
+  Maximum Data Path at Slow Process Corner: control/M_position_q_330 to control/M_position_q_249
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y22.CQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_126
-    SLICE_X8Y29.B1       net (fanout=10)       1.772   control/M_position_q[126]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X6Y26.A1       net (fanout=21)       1.437   control/placehold<100>2
-    SLICE_X6Y26.A        Tilo                  0.235   control/M_position_q[104]
-                                                       control/move/placehold<101>13_1
-    SLICE_X6Y24.B2       net (fanout=17)       0.821   control/placehold<101>13
-    SLICE_X6Y24.CLK      Tas                   0.349   control/M_position_q[108]
-                                                       control/M_position_d<106>1
-                                                       control/M_position_q_106
+    SLICE_X14Y49.AQ      Tcko                  0.476   control/M_position_q[333]
+                                                       control/M_position_q_330
+    SLICE_X13Y41.D2      net (fanout=9)        2.625   control/M_position_q[330]
+    SLICE_X13Y41.D       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/collide/upDown/out152
+    SLICE_X13Y41.A5      net (fanout=1)        0.435   control/collide/upDown/out141
+    SLICE_X13Y41.A       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/collide/upDown/out154
+    SLICE_X19Y15.B3      net (fanout=71)       4.533   control/position[339]_reduce_or_156_o
+    SLICE_X19Y15.B       Tilo                  0.259   control/move/placehold[230]
+                                                       control/move/placehold<260>21
+    SLICE_X23Y18.A1      net (fanout=6)        1.138   control/move/placehold<260>2
+    SLICE_X23Y18.A       Tilo                  0.259   control/placehold<251>1
+                                                       control/move/placehold<240>11
+    SLICE_X19Y19.B1      net (fanout=21)       1.231   control/placehold<240>1
+    SLICE_X19Y19.B       Tilo                  0.259   control/placehold<249>1
+                                                       control/move/placehold<249>2
+    SLICE_X20Y19.A2      net (fanout=2)        0.934   control/placehold<249>1
+    SLICE_X20Y19.CLK     Tas                   0.339   control/M_position_q[252]
+                                                       control/M_position_d<249>1
+                                                       control/M_position_q_249
     -------------------------------------------------  ---------------------------
-    Total                                     12.683ns (1.973ns logic, 10.710ns route)
-                                                       (15.6% logic, 84.4% route)
+    Total                                     13.006ns (2.110ns logic, 10.896ns route)
+                                                       (16.2% logic, 83.8% route)
 
 --------------------------------------------------------------------------------
-Slack:                  7.296ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_124 (FF)
-  Destination:          control/M_position_q_106 (FF)
+Slack:                  6.884ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_209 (FF)
+  Destination:          control/M_position_q_266 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      12.680ns (Levels of Logic = 6)
-  Clock Path Skew:      0.011ns (0.625 - 0.614)
+  Data Path Delay:      12.995ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.086ns (0.596 - 0.682)
   Source Clock:         clk_IBUF_BUFG rising at 0.000ns
   Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -784,42 +508,42 @@ Slack:                  7.296ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: control/M_position_q_124 to control/M_position_q_106
+  Maximum Data Path at Slow Process Corner: control/M_position_q_209 to control/M_position_q_266
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y22.AQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_124
-    SLICE_X8Y29.B2       net (fanout=9)        1.989   control/M_position_q[124]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X5Y25.B3       net (fanout=21)       1.026   control/placehold<100>2
-    SLICE_X5Y25.B        Tilo                  0.259   control/placehold<106>1
-                                                       control/move/placehold<106>2
-    SLICE_X6Y24.B1       net (fanout=2)        0.988   control/placehold<106>1
-    SLICE_X6Y24.CLK      Tas                   0.349   control/M_position_q[108]
-                                                       control/M_position_d<106>1
-                                                       control/M_position_q_106
+    SLICE_X21Y9.AQ       Tcko                  0.430   control/M_position_q[212]
+                                                       control/M_position_q_209
+    SLICE_X19Y12.B2      net (fanout=8)        1.603   control/M_position_q[209]
+    SLICE_X19Y12.B       Tilo                  0.259   control/M_move_out[206]
+                                                       control/collide/upDown/out93
+    SLICE_X18Y15.A4      net (fanout=1)        0.838   control/collide/upDown/out82
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X20Y27.B3      net (fanout=20)       1.971   control/placehold<261>1
+    SLICE_X20Y27.B       Tilo                  0.254   control/N223
+                                                       control/move/placehold<266>1
+    SLICE_X20Y25.A3      net (fanout=2)        0.705   control/placehold[266]
+    SLICE_X20Y25.CLK     Tas                   0.339   control/M_position_q[269]
+                                                       control/M_position_d<266>1
+                                                       control/M_position_q_266
     -------------------------------------------------  ---------------------------
-    Total                                     12.680ns (1.997ns logic, 10.683ns route)
-                                                       (15.7% logic, 84.3% route)
+    Total                                     12.995ns (2.011ns logic, 10.984ns route)
+                                                       (15.5% logic, 84.5% route)
 
 --------------------------------------------------------------------------------
-Slack:                  7.298ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_126 (FF)
-  Destination:          control/M_position_q_107 (FF)
+Slack:                  6.938ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_209 (FF)
+  Destination:          control/M_position_q_263 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      12.678ns (Levels of Logic = 6)
-  Clock Path Skew:      0.011ns (0.625 - 0.614)
+  Data Path Delay:      12.944ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.083ns (0.599 - 0.682)
   Source Clock:         clk_IBUF_BUFG rising at 0.000ns
   Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -830,180 +554,42 @@ Slack:                  7.298ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: control/M_position_q_126 to control/M_position_q_107
+  Maximum Data Path at Slow Process Corner: control/M_position_q_209 to control/M_position_q_263
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y22.CQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_126
-    SLICE_X8Y29.B1       net (fanout=10)       1.772   control/M_position_q[126]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X6Y26.A1       net (fanout=21)       1.437   control/placehold<100>2
-    SLICE_X6Y26.A        Tilo                  0.235   control/M_position_q[104]
-                                                       control/move/placehold<101>13_1
-    SLICE_X6Y24.C1       net (fanout=17)       0.816   control/placehold<101>13
-    SLICE_X6Y24.CLK      Tas                   0.349   control/M_position_q[108]
-                                                       control/M_position_d<107>1
-                                                       control/M_position_q_107
+    SLICE_X21Y9.AQ       Tcko                  0.430   control/M_position_q[212]
+                                                       control/M_position_q_209
+    SLICE_X19Y12.B2      net (fanout=8)        1.603   control/M_position_q[209]
+    SLICE_X19Y12.B       Tilo                  0.259   control/M_move_out[206]
+                                                       control/collide/upDown/out93
+    SLICE_X18Y15.A4      net (fanout=1)        0.838   control/collide/upDown/out82
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X23Y27.B5      net (fanout=20)       2.044   control/placehold<261>1
+    SLICE_X23Y27.B       Tilo                  0.259   control/placehold<263>1
+                                                       control/move/placehold<263>1
+    SLICE_X23Y26.B4      net (fanout=2)        0.542   control/placehold[263]
+    SLICE_X23Y26.CLK     Tas                   0.373   control/M_position_q[265]
+                                                       control/M_position_d<263>1
+                                                       control/M_position_q_263
     -------------------------------------------------  ---------------------------
-    Total                                     12.678ns (1.973ns logic, 10.705ns route)
-                                                       (15.6% logic, 84.4% route)
-
---------------------------------------------------------------------------------
-Slack:                  7.302ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_121 (FF)
-  Destination:          control/M_position_q_111 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      12.678ns (Levels of Logic = 6)
-  Clock Path Skew:      0.015ns (0.629 - 0.614)
-  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
-  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: control/M_position_q_121 to control/M_position_q_111
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X15Y25.AQ      Tcko                  0.430   control/M_position_q[123]
-                                                       control/M_position_q_121
-    SLICE_X11Y33.D3      net (fanout=8)        1.725   control/M_position_q[121]
-    SLICE_X11Y33.D       Tilo                  0.259   control/out4
-                                                       control/collide/upDown/out51
-    SLICE_X6Y32.A3       net (fanout=2)        0.848   control/out4
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X4Y26.B2       net (fanout=21)       1.382   control/placehold<100>2
-    SLICE_X4Y26.B        Tilo                  0.254   control/placehold<111>1
-                                                       control/move/placehold<111>2
-    SLICE_X7Y26.C2       net (fanout=2)        1.218   control/placehold<111>1
-    SLICE_X7Y26.CLK      Tas                   0.373   control/M_position_q[112]
-                                                       control/M_position_d<111>1
-                                                       control/M_position_q_111
-    -------------------------------------------------  ---------------------------
-    Total                                     12.678ns (2.021ns logic, 10.657ns route)
-                                                       (15.9% logic, 84.1% route)
-
---------------------------------------------------------------------------------
-Slack:                  7.306ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_124 (FF)
-  Destination:          control/M_position_q_109 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      12.674ns (Levels of Logic = 6)
-  Clock Path Skew:      0.015ns (0.629 - 0.614)
-  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
-  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: control/M_position_q_124 to control/M_position_q_109
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X13Y22.AQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_124
-    SLICE_X8Y29.B2       net (fanout=9)        1.989   control/M_position_q[124]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X4Y27.B1       net (fanout=21)       1.210   control/placehold<100>2
-    SLICE_X4Y27.B        Tilo                  0.254   control/placehold<108>1
-                                                       control/move/placehold<109>2
-    SLICE_X7Y26.A1       net (fanout=2)        0.779   control/placehold<109>1
-    SLICE_X7Y26.CLK      Tas                   0.373   control/M_position_q[112]
-                                                       control/M_position_d<109>1
-                                                       control/M_position_q_109
-    -------------------------------------------------  ---------------------------
-    Total                                     12.674ns (2.016ns logic, 10.658ns route)
-                                                       (15.9% logic, 84.1% route)
-
---------------------------------------------------------------------------------
-Slack:                  7.310ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_124 (FF)
-  Destination:          control/M_position_q_110 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      12.670ns (Levels of Logic = 6)
-  Clock Path Skew:      0.015ns (0.629 - 0.614)
-  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
-  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: control/M_position_q_124 to control/M_position_q_110
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X13Y22.AQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_124
-    SLICE_X8Y29.B2       net (fanout=9)        1.989   control/M_position_q[124]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X6Y26.A1       net (fanout=21)       1.437   control/placehold<100>2
-    SLICE_X6Y26.A        Tilo                  0.235   control/M_position_q[104]
-                                                       control/move/placehold<101>13_1
-    SLICE_X7Y26.B1       net (fanout=17)       0.567   control/placehold<101>13
-    SLICE_X7Y26.CLK      Tas                   0.373   control/M_position_q[112]
-                                                       control/M_position_d<110>1
-                                                       control/M_position_q_110
-    -------------------------------------------------  ---------------------------
-    Total                                     12.670ns (1.997ns logic, 10.673ns route)
+    Total                                     12.944ns (2.050ns logic, 10.894ns route)
                                                        (15.8% logic, 84.2% route)
 
 --------------------------------------------------------------------------------
-Slack:                  7.317ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_124 (FF)
-  Destination:          control/M_position_q_117 (FF)
+Slack:                  6.955ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_219 (FF)
+  Destination:          control/M_position_q_262 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      12.668ns (Levels of Logic = 6)
-  Clock Path Skew:      0.020ns (0.634 - 0.614)
+  Data Path Delay:      12.929ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.081ns (0.599 - 0.680)
   Source Clock:         clk_IBUF_BUFG rising at 0.000ns
   Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -1014,42 +600,42 @@ Slack:                  7.317ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: control/M_position_q_124 to control/M_position_q_117
+  Maximum Data Path at Slow Process Corner: control/M_position_q_219 to control/M_position_q_262
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y22.AQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_124
-    SLICE_X8Y29.B2       net (fanout=9)        1.989   control/M_position_q[124]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X6Y26.A1       net (fanout=21)       1.437   control/placehold<100>2
-    SLICE_X6Y26.A        Tilo                  0.235   control/M_position_q[104]
-                                                       control/move/placehold<101>13_1
-    SLICE_X6Y28.A6       net (fanout=17)       0.589   control/placehold<101>13
-    SLICE_X6Y28.CLK      Tas                   0.349   control/M_position_q[120]
-                                                       control/M_position_d<117>1
-                                                       control/M_position_q_117
+    SLICE_X18Y10.DQ      Tcko                  0.476   control/M_position_q[219]
+                                                       control/M_position_q_219
+    SLICE_X16Y14.C2      net (fanout=7)        1.446   control/M_position_q[219]
+    SLICE_X16Y14.C       Tilo                  0.255   control/collide/upDown/out8
+                                                       control/collide/upDown/out91
+    SLICE_X18Y15.A1      net (fanout=1)        0.767   control/collide/upDown/out8
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X21Y26.B1      net (fanout=20)       2.044   control/placehold<261>1
+    SLICE_X21Y26.B       Tilo                  0.259   control/placehold[262]
+                                                       control/move/placehold<262>1
+    SLICE_X23Y26.A4      net (fanout=2)        0.713   control/placehold[262]
+    SLICE_X23Y26.CLK     Tas                   0.373   control/M_position_q[265]
+                                                       control/M_position_d<262>1
+                                                       control/M_position_q_262
     -------------------------------------------------  ---------------------------
-    Total                                     12.668ns (1.973ns logic, 10.695ns route)
-                                                       (15.6% logic, 84.4% route)
+    Total                                     12.929ns (2.092ns logic, 10.837ns route)
+                                                       (16.2% logic, 83.8% route)
 
 --------------------------------------------------------------------------------
-Slack:                  7.317ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_124 (FF)
-  Destination:          control/M_position_q_103 (FF)
+Slack:                  6.971ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_209 (FF)
+  Destination:          control/M_position_q_273 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      12.663ns (Levels of Logic = 6)
-  Clock Path Skew:      0.015ns (0.629 - 0.614)
+  Data Path Delay:      12.915ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.079ns (0.603 - 0.682)
   Source Clock:         clk_IBUF_BUFG rising at 0.000ns
   Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -1060,42 +646,42 @@ Slack:                  7.317ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: control/M_position_q_124 to control/M_position_q_103
+  Maximum Data Path at Slow Process Corner: control/M_position_q_209 to control/M_position_q_273
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y22.AQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_124
-    SLICE_X8Y29.B2       net (fanout=9)        1.989   control/M_position_q[124]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X6Y26.A1       net (fanout=21)       1.437   control/placehold<100>2
-    SLICE_X6Y26.A        Tilo                  0.235   control/M_position_q[104]
-                                                       control/move/placehold<101>13_1
-    SLICE_X6Y26.C1       net (fanout=17)       0.584   control/placehold<101>13
-    SLICE_X6Y26.CLK      Tas                   0.349   control/M_position_q[104]
-                                                       control/M_position_d<103>1
-                                                       control/M_position_q_103
+    SLICE_X21Y9.AQ       Tcko                  0.430   control/M_position_q[212]
+                                                       control/M_position_q_209
+    SLICE_X19Y12.B2      net (fanout=8)        1.603   control/M_position_q[209]
+    SLICE_X19Y12.B       Tilo                  0.259   control/M_move_out[206]
+                                                       control/collide/upDown/out93
+    SLICE_X18Y15.A4      net (fanout=1)        0.838   control/collide/upDown/out82
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X22Y28.B4      net (fanout=20)       1.846   control/placehold<261>1
+    SLICE_X22Y28.B       Tilo                  0.235   control/placehold<273>1
+                                                       control/move/placehold<273>1
+    SLICE_X21Y28.D1      net (fanout=2)        0.735   control/placehold[273]
+    SLICE_X21Y28.CLK     Tas                   0.373   control/M_position_q[273]
+                                                       control/M_position_d<273>1
+                                                       control/M_position_q_273
     -------------------------------------------------  ---------------------------
-    Total                                     12.663ns (1.973ns logic, 10.690ns route)
-                                                       (15.6% logic, 84.4% route)
+    Total                                     12.915ns (2.026ns logic, 10.889ns route)
+                                                       (15.7% logic, 84.3% route)
 
 --------------------------------------------------------------------------------
-Slack:                  7.318ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_timer_q_0 (FF)
-  Destination:          control/M_position_q_306 (FF)
+Slack:                  7.014ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_205 (FF)
+  Destination:          control/M_position_q_274 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      12.634ns (Levels of Logic = 11)
-  Clock Path Skew:      -0.013ns (0.748 - 0.761)
+  Data Path Delay:      12.876ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.075ns (0.605 - 0.680)
   Source Clock:         clk_IBUF_BUFG rising at 0.000ns
   Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -1106,58 +692,42 @@ Slack:                  7.318ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: control/M_timer_q_0 to control/M_position_q_306
+  Maximum Data Path at Slow Process Corner: control/M_position_q_205 to control/M_position_q_274
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X0Y29.AQ       Tcko                  0.525   control/M_timer_q[3]
-                                                       control/M_timer_q_0
-    SLICE_X2Y29.A4       net (fanout=2)        0.501   control/M_timer_q[0]
-    SLICE_X2Y29.COUT     Topcya                0.472   control/Msub_temp_cy[3]
-                                                       control/M_timer_q[0]_rt
-                                                       control/Msub_temp_cy<3>
-    SLICE_X2Y30.CIN      net (fanout=1)        0.003   control/Msub_temp_cy[3]
-    SLICE_X2Y30.COUT     Tbyp                  0.091   control/Msub_temp_cy[7]
-                                                       control/Msub_temp_cy<7>
-    SLICE_X2Y31.CIN      net (fanout=1)        0.003   control/Msub_temp_cy[7]
-    SLICE_X2Y31.COUT     Tbyp                  0.091   control/Msub_temp_cy[11]
-                                                       control/Msub_temp_cy<11>
-    SLICE_X2Y32.CIN      net (fanout=1)        0.135   control/Msub_temp_cy[11]
-    SLICE_X2Y32.COUT     Tbyp                  0.091   control/Msub_temp_cy[15]
-                                                       control/Msub_temp_cy<15>
-    SLICE_X2Y33.CIN      net (fanout=1)        0.003   control/Msub_temp_cy[15]
-    SLICE_X2Y33.COUT     Tbyp                  0.091   control/Msub_temp_cy[19]
-                                                       control/Msub_temp_cy<19>
-    SLICE_X2Y34.CIN      net (fanout=1)        0.003   control/Msub_temp_cy[19]
-    SLICE_X2Y34.COUT     Tbyp                  0.091   control/Msub_temp_cy[23]
-                                                       control/Msub_temp_cy<23>
-    SLICE_X2Y35.CIN      net (fanout=1)        0.003   control/Msub_temp_cy[23]
-    SLICE_X2Y35.AMUX     Tcina                 0.210   control/M_timer_q_24_1
-                                                       control/Msub_temp_xor<24>
-    SLICE_X14Y30.C6      net (fanout=145)      1.971   control/temp[24]
-    SLICE_X14Y30.C       Tilo                  0.235   control/move/placehold<120>21
-                                                       control/Mmux_M_move_movement21_1
-    SLICE_X3Y50.B4       net (fanout=10)       3.332   control/Mmux_M_move_movement21
-    SLICE_X3Y50.B        Tilo                  0.259   control/M_position_d<318>3
-                                                       control/move/placehold<300>11
-    SLICE_X22Y51.B4      net (fanout=21)       2.557   control/placehold<300>1
-    SLICE_X22Y51.B       Tilo                  0.235   control/placehold<306>1
-                                                       control/move/placehold<306>2
-    SLICE_X16Y51.B1      net (fanout=2)        1.393   control/placehold<306>1
-    SLICE_X16Y51.CLK     Tas                   0.339   control/M_position_q[308]
-                                                       control/M_position_d<306>1
-                                                       control/M_position_q_306
+    SLICE_X21Y8.AQ       Tcko                  0.430   control/M_position_q[208]
+                                                       control/M_position_q_205
+    SLICE_X19Y12.B1      net (fanout=8)        1.115   control/M_position_q[205]
+    SLICE_X19Y12.B       Tilo                  0.259   control/M_move_out[206]
+                                                       control/collide/upDown/out93
+    SLICE_X18Y15.A4      net (fanout=1)        0.838   control/collide/upDown/out82
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X21Y29.D2      net (fanout=20)       2.316   control/placehold<261>1
+    SLICE_X21Y29.D       Tilo                  0.259   control/placehold[274]
+                                                       control/move/placehold<274>1
+    SLICE_X20Y29.A2      net (fanout=2)        0.724   control/placehold[274]
+    SLICE_X20Y29.CLK     Tas                   0.339   control/M_position_q[277]
+                                                       control/M_position_d<274>1
+                                                       control/M_position_q_274
     -------------------------------------------------  ---------------------------
-    Total                                     12.634ns (2.730ns logic, 9.904ns route)
-                                                       (21.6% logic, 78.4% route)
+    Total                                     12.876ns (2.016ns logic, 10.860ns route)
+                                                       (15.7% logic, 84.3% route)
 
 --------------------------------------------------------------------------------
-Slack:                  7.323ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_128 (FF)
-  Destination:          control/M_position_q_118 (FF)
+Slack:                  7.023ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_219 (FF)
+  Destination:          control/M_position_q_271 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      12.664ns (Levels of Logic = 6)
-  Clock Path Skew:      0.022ns (0.634 - 0.612)
+  Data Path Delay:      12.865ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.077ns (0.603 - 0.680)
   Source Clock:         clk_IBUF_BUFG rising at 0.000ns
   Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -1168,42 +738,42 @@ Slack:                  7.323ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: control/M_position_q_128 to control/M_position_q_118
+  Maximum Data Path at Slow Process Corner: control/M_position_q_219 to control/M_position_q_271
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y23.AQ      Tcko                  0.430   control/M_position_q[131]
-                                                       control/M_position_q_128
-    SLICE_X8Y29.B3       net (fanout=11)       1.585   control/M_position_q[128]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X6Y26.A1       net (fanout=21)       1.437   control/placehold<100>2
-    SLICE_X6Y26.A        Tilo                  0.235   control/M_position_q[104]
-                                                       control/move/placehold<101>13_1
-    SLICE_X6Y28.B2       net (fanout=17)       0.989   control/placehold<101>13
-    SLICE_X6Y28.CLK      Tas                   0.349   control/M_position_q[120]
-                                                       control/M_position_d<118>4
-                                                       control/M_position_q_118
+    SLICE_X18Y10.DQ      Tcko                  0.476   control/M_position_q[219]
+                                                       control/M_position_q_219
+    SLICE_X16Y14.C2      net (fanout=7)        1.446   control/M_position_q[219]
+    SLICE_X16Y14.C       Tilo                  0.255   control/collide/upDown/out8
+                                                       control/collide/upDown/out91
+    SLICE_X18Y15.A1      net (fanout=1)        0.767   control/collide/upDown/out8
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X23Y28.B4      net (fanout=20)       1.895   control/placehold<261>1
+    SLICE_X23Y28.B       Tilo                  0.259   control/placehold[271]
+                                                       control/move/placehold<271>1
+    SLICE_X21Y28.B5      net (fanout=2)        0.798   control/placehold[271]
+    SLICE_X21Y28.CLK     Tas                   0.373   control/M_position_q[273]
+                                                       control/M_position_d<271>1
+                                                       control/M_position_q_271
     -------------------------------------------------  ---------------------------
-    Total                                     12.664ns (1.973ns logic, 10.691ns route)
-                                                       (15.6% logic, 84.4% route)
+    Total                                     12.865ns (2.092ns logic, 10.773ns route)
+                                                       (16.3% logic, 83.7% route)
 
 --------------------------------------------------------------------------------
-Slack:                  7.326ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_timer_q_1 (FF)
-  Destination:          control/M_position_q_306 (FF)
+Slack:                  7.028ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_200 (FF)
+  Destination:          control/M_position_q_262 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      12.626ns (Levels of Logic = 11)
-  Clock Path Skew:      -0.013ns (0.748 - 0.761)
+  Data Path Delay:      12.857ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.080ns (0.599 - 0.679)
   Source Clock:         clk_IBUF_BUFG rising at 0.000ns
   Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -1214,58 +784,42 @@ Slack:                  7.326ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: control/M_timer_q_1 to control/M_position_q_306
+  Maximum Data Path at Slow Process Corner: control/M_position_q_200 to control/M_position_q_262
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X0Y29.BQ       Tcko                  0.525   control/M_timer_q[3]
-                                                       control/M_timer_q_1
-    SLICE_X2Y29.B4       net (fanout=2)        0.517   control/M_timer_q[1]
-    SLICE_X2Y29.COUT     Topcyb                0.448   control/Msub_temp_cy[3]
-                                                       control/Msub_temp_lut<1>_INV_0
-                                                       control/Msub_temp_cy<3>
-    SLICE_X2Y30.CIN      net (fanout=1)        0.003   control/Msub_temp_cy[3]
-    SLICE_X2Y30.COUT     Tbyp                  0.091   control/Msub_temp_cy[7]
-                                                       control/Msub_temp_cy<7>
-    SLICE_X2Y31.CIN      net (fanout=1)        0.003   control/Msub_temp_cy[7]
-    SLICE_X2Y31.COUT     Tbyp                  0.091   control/Msub_temp_cy[11]
-                                                       control/Msub_temp_cy<11>
-    SLICE_X2Y32.CIN      net (fanout=1)        0.135   control/Msub_temp_cy[11]
-    SLICE_X2Y32.COUT     Tbyp                  0.091   control/Msub_temp_cy[15]
-                                                       control/Msub_temp_cy<15>
-    SLICE_X2Y33.CIN      net (fanout=1)        0.003   control/Msub_temp_cy[15]
-    SLICE_X2Y33.COUT     Tbyp                  0.091   control/Msub_temp_cy[19]
-                                                       control/Msub_temp_cy<19>
-    SLICE_X2Y34.CIN      net (fanout=1)        0.003   control/Msub_temp_cy[19]
-    SLICE_X2Y34.COUT     Tbyp                  0.091   control/Msub_temp_cy[23]
-                                                       control/Msub_temp_cy<23>
-    SLICE_X2Y35.CIN      net (fanout=1)        0.003   control/Msub_temp_cy[23]
-    SLICE_X2Y35.AMUX     Tcina                 0.210   control/M_timer_q_24_1
-                                                       control/Msub_temp_xor<24>
-    SLICE_X14Y30.C6      net (fanout=145)      1.971   control/temp[24]
-    SLICE_X14Y30.C       Tilo                  0.235   control/move/placehold<120>21
-                                                       control/Mmux_M_move_movement21_1
-    SLICE_X3Y50.B4       net (fanout=10)       3.332   control/Mmux_M_move_movement21
-    SLICE_X3Y50.B        Tilo                  0.259   control/M_position_d<318>3
-                                                       control/move/placehold<300>11
-    SLICE_X22Y51.B4      net (fanout=21)       2.557   control/placehold<300>1
-    SLICE_X22Y51.B       Tilo                  0.235   control/placehold<306>1
-                                                       control/move/placehold<306>2
-    SLICE_X16Y51.B1      net (fanout=2)        1.393   control/placehold<306>1
-    SLICE_X16Y51.CLK     Tas                   0.339   control/M_position_q[308]
-                                                       control/M_position_d<306>1
-                                                       control/M_position_q_306
+    SLICE_X14Y10.DQ      Tcko                  0.476   control/M_position_q[200]
+                                                       control/M_position_q_200
+    SLICE_X16Y14.C1      net (fanout=7)        1.374   control/M_position_q[200]
+    SLICE_X16Y14.C       Tilo                  0.255   control/collide/upDown/out8
+                                                       control/collide/upDown/out91
+    SLICE_X18Y15.A1      net (fanout=1)        0.767   control/collide/upDown/out8
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X21Y26.B1      net (fanout=20)       2.044   control/placehold<261>1
+    SLICE_X21Y26.B       Tilo                  0.259   control/placehold[262]
+                                                       control/move/placehold<262>1
+    SLICE_X23Y26.A4      net (fanout=2)        0.713   control/placehold[262]
+    SLICE_X23Y26.CLK     Tas                   0.373   control/M_position_q[265]
+                                                       control/M_position_d<262>1
+                                                       control/M_position_q_262
     -------------------------------------------------  ---------------------------
-    Total                                     12.626ns (2.706ns logic, 9.920ns route)
-                                                       (21.4% logic, 78.6% route)
+    Total                                     12.857ns (2.092ns logic, 10.765ns route)
+                                                       (16.3% logic, 83.7% route)
 
 --------------------------------------------------------------------------------
-Slack:                  7.337ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_124 (FF)
-  Destination:          control/M_position_q_108 (FF)
+Slack:                  7.050ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_334 (FF)
+  Destination:          control/M_position_q_253 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      12.639ns (Levels of Logic = 6)
-  Clock Path Skew:      0.011ns (0.625 - 0.614)
+  Data Path Delay:      12.830ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.085ns (0.684 - 0.769)
   Source Clock:         clk_IBUF_BUFG rising at 0.000ns
   Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -1276,147 +830,42 @@ Slack:                  7.337ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: control/M_position_q_124 to control/M_position_q_108
+  Maximum Data Path at Slow Process Corner: control/M_position_q_334 to control/M_position_q_253
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X13Y22.AQ      Tcko                  0.430   control/M_position_q[127]
-                                                       control/M_position_q_124
-    SLICE_X8Y29.B2       net (fanout=9)        1.989   control/M_position_q[124]
-    SLICE_X8Y29.B        Tilo                  0.254   control/M_convert_position[102]
-                                                       control/collide/upDown/out53
-    SLICE_X6Y32.A1       net (fanout=2)        1.196   control/out42
-    SLICE_X6Y32.A        Tilo                  0.235   control/placehold<101>1
-                                                       control/collide/upDown/out54
-    SLICE_X2Y48.B1       net (fanout=55)       2.619   control/position[139]_reduce_or_46_o
-    SLICE_X2Y48.B        Tilo                  0.235   control/N68
-                                                       control/move/placehold<60>221_SW2
-    SLICE_X6Y30.B2       net (fanout=2)        2.865   control/move/N761
-    SLICE_X6Y30.B        Tilo                  0.235   control/M_position_d<101>3
-                                                       control/move/placehold<100>21
-    SLICE_X6Y26.A1       net (fanout=21)       1.437   control/placehold<100>2
-    SLICE_X6Y26.A        Tilo                  0.235   control/M_position_q[104]
-                                                       control/move/placehold<101>13_1
-    SLICE_X6Y24.D4       net (fanout=17)       0.560   control/placehold<101>13
-    SLICE_X6Y24.CLK      Tas                   0.349   control/M_position_q[108]
-                                                       control/M_position_d<108>1
-                                                       control/M_position_q_108
-    -------------------------------------------------  ---------------------------
-    Total                                     12.639ns (1.973ns logic, 10.666ns route)
-                                                       (15.6% logic, 84.4% route)
-
---------------------------------------------------------------------------------
-Slack:                  7.349ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_timer_q_6 (FF)
-  Destination:          control/M_position_q_306 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      12.602ns (Levels of Logic = 10)
-  Clock Path Skew:      -0.014ns (0.748 - 0.762)
-  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
-  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: control/M_timer_q_6 to control/M_position_q_306
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X0Y30.CQ       Tcko                  0.525   control/M_timer_q[7]
-                                                       control/M_timer_q_6
-    SLICE_X2Y30.C2       net (fanout=2)        0.710   control/M_timer_q[6]
-    SLICE_X2Y30.COUT     Topcyc                0.325   control/Msub_temp_cy[7]
-                                                       control/Msub_temp_lut<6>_INV_0
-                                                       control/Msub_temp_cy<7>
-    SLICE_X2Y31.CIN      net (fanout=1)        0.003   control/Msub_temp_cy[7]
-    SLICE_X2Y31.COUT     Tbyp                  0.091   control/Msub_temp_cy[11]
-                                                       control/Msub_temp_cy<11>
-    SLICE_X2Y32.CIN      net (fanout=1)        0.135   control/Msub_temp_cy[11]
-    SLICE_X2Y32.COUT     Tbyp                  0.091   control/Msub_temp_cy[15]
-                                                       control/Msub_temp_cy<15>
-    SLICE_X2Y33.CIN      net (fanout=1)        0.003   control/Msub_temp_cy[15]
-    SLICE_X2Y33.COUT     Tbyp                  0.091   control/Msub_temp_cy[19]
-                                                       control/Msub_temp_cy<19>
-    SLICE_X2Y34.CIN      net (fanout=1)        0.003   control/Msub_temp_cy[19]
-    SLICE_X2Y34.COUT     Tbyp                  0.091   control/Msub_temp_cy[23]
-                                                       control/Msub_temp_cy<23>
-    SLICE_X2Y35.CIN      net (fanout=1)        0.003   control/Msub_temp_cy[23]
-    SLICE_X2Y35.AMUX     Tcina                 0.210   control/M_timer_q_24_1
-                                                       control/Msub_temp_xor<24>
-    SLICE_X14Y30.C6      net (fanout=145)      1.971   control/temp[24]
-    SLICE_X14Y30.C       Tilo                  0.235   control/move/placehold<120>21
-                                                       control/Mmux_M_move_movement21_1
-    SLICE_X3Y50.B4       net (fanout=10)       3.332   control/Mmux_M_move_movement21
-    SLICE_X3Y50.B        Tilo                  0.259   control/M_position_d<318>3
-                                                       control/move/placehold<300>11
-    SLICE_X22Y51.B4      net (fanout=21)       2.557   control/placehold<300>1
-    SLICE_X22Y51.B       Tilo                  0.235   control/placehold<306>1
-                                                       control/move/placehold<306>2
-    SLICE_X16Y51.B1      net (fanout=2)        1.393   control/placehold<306>1
-    SLICE_X16Y51.CLK     Tas                   0.339   control/M_position_q[308]
-                                                       control/M_position_d<306>1
-                                                       control/M_position_q_306
-    -------------------------------------------------  ---------------------------
-    Total                                     12.602ns (2.492ns logic, 10.110ns route)
-                                                       (19.8% logic, 80.2% route)
-
---------------------------------------------------------------------------------
-Slack:                  7.352ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_253 (FF)
-  Destination:          control/M_position_q_125 (FF)
-  Requirement:          20.000ns
-  Data Path Delay:      12.517ns (Levels of Logic = 6)
-  Clock Path Skew:      -0.096ns (0.678 - 0.774)
-  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
-  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
-  Clock Uncertainty:    0.035ns
-
-  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Total Input Jitter (TIJ):   0.000ns
-    Discrete Jitter (DJ):       0.000ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: control/M_position_q_253 to control/M_position_q_125
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X13Y52.AQ      Tcko                  0.430   control/M_position_q[256]
+    SLICE_X13Y54.AQ      Tcko                  0.430   control/M_position_q[337]
+                                                       control/M_position_q_334
+    SLICE_X13Y41.D5      net (fanout=9)        2.171   control/M_position_q[334]
+    SLICE_X13Y41.D       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/collide/upDown/out152
+    SLICE_X13Y41.A5      net (fanout=1)        0.435   control/collide/upDown/out141
+    SLICE_X13Y41.A       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/collide/upDown/out154
+    SLICE_X19Y15.B3      net (fanout=71)       4.533   control/position[339]_reduce_or_156_o
+    SLICE_X19Y15.B       Tilo                  0.259   control/move/placehold[230]
+                                                       control/move/placehold<260>21
+    SLICE_X23Y18.A1      net (fanout=6)        1.138   control/move/placehold<260>2
+    SLICE_X23Y18.A       Tilo                  0.259   control/placehold<251>1
+                                                       control/move/placehold<240>11
+    SLICE_X19Y22.B3      net (fanout=21)       1.650   control/placehold<240>1
+    SLICE_X19Y22.B       Tilo                  0.259   control/N499
+                                                       control/move/placehold<253>2
+    SLICE_X21Y22.A5      net (fanout=2)        0.805   control/placehold<253>1
+    SLICE_X21Y22.CLK     Tas                   0.373   control/M_position_q[256]
+                                                       control/M_position_d<253>1
                                                        control/M_position_q_253
-    SLICE_X10Y45.D2      net (fanout=11)       2.624   control/M_position_q[253]
-    SLICE_X10Y45.D       Tilo                  0.235   control/collide/upDown/out101
-                                                       control/collide/upDown/out112
-    SLICE_X11Y45.A1      net (fanout=2)        0.664   control/collide/upDown/out101
-    SLICE_X11Y45.A       Tilo                  0.259   control/collide/upDown/Mmux_out213
-                                                       control/collide/upDown/out114_1
-    SLICE_X13Y43.A2      net (fanout=1)        1.292   control/out114
-    SLICE_X13Y43.A       Tilo                  0.259   control/out104
-                                                       control/move/placehold<60>2111
-    SLICE_X9Y29.A3       net (fanout=23)       2.547   control/placehold<60>211
-    SLICE_X9Y29.A        Tilo                  0.259   control/M_position_d<121>3
-                                                       control/move/placehold<120>21
-    SLICE_X15Y25.B4      net (fanout=21)       1.645   control/placehold<120>2
-    SLICE_X15Y25.B       Tilo                  0.259   control/M_position_q[123]
-                                                       control/move/placehold<121>11_1
-    SLICE_X13Y22.B2      net (fanout=17)       1.671   control/placehold<121>11
-    SLICE_X13Y22.CLK     Tas                   0.373   control/M_position_q[127]
-                                                       control/M_position_d<125>1
-                                                       control/M_position_q_125
     -------------------------------------------------  ---------------------------
-    Total                                     12.517ns (2.074ns logic, 10.443ns route)
-                                                       (16.6% logic, 83.4% route)
+    Total                                     12.830ns (2.098ns logic, 10.732ns route)
+                                                       (16.4% logic, 83.6% route)
 
 --------------------------------------------------------------------------------
-Slack:                  7.354ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               control/M_position_q_281 (FF)
-  Destination:          control/M_position_q_125 (FF)
+Slack:                  7.057ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_201 (FF)
+  Destination:          control/M_position_q_274 (FF)
   Requirement:          20.000ns
-  Data Path Delay:      12.527ns (Levels of Logic = 6)
-  Clock Path Skew:      -0.084ns (0.678 - 0.762)
+  Data Path Delay:      12.838ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.070ns (0.605 - 0.675)
   Source Clock:         clk_IBUF_BUFG rising at 0.000ns
   Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -1427,34 +876,540 @@ Slack:                  7.354ns (requirement - (data path - clock path skew + un
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: control/M_position_q_281 to control/M_position_q_125
+  Maximum Data Path at Slow Process Corner: control/M_position_q_201 to control/M_position_q_274
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X0Y46.CQ       Tcko                  0.525   control/M_position_q[281]
-                                                       control/M_position_q_281
-    SLICE_X15Y48.D4      net (fanout=8)        1.968   control/M_position_q[281]
-    SLICE_X15Y48.D       Tilo                  0.259   control/collide/upDown/out12
-                                                       control/collide/upDown/out131
-    SLICE_X15Y48.A4      net (fanout=1)        0.503   control/collide/upDown/out12
-    SLICE_X15Y48.A       Tilo                  0.259   control/collide/upDown/out12
-                                                       control/collide/upDown/out134
-    SLICE_X13Y34.D6      net (fanout=56)       3.299   control/position[299]_reduce_or_134_o
-    SLICE_X13Y34.D       Tilo                  0.259   control/move/N753
-                                                       control/move/placehold<60>212_SW1
-    SLICE_X9Y29.A5       net (fanout=2)        1.248   control/move/N753
-    SLICE_X9Y29.A        Tilo                  0.259   control/M_position_d<121>3
-                                                       control/move/placehold<120>21
-    SLICE_X15Y25.B4      net (fanout=21)       1.645   control/placehold<120>2
-    SLICE_X15Y25.B       Tilo                  0.259   control/M_position_q[123]
-                                                       control/move/placehold<121>11_1
-    SLICE_X13Y22.B2      net (fanout=17)       1.671   control/placehold<121>11
-    SLICE_X13Y22.CLK     Tas                   0.373   control/M_position_q[127]
-                                                       control/M_position_d<125>1
-                                                       control/M_position_q_125
+    SLICE_X19Y7.AQ       Tcko                  0.430   control/M_position_q[204]
+                                                       control/M_position_q_201
+    SLICE_X16Y14.C3      net (fanout=9)        1.152   control/M_position_q[201]
+    SLICE_X16Y14.C       Tilo                  0.255   control/collide/upDown/out8
+                                                       control/collide/upDown/out91
+    SLICE_X18Y15.A1      net (fanout=1)        0.767   control/collide/upDown/out8
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X21Y29.D2      net (fanout=20)       2.316   control/placehold<261>1
+    SLICE_X21Y29.D       Tilo                  0.259   control/placehold[274]
+                                                       control/move/placehold<274>1
+    SLICE_X20Y29.A2      net (fanout=2)        0.724   control/placehold[274]
+    SLICE_X20Y29.CLK     Tas                   0.339   control/M_position_q[277]
+                                                       control/M_position_d<274>1
+                                                       control/M_position_q_274
     -------------------------------------------------  ---------------------------
-    Total                                     12.527ns (2.193ns logic, 10.334ns route)
-                                                       (17.5% logic, 82.5% route)
+    Total                                     12.838ns (2.012ns logic, 10.826ns route)
+                                                       (15.7% logic, 84.3% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.064ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_330 (FF)
+  Destination:          control/M_position_q_205 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.866ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.035ns (0.744 - 0.779)
+  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
+  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: control/M_position_q_330 to control/M_position_q_205
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y49.AQ      Tcko                  0.476   control/M_position_q[333]
+                                                       control/M_position_q_330
+    SLICE_X13Y41.D2      net (fanout=9)        2.625   control/M_position_q[330]
+    SLICE_X13Y41.D       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/collide/upDown/out152
+    SLICE_X13Y41.A5      net (fanout=1)        0.435   control/collide/upDown/out141
+    SLICE_X13Y41.A       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/collide/upDown/out154
+    SLICE_X19Y15.B3      net (fanout=71)       4.533   control/position[339]_reduce_or_156_o
+    SLICE_X19Y15.B       Tilo                  0.259   control/move/placehold[230]
+                                                       control/move/placehold<260>21
+    SLICE_X18Y11.B5      net (fanout=6)        0.677   control/move/placehold<260>2
+    SLICE_X18Y11.B       Tilo                  0.235   control/placehold<210>1
+                                                       control/move/placehold<200>11
+    SLICE_X23Y8.B2       net (fanout=22)       1.723   control/placehold<200>1
+    SLICE_X23Y8.B        Tilo                  0.259   control/placehold<205>1
+                                                       control/move/placehold<205>2
+    SLICE_X21Y8.A2       net (fanout=2)        0.753   control/placehold<205>1
+    SLICE_X21Y8.CLK      Tas                   0.373   control/M_position_q[208]
+                                                       control/M_position_d<205>1
+                                                       control/M_position_q_205
+    -------------------------------------------------  ---------------------------
+    Total                                     12.866ns (2.120ns logic, 10.746ns route)
+                                                       (16.5% logic, 83.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.072ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_219 (FF)
+  Destination:          control/M_position_q_266 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.809ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.084ns (0.596 - 0.680)
+  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
+  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: control/M_position_q_219 to control/M_position_q_266
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y10.DQ      Tcko                  0.476   control/M_position_q[219]
+                                                       control/M_position_q_219
+    SLICE_X16Y14.C2      net (fanout=7)        1.446   control/M_position_q[219]
+    SLICE_X16Y14.C       Tilo                  0.255   control/collide/upDown/out8
+                                                       control/collide/upDown/out91
+    SLICE_X18Y15.A1      net (fanout=1)        0.767   control/collide/upDown/out8
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X20Y27.B3      net (fanout=20)       1.971   control/placehold<261>1
+    SLICE_X20Y27.B       Tilo                  0.254   control/N223
+                                                       control/move/placehold<266>1
+    SLICE_X20Y25.A3      net (fanout=2)        0.705   control/placehold[266]
+    SLICE_X20Y25.CLK     Tas                   0.339   control/M_position_q[269]
+                                                       control/M_position_d<266>1
+                                                       control/M_position_q_266
+    -------------------------------------------------  ---------------------------
+    Total                                     12.809ns (2.053ns logic, 10.756ns route)
+                                                       (16.0% logic, 84.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.072ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_353 (FF)
+  Destination:          control/M_position_q_133 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.828ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.065ns (0.733 - 0.798)
+  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
+  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: control/M_position_q_353 to control/M_position_q_133
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y57.DQ       Tcko                  0.430   control/M_position_q[353]
+                                                       control/M_position_q_353
+    SLICE_X9Y48.B2       net (fanout=8)        1.752   control/M_position_q[353]
+    SLICE_X9Y48.B        Tilo                  0.259   control/move/out151
+                                                       control/move/out152
+    SLICE_X8Y42.A2       net (fanout=1)        1.134   control/move/out151
+    SLICE_X8Y42.A        Tilo                  0.254   control/M_timer_q[24]
+                                                       control/move/out154
+    SLICE_X9Y14.D6       net (fanout=76)       3.563   control/position[359]_reduce_or_136_o
+    SLICE_X9Y14.D        Tilo                  0.259   control/move/N758
+                                                       control/move/placehold<60>212_SW1
+    SLICE_X5Y17.A2       net (fanout=2)        1.299   control/move/N758
+    SLICE_X5Y17.A        Tilo                  0.259   control/placehold<130>1
+                                                       control/move/placehold<120>21
+    SLICE_X7Y14.B1       net (fanout=21)       1.574   control/placehold<120>2
+    SLICE_X7Y14.B        Tilo                  0.259   control/M_position_q[123]
+                                                       control/move/placehold<121>11_1
+    SLICE_X0Y17.B2       net (fanout=17)       1.447   control/placehold<121>11
+    SLICE_X0Y17.CLK      Tas                   0.339   control/M_position_q[135]
+                                                       control/M_position_d<133>1
+                                                       control/M_position_q_133
+    -------------------------------------------------  ---------------------------
+    Total                                     12.828ns (2.059ns logic, 10.769ns route)
+                                                       (16.1% logic, 83.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.072ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_212 (FF)
+  Destination:          control/M_position_q_274 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.816ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.077ns (0.605 - 0.682)
+  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
+  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: control/M_position_q_212 to control/M_position_q_274
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y9.DQ       Tcko                  0.430   control/M_position_q[212]
+                                                       control/M_position_q_212
+    SLICE_X18Y15.B2      net (fanout=9)        1.449   control/M_position_q[212]
+    SLICE_X18Y15.B       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out92
+    SLICE_X18Y15.A3      net (fanout=1)        0.468   control/collide/upDown/out81
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X21Y29.D2      net (fanout=20)       2.316   control/placehold<261>1
+    SLICE_X21Y29.D       Tilo                  0.259   control/placehold[274]
+                                                       control/move/placehold<274>1
+    SLICE_X20Y29.A2      net (fanout=2)        0.724   control/placehold[274]
+    SLICE_X20Y29.CLK     Tas                   0.339   control/M_position_q[277]
+                                                       control/M_position_d<274>1
+                                                       control/M_position_q_274
+    -------------------------------------------------  ---------------------------
+    Total                                     12.816ns (1.992ns logic, 10.824ns route)
+                                                       (15.5% logic, 84.5% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.087ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_209 (FF)
+  Destination:          control/M_position_q_272 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.799ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.079ns (0.603 - 0.682)
+  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
+  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: control/M_position_q_209 to control/M_position_q_272
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y9.AQ       Tcko                  0.430   control/M_position_q[212]
+                                                       control/M_position_q_209
+    SLICE_X19Y12.B2      net (fanout=8)        1.603   control/M_position_q[209]
+    SLICE_X19Y12.B       Tilo                  0.259   control/M_move_out[206]
+                                                       control/collide/upDown/out93
+    SLICE_X18Y15.A4      net (fanout=1)        0.838   control/collide/upDown/out82
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X22Y29.B4      net (fanout=20)       2.029   control/placehold<261>1
+    SLICE_X22Y29.B       Tilo                  0.235   control/placehold<274>1
+                                                       control/move/placehold<272>1
+    SLICE_X21Y28.C5      net (fanout=2)        0.436   control/placehold[272]
+    SLICE_X21Y28.CLK     Tas                   0.373   control/M_position_q[273]
+                                                       control/M_position_d<272>1
+                                                       control/M_position_q_272
+    -------------------------------------------------  ---------------------------
+    Total                                     12.799ns (2.026ns logic, 10.773ns route)
+                                                       (15.8% logic, 84.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.096ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_200 (FF)
+  Destination:          control/M_position_q_271 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.793ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.076ns (0.603 - 0.679)
+  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
+  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: control/M_position_q_200 to control/M_position_q_271
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y10.DQ      Tcko                  0.476   control/M_position_q[200]
+                                                       control/M_position_q_200
+    SLICE_X16Y14.C1      net (fanout=7)        1.374   control/M_position_q[200]
+    SLICE_X16Y14.C       Tilo                  0.255   control/collide/upDown/out8
+                                                       control/collide/upDown/out91
+    SLICE_X18Y15.A1      net (fanout=1)        0.767   control/collide/upDown/out8
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X23Y28.B4      net (fanout=20)       1.895   control/placehold<261>1
+    SLICE_X23Y28.B       Tilo                  0.259   control/placehold[271]
+                                                       control/move/placehold<271>1
+    SLICE_X21Y28.B5      net (fanout=2)        0.798   control/placehold[271]
+    SLICE_X21Y28.CLK     Tas                   0.373   control/M_position_q[273]
+                                                       control/M_position_d<271>1
+                                                       control/M_position_q_271
+    -------------------------------------------------  ---------------------------
+    Total                                     12.793ns (2.092ns logic, 10.701ns route)
+                                                       (16.4% logic, 83.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.105ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_334 (FF)
+  Destination:          control/M_position_q_255 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.775ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.085ns (0.684 - 0.769)
+  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
+  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: control/M_position_q_334 to control/M_position_q_255
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y54.AQ      Tcko                  0.430   control/M_position_q[337]
+                                                       control/M_position_q_334
+    SLICE_X13Y41.D5      net (fanout=9)        2.171   control/M_position_q[334]
+    SLICE_X13Y41.D       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/collide/upDown/out152
+    SLICE_X13Y41.A5      net (fanout=1)        0.435   control/collide/upDown/out141
+    SLICE_X13Y41.A       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/collide/upDown/out154
+    SLICE_X19Y15.B3      net (fanout=71)       4.533   control/position[339]_reduce_or_156_o
+    SLICE_X19Y15.B       Tilo                  0.259   control/move/placehold[230]
+                                                       control/move/placehold<260>21
+    SLICE_X23Y18.A1      net (fanout=6)        1.138   control/move/placehold<260>2
+    SLICE_X23Y18.A       Tilo                  0.259   control/placehold<251>1
+                                                       control/move/placehold<240>11
+    SLICE_X18Y22.B3      net (fanout=21)       1.682   control/placehold<240>1
+    SLICE_X18Y22.B       Tilo                  0.235   control/placehold<255>1
+                                                       control/move/placehold<255>2
+    SLICE_X21Y22.C4      net (fanout=2)        0.742   control/placehold<255>1
+    SLICE_X21Y22.CLK     Tas                   0.373   control/M_position_q[256]
+                                                       control/M_position_d<255>1
+                                                       control/M_position_q_255
+    -------------------------------------------------  ---------------------------
+    Total                                     12.775ns (2.074ns logic, 10.701ns route)
+                                                       (16.2% logic, 83.8% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.120ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_209 (FF)
+  Destination:          control/M_position_q_270 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.766ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.079ns (0.603 - 0.682)
+  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
+  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: control/M_position_q_209 to control/M_position_q_270
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y9.AQ       Tcko                  0.430   control/M_position_q[212]
+                                                       control/M_position_q_209
+    SLICE_X19Y12.B2      net (fanout=8)        1.603   control/M_position_q[209]
+    SLICE_X19Y12.B       Tilo                  0.259   control/M_move_out[206]
+                                                       control/collide/upDown/out93
+    SLICE_X18Y15.A4      net (fanout=1)        0.838   control/collide/upDown/out82
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X20Y28.B4      net (fanout=20)       1.874   control/placehold<261>1
+    SLICE_X20Y28.B       Tilo                  0.254   control/N229
+                                                       control/move/placehold<270>1
+    SLICE_X21Y28.A1      net (fanout=2)        0.539   control/placehold[270]
+    SLICE_X21Y28.CLK     Tas                   0.373   control/M_position_q[273]
+                                                       control/M_position_d<270>1
+                                                       control/M_position_q_270
+    -------------------------------------------------  ---------------------------
+    Total                                     12.766ns (2.045ns logic, 10.721ns route)
+                                                       (16.0% logic, 84.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.126ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_330 (FF)
+  Destination:          control/M_position_q_161 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.828ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.011ns (0.768 - 0.779)
+  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
+  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: control/M_position_q_330 to control/M_position_q_161
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y49.AQ      Tcko                  0.476   control/M_position_q[333]
+                                                       control/M_position_q_330
+    SLICE_X13Y41.D2      net (fanout=9)        2.625   control/M_position_q[330]
+    SLICE_X13Y41.D       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/collide/upDown/out152
+    SLICE_X13Y41.A5      net (fanout=1)        0.435   control/collide/upDown/out141
+    SLICE_X13Y41.A       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/collide/upDown/out154
+    SLICE_X16Y18.C6      net (fanout=71)       4.059   control/position[339]_reduce_or_156_o
+    SLICE_X16Y18.C       Tilo                  0.255   control/out104
+                                                       control/move/placehold<60>212_1
+    SLICE_X12Y26.B4      net (fanout=4)        1.028   control/move/placehold<60>212
+    SLICE_X12Y26.B       Tilo                  0.254   control/placehold<160>1
+                                                       control/move/placehold<160>12
+    SLICE_X8Y7.B3        net (fanout=2)        2.338   control/placehold<160>1
+    SLICE_X8Y7.B         Tilo                  0.254   control/M_position_q[163]
+                                                       control/M_position_d<161>3
+    SLICE_X8Y7.A5        net (fanout=1)        0.247   control/M_position_d<161>3
+    SLICE_X8Y7.CLK       Tas                   0.339   control/M_position_q[163]
+                                                       control/M_position_d<161>4
+                                                       control/M_position_q_161
+    -------------------------------------------------  ---------------------------
+    Total                                     12.828ns (2.096ns logic, 10.732ns route)
+                                                       (16.3% logic, 83.7% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.126ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_219 (FF)
+  Destination:          control/M_position_q_263 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.758ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.081ns (0.599 - 0.680)
+  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
+  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: control/M_position_q_219 to control/M_position_q_263
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y10.DQ      Tcko                  0.476   control/M_position_q[219]
+                                                       control/M_position_q_219
+    SLICE_X16Y14.C2      net (fanout=7)        1.446   control/M_position_q[219]
+    SLICE_X16Y14.C       Tilo                  0.255   control/collide/upDown/out8
+                                                       control/collide/upDown/out91
+    SLICE_X18Y15.A1      net (fanout=1)        0.767   control/collide/upDown/out8
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X23Y27.B5      net (fanout=20)       2.044   control/placehold<261>1
+    SLICE_X23Y27.B       Tilo                  0.259   control/placehold<263>1
+                                                       control/move/placehold<263>1
+    SLICE_X23Y26.B4      net (fanout=2)        0.542   control/placehold[263]
+    SLICE_X23Y26.CLK     Tas                   0.373   control/M_position_q[265]
+                                                       control/M_position_d<263>1
+                                                       control/M_position_q_263
+    -------------------------------------------------  ---------------------------
+    Total                                     12.758ns (2.092ns logic, 10.666ns route)
+                                                       (16.4% logic, 83.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  7.131ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               control/M_position_q_209 (FF)
+  Destination:          control/M_position_q_264 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      12.751ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.083ns (0.599 - 0.682)
+  Source Clock:         clk_IBUF_BUFG rising at 0.000ns
+  Destination Clock:    clk_IBUF_BUFG rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: control/M_position_q_209 to control/M_position_q_264
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y9.AQ       Tcko                  0.430   control/M_position_q[212]
+                                                       control/M_position_q_209
+    SLICE_X19Y12.B2      net (fanout=8)        1.603   control/M_position_q[209]
+    SLICE_X19Y12.B       Tilo                  0.259   control/M_move_out[206]
+                                                       control/collide/upDown/out93
+    SLICE_X18Y15.A4      net (fanout=1)        0.838   control/collide/upDown/out82
+    SLICE_X18Y15.A       Tilo                  0.235   control/collide/leftRight/position[339]_reduce_or_127_o116
+                                                       control/collide/upDown/out94
+    SLICE_X13Y41.B5      net (fanout=60)       3.478   control/position[219]_reduce_or_90_o
+    SLICE_X13Y41.B       Tilo                  0.259   control/collide/upDown/out141
+                                                       control/move/placehold<261>1_SW0_SW0
+    SLICE_X10Y22.C2      net (fanout=1)        2.389   control/move/N67
+    SLICE_X10Y22.C       Tilo                  0.235   control/move/N769
+                                                       control/move/placehold<261>1
+    SLICE_X22Y27.B4      net (fanout=20)       1.907   control/placehold<261>1
+    SLICE_X22Y27.B       Tilo                  0.235   control/placehold<264>1
+                                                       control/move/placehold<264>1
+    SLICE_X23Y26.C4      net (fanout=2)        0.510   control/placehold[264]
+    SLICE_X23Y26.CLK     Tas                   0.373   control/M_position_q[265]
+                                                       control/M_position_d<264>1
+                                                       control/M_position_q_264
+    -------------------------------------------------  ---------------------------
+    Total                                     12.751ns (2.026ns logic, 10.725ns route)
+                                                       (15.9% logic, 84.1% route)
 
 --------------------------------------------------------------------------------
 
@@ -1468,12 +1423,52 @@ Slack: 17.334ns (period - min period limit)
   Location pin: BUFGMUX_X2Y11.I0
   Clock network: clk_IBUF
 --------------------------------------------------------------------------------
+Slack: 18.601ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.399ns (714.796MHz) (Tcp)
+  Physical resource: directions_gen_0[2].directions/M_sync_out/CLK
+  Logical resource: directions_gen_0[0].directions/sync/Mshreg_M_pipe_q_1/CLK
+  Location pin: SLICE_X8Y58.CLK
+  Clock network: clk_IBUF_BUFG
+--------------------------------------------------------------------------------
+Slack: 18.601ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.399ns (714.796MHz) (Tcp)
+  Physical resource: directions_gen_0[2].directions/M_sync_out/CLK
+  Logical resource: directions_gen_0[1].directions/sync/Mshreg_M_pipe_q_1/CLK
+  Location pin: SLICE_X8Y58.CLK
+  Clock network: clk_IBUF_BUFG
+--------------------------------------------------------------------------------
+Slack: 18.601ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.399ns (714.796MHz) (Tcp)
+  Physical resource: directions_gen_0[2].directions/M_sync_out/CLK
+  Logical resource: directions_gen_0[3].directions/sync/Mshreg_M_pipe_q_1/CLK
+  Location pin: SLICE_X8Y58.CLK
+  Clock network: clk_IBUF_BUFG
+--------------------------------------------------------------------------------
+Slack: 18.601ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.399ns (714.796MHz) (Tcp)
+  Physical resource: directions_gen_0[2].directions/M_sync_out/CLK
+  Logical resource: win_cond/sync/Mshreg_M_pipe_q_1/CLK
+  Location pin: SLICE_X8Y58.CLK
+  Clock network: clk_IBUF_BUFG
+--------------------------------------------------------------------------------
+Slack: 18.601ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.399ns (714.796MHz) (Tcp)
+  Physical resource: directions_gen_0[2].directions/M_sync_out/CLK
+  Logical resource: directions_gen_0[2].directions/sync/Mshreg_M_pipe_q_1/CLK
+  Location pin: SLICE_X8Y58.CLK
+  Clock network: clk_IBUF_BUFG
+--------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
   Period: 20.000ns
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[3]/CLK
   Logical resource: control/M_timer_q_0/CK
-  Location pin: SLICE_X0Y29.CLK
+  Location pin: SLICE_X4Y19.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1481,7 +1476,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[3]/CLK
   Logical resource: control/M_timer_q_1/CK
-  Location pin: SLICE_X0Y29.CLK
+  Location pin: SLICE_X4Y19.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1489,7 +1484,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[3]/CLK
   Logical resource: control/M_timer_q_2/CK
-  Location pin: SLICE_X0Y29.CLK
+  Location pin: SLICE_X4Y19.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1497,7 +1492,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[3]/CLK
   Logical resource: control/M_timer_q_3/CK
-  Location pin: SLICE_X0Y29.CLK
+  Location pin: SLICE_X4Y19.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1505,7 +1500,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[7]/CLK
   Logical resource: control/M_timer_q_4/CK
-  Location pin: SLICE_X0Y30.CLK
+  Location pin: SLICE_X4Y20.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1513,7 +1508,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[7]/CLK
   Logical resource: control/M_timer_q_5/CK
-  Location pin: SLICE_X0Y30.CLK
+  Location pin: SLICE_X4Y20.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1521,7 +1516,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[7]/CLK
   Logical resource: control/M_timer_q_6/CK
-  Location pin: SLICE_X0Y30.CLK
+  Location pin: SLICE_X4Y20.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1529,7 +1524,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[7]/CLK
   Logical resource: control/M_timer_q_7/CK
-  Location pin: SLICE_X0Y30.CLK
+  Location pin: SLICE_X4Y20.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1537,7 +1532,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[11]/CLK
   Logical resource: control/M_timer_q_8/CK
-  Location pin: SLICE_X0Y31.CLK
+  Location pin: SLICE_X4Y21.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1545,7 +1540,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[11]/CLK
   Logical resource: control/M_timer_q_9/CK
-  Location pin: SLICE_X0Y31.CLK
+  Location pin: SLICE_X4Y21.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1553,7 +1548,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[11]/CLK
   Logical resource: control/M_timer_q_10/CK
-  Location pin: SLICE_X0Y31.CLK
+  Location pin: SLICE_X4Y21.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1561,7 +1556,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[11]/CLK
   Logical resource: control/M_timer_q_11/CK
-  Location pin: SLICE_X0Y31.CLK
+  Location pin: SLICE_X4Y21.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1569,7 +1564,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[15]/CLK
   Logical resource: control/M_timer_q_12/CK
-  Location pin: SLICE_X0Y32.CLK
+  Location pin: SLICE_X4Y22.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1577,7 +1572,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[15]/CLK
   Logical resource: control/M_timer_q_13/CK
-  Location pin: SLICE_X0Y32.CLK
+  Location pin: SLICE_X4Y22.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1585,7 +1580,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[15]/CLK
   Logical resource: control/M_timer_q_14/CK
-  Location pin: SLICE_X0Y32.CLK
+  Location pin: SLICE_X4Y22.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1593,7 +1588,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[15]/CLK
   Logical resource: control/M_timer_q_15/CK
-  Location pin: SLICE_X0Y32.CLK
+  Location pin: SLICE_X4Y22.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1601,7 +1596,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[19]/CLK
   Logical resource: control/M_timer_q_16/CK
-  Location pin: SLICE_X0Y33.CLK
+  Location pin: SLICE_X4Y23.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1609,7 +1604,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[19]/CLK
   Logical resource: control/M_timer_q_17/CK
-  Location pin: SLICE_X0Y33.CLK
+  Location pin: SLICE_X4Y23.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1617,7 +1612,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[19]/CLK
   Logical resource: control/M_timer_q_18/CK
-  Location pin: SLICE_X0Y33.CLK
+  Location pin: SLICE_X4Y23.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1625,7 +1620,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[19]/CLK
   Logical resource: control/M_timer_q_19/CK
-  Location pin: SLICE_X0Y33.CLK
+  Location pin: SLICE_X4Y23.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1633,7 +1628,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[23]/CLK
   Logical resource: control/M_timer_q_20/CK
-  Location pin: SLICE_X0Y34.CLK
+  Location pin: SLICE_X4Y24.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1641,7 +1636,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[23]/CLK
   Logical resource: control/M_timer_q_21/CK
-  Location pin: SLICE_X0Y34.CLK
+  Location pin: SLICE_X4Y24.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1649,7 +1644,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[23]/CLK
   Logical resource: control/M_timer_q_22/CK
-  Location pin: SLICE_X0Y34.CLK
+  Location pin: SLICE_X4Y24.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 Slack: 19.520ns (period - min period limit)
@@ -1657,48 +1652,7 @@ Slack: 19.520ns (period - min period limit)
   Min period limit: 0.480ns (2083.333MHz) (Tcp)
   Physical resource: control/M_timer_q[23]/CLK
   Logical resource: control/M_timer_q_23/CK
-  Location pin: SLICE_X0Y34.CLK
-  Clock network: clk_IBUF_BUFG
---------------------------------------------------------------------------------
-Slack: 19.520ns (period - min period limit)
-  Period: 20.000ns
-  Min period limit: 0.480ns (2083.333MHz) (Tcp)
-  Physical resource: reset_cond/M_stage_q[2]/CLK
-  Logical resource: reset_cond/M_stage_q_3/CK
-  Location pin: SLICE_X0Y2.CLK
-  Clock network: clk_IBUF_BUFG
---------------------------------------------------------------------------------
-Slack: 19.520ns (period - (min high pulse limit / (high pulse / period)))
-  Period: 20.000ns
-  High pulse: 10.000ns
-  High pulse limit: 0.240ns (Trpw)
-  Physical resource: reset_cond/M_stage_q[2]/SR
-  Logical resource: reset_cond/M_stage_q_3/SR
-  Location pin: SLICE_X0Y2.SR
-  Clock network: M_reset_cond_in
---------------------------------------------------------------------------------
-Slack: 19.520ns (period - min period limit)
-  Period: 20.000ns
-  Min period limit: 0.480ns (2083.333MHz) (Tcp)
-  Physical resource: reset_cond/M_stage_q[2]/CLK
-  Logical resource: reset_cond/M_stage_q_0/CK
-  Location pin: SLICE_X0Y2.CLK
-  Clock network: clk_IBUF_BUFG
---------------------------------------------------------------------------------
-Slack: 19.520ns (period - min period limit)
-  Period: 20.000ns
-  Min period limit: 0.480ns (2083.333MHz) (Tcp)
-  Physical resource: reset_cond/M_stage_q[2]/CLK
-  Logical resource: reset_cond/M_stage_q_1/CK
-  Location pin: SLICE_X0Y2.CLK
-  Clock network: clk_IBUF_BUFG
---------------------------------------------------------------------------------
-Slack: 19.520ns (period - min period limit)
-  Period: 20.000ns
-  Min period limit: 0.480ns (2083.333MHz) (Tcp)
-  Physical resource: reset_cond/M_stage_q[2]/CLK
-  Logical resource: reset_cond/M_stage_q_2/CK
-  Location pin: SLICE_X0Y2.CLK
+  Location pin: SLICE_X4Y24.CLK
   Clock network: clk_IBUF_BUFG
 --------------------------------------------------------------------------------
 
@@ -1715,7 +1669,7 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   13.305|         |         |         |
+clk            |   13.476|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -1724,23 +1678,23 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 325217 paths, 0 nets, and 9277 connections
+Constraints cover 328910 paths, 0 nets, and 9626 connections
 
 Design statistics:
-   Minimum period:  13.305ns{1}   (Maximum frequency:  75.160MHz)
+   Minimum period:  13.476ns{1}   (Maximum frequency:  74.206MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Thu Dec 08 18:32:47 2016 
+Analysis completed Tue Dec 13 10:35:48 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 246 MB
+Peak Memory Usage: 248 MB
 
 
 

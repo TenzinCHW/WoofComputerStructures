@@ -1,0 +1,42 @@
+module adder (
+    output out[8],
+    output z[1],
+    output v[1],
+    output n[1],
+    input a[8],
+    input b[8],
+    input aLUFN[6]
+  ) {
+  sig p[8];  // Acts as temp variable since out is output
+  // out cannot be read
+  
+  //sig zero[8];
+  //sig one[8];
+  //sig alufnIszero[8];
+  //sig alufnIsone[8];
+  
+  always {
+  
+    //zero = a - b;
+    //one = a + b;
+    //alufnIszero = ~(zero & ~8x{aLUFN[0]});
+    //alufnIsone = ~(one & 8x{aLUFN[1]});
+    //p = ~(alufnIszero & alufnIsone);  // a 2-bit multiplexer
+    //z = ~(~(0 & ~p[0]) & ~(1 & p[0]));  // 2-bit multiplexer shortened
+    
+    p = 8b0;
+    case (aLUFN[0]) {
+      0: p = a + b;
+      1: p = a - b;
+      default: p = 0;
+      }
+    case (p) {
+      0: z = 1;
+      default: z = 0;
+      }
+    out = p;  // always block is like a while(true) block
+    // only need to specify that out is equal to p here.
+    v = (a[7] & (b[7] ^ aLUFN[0]) & !p[7]) | (!a[7] & !(b[7] ^ aLUFN[0]) & p[7]);
+    n = p[7];
+  }
+}

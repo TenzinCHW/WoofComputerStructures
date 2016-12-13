@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module collision_8 (
+module collision_13 (
     input clk,
     input rst,
     input [3:0] movement,
@@ -19,7 +19,7 @@ module collision_8 (
   reg [1-1:0] M_upDown_upDown;
   reg [400-1:0] M_upDown_map;
   reg [400-1:0] M_upDown_position;
-  checkUpDown_9 upDown (
+  checkUpDown_14 upDown (
     .upDown(M_upDown_upDown),
     .map(M_upDown_map),
     .position(M_upDown_position),
@@ -30,7 +30,7 @@ module collision_8 (
   reg [400-1:0] M_leftRight_map;
   reg [400-1:0] M_leftRight_position;
   reg [1-1:0] M_leftRight_leftRight;
-  checkLeftRight_10 leftRight (
+  checkLeftRight_15 leftRight (
     .map(M_leftRight_map),
     .position(M_leftRight_position),
     .leftRight(M_leftRight_leftRight),
