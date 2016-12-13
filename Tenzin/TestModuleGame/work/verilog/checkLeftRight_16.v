@@ -4,11 +4,12 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module checkLeftRight_15 (
+module checkLeftRight_16 (
     input [399:0] map,
     input [399:0] position,
     input [0:0] leftRight,
-    output reg out
+    output reg [0:0] out,
+    output reg [0:0] outerWall
   );
   
   
@@ -31,18 +32,23 @@ module checkLeftRight_15 (
   
   always @* begin
     out = 1'h1;
+    outerWall = 1'h0;
     for (loop = 2'h2; loop < 5'h12; loop = loop + 1'h1) begin
       if ((|position[(loop)*20+19-:20])) begin
         if (leftRight) begin
           if ((~|((position[(loop)*20+19-:20] >> 1'h1) & map[(loop)*20+19-:20]))) begin
             if ((~|((position[(loop)*20+19-:20] >> 1'h1) & OUTERWALL[(loop)*20+19-:20]))) begin
               out = 1'h0;
+            end else begin
+              outerWall = 1'h1;
             end
           end
         end else begin
           if ((~|((position[(loop)*20+19-:20] << 1'h1) & map[(loop)*20+19-:20]))) begin
             if ((~|((position[(loop)*20+19-:20] << 1'h1) & OUTERWALL[(loop)*20+19-:20]))) begin
               out = 1'h0;
+            end else begin
+              outerWall = 1'h1;
             end
           end
         end

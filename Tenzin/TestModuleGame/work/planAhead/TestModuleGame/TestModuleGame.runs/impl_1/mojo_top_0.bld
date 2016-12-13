@@ -18,19 +18,9 @@ Done.
 Annotating constraints to design from ucf file "mojo_top_0.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
-WARNING:ConstraintSystem:119 - Constraint <NET "myreset[0]" IOSTANDARD = LVTTL;>
-   [mojo_top_0.ucf(42)]: This constraint cannot be distributed from the design
-   objects matching 'NET "myreset[0]"' because those design objects do not
-   contain or drive any instances of the correct type.
-
 WARNING:ConstraintSystem:119 - Constraint <NET "io_button[1]" IOSTANDARD =
-   LVTTL;> [mojo_top_0.ucf(125)]: This constraint cannot be distributed from the
+   LVTTL;> [mojo_top_0.ucf(124)]: This constraint cannot be distributed from the
    design objects matching 'NET "io_button[1]"' because those design objects do
-   not contain or drive any instances of the correct type.
-
-WARNING:ConstraintSystem:119 - Constraint <NET "io_button[2]" IOSTANDARD =
-   LVTTL;> [mojo_top_0.ucf(127)]: This constraint cannot be distributed from the
-   design objects matching 'NET "io_button[2]"' because those design objects do
    not contain or drive any instances of the correct type.
 
 WARNING:ConstraintSystem:119 - Constraint <NET "io_dip[23]" IOSTANDARD = LVTTL;>
@@ -66,12 +56,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   7
+  Number of warnings:   5
 
-Total memory usage is 188160 kilobytes
+Total memory usage is 189184 kilobytes
 
 Writing NGD file "mojo_top_0.ngd" ...
-Total REAL time to NGDBUILD completion:  48 sec
-Total CPU time to NGDBUILD completion:   19 sec
+Total REAL time to NGDBUILD completion:  53 sec
+Total CPU time to NGDBUILD completion:   20 sec
 
 Writing NGDBUILD log file "mojo_top_0.bld"...

@@ -1,8 +1,9 @@
 module checkUpDown (
-    input upDown[1],  // 1 if up, 0 if down
     input map[20][20],
     input position[20][20],
-    output out
+    input upDown[1],  // 1 if up, 0 if down
+    output out[1],
+    output outerWall[1]
   ) {
 
   var loop;
@@ -17,6 +18,7 @@ module checkUpDown (
   always {
     
     out = 1; // collision, don't move
+    outerWall = 0;  // no auto lose
       // for each case statement, perform the appropriate xform
       // or comparison call a diff alu function to check for 
       // collision
@@ -33,7 +35,10 @@ module checkUpDown (
           c = OUTERWALL[loop + 1][17:10];  // AND these tgt using ALU
           if (~|(position[loop] & map[loop + 1])) {  // compare w/ line above
             if (~|(position[loop] & OUTERWALL[loop + 1])){
-            out = 0; // no collision, continue to move
+              out = 0; // no collision, continue to move
+            }
+            else {
+              outerWall = 1;  // if hit outer wall, this flag should be up
             }
           }
         }
@@ -43,7 +48,10 @@ module checkUpDown (
           c = OUTERWALL[loop - 1][17:12];  // AND these
           if (~|(position[loop] & map[loop - 1])) {  // compare w/ line below
             if (~|(position[loop] & OUTERWALL[loop - 1])){
-            out = 0;  // no collision, continue to move
+              out = 0;  // no collision, continue to move
+            }
+            else {
+              outerWall = 1;
             }
           }
         }

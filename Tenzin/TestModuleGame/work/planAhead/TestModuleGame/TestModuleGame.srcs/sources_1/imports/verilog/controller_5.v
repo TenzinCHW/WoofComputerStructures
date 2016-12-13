@@ -21,7 +21,7 @@ module controller_5 (
   wire [400-1:0] M_move_out;
   reg [4-1:0] M_move_movement;
   reg [400-1:0] M_move_position;
-  move_8 move (
+  move_9 move (
     .movement(M_move_movement),
     .position(M_move_position),
     .out(M_move_out)
@@ -30,8 +30,8 @@ module controller_5 (
   wire [400-1:0] M_mapMod_map;
   wire [400-1:0] M_mapMod_start;
   wire [400-1:0] M_mapMod_winPos;
-  reg [2-1:0] M_mapMod_level;
-  map_9 mapMod (
+  reg [3-1:0] M_mapMod_level;
+  map_10 mapMod (
     .level(M_mapMod_level),
     .map(M_mapMod_map),
     .start(M_mapMod_start),
@@ -41,7 +41,7 @@ module controller_5 (
   wire [256-1:0] M_convert_out;
   reg [400-1:0] M_convert_map;
   reg [400-1:0] M_convert_position;
-  convertToDisplay_10 convert (
+  convertToDisplay_11 convert (
     .map(M_convert_map),
     .position(M_convert_position),
     .out(M_convert_out)
@@ -50,14 +50,14 @@ module controller_5 (
   wire [1-1:0] M_win_out;
   reg [400-1:0] M_win_position;
   reg [400-1:0] M_win_winPos;
-  checkWin_11 win (
+  checkWin_12 win (
     .position(M_win_position),
     .winPos(M_win_winPos),
     .out(M_win_out)
   );
   
   reg [0:0] M_start_d, M_start_q = 1'h0;
-  reg [1:0] M_level_d, M_level_q = 1'h0;
+  reg [2:0] M_level_d, M_level_q = 1'h0;
   reg [0:0] M_difficulty_d, M_difficulty_q = 1'h0;
   reg [399:0] M_position_d, M_position_q = 1'h0;
   reg [399:0] M_currentMap_d, M_currentMap_q = 1'h0;
@@ -72,23 +72,25 @@ module controller_5 (
   reg [2:0] M_state_d, M_state_q = STATIONARY_state;
   wire [8-1:0] M_display_inputsToCircuit;
   reg [256-1:0] M_display_pattern;
-  toDisplay_12 display (
+  toDisplay_13 display (
     .clk(clk),
     .rst(rst),
     .pattern(M_display_pattern),
     .inputsToCircuit(M_display_inputsToCircuit)
   );
   wire [1-1:0] M_collide_out;
+  wire [1-1:0] M_collide_outerWall;
   reg [4-1:0] M_collide_movement;
   reg [400-1:0] M_collide_map;
   reg [400-1:0] M_collide_position;
-  collision_13 collide (
+  collision_14 collide (
     .clk(clk),
     .rst(rst),
     .movement(M_collide_movement),
     .map(M_collide_map),
     .position(M_collide_position),
-    .out(M_collide_out)
+    .out(M_collide_out),
+    .outerWall(M_collide_outerWall)
   );
   
   always @* begin
@@ -98,6 +100,7 @@ module controller_5 (
     M_start_d = M_start_q;
     M_timer_d = M_timer_q;
     M_currentMap_d = M_currentMap_q;
+    M_difficulty_d = M_difficulty_q;
     M_winPos_d = M_winPos_q;
     
     if (M_state_q == STATIONARY_state) begin
@@ -119,6 +122,9 @@ module controller_5 (
     end
     if (M_collide_out) begin
       M_state_d = STATIONARY_state;
+    end
+    if (M_difficulty_q & M_collide_outerWall) begin
+      M_start_d = 1'h0;
     end
     
     case (M_state_q)
@@ -175,12 +181,26 @@ module controller_5 (
     end
     M_mapMod_level = M_level_q;
     if (~M_start_q) begin
+      if (M_level_q > 2'h2) begin
+        M_difficulty_d = 1'h1;
+      end else begin
+        M_difficulty_d = 1'h0;
+      end
       M_currentMap_d = M_mapMod_map;
       M_position_d = M_mapMod_start;
       M_winPos_d = M_mapMod_winPos;
       M_start_d = 1'h1;
     end
   end
+  
+  always @(posedge clk) begin
+    if (rst == 1'b1) begin
+      M_state_q <= 1'h0;
+    end else begin
+      M_state_q <= M_state_d;
+    end
+  end
+  
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
@@ -199,15 +219,6 @@ module controller_5 (
       M_currentMap_q <= M_currentMap_d;
       M_winPos_q <= M_winPos_d;
       M_timer_q <= M_timer_d;
-    end
-  end
-  
-  
-  always @(posedge clk) begin
-    if (rst == 1'b1) begin
-      M_state_q <= 1'h0;
-    end else begin
-      M_state_q <= M_state_d;
     end
   end
   

@@ -4,37 +4,42 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module collision_13 (
+module collision_14 (
     input clk,
     input rst,
     input [3:0] movement,
     input [399:0] map,
     input [399:0] position,
-    output reg [0:0] out
+    output reg [0:0] out,
+    output reg [0:0] outerWall
   );
   
   
   
   wire [1-1:0] M_upDown_out;
-  reg [1-1:0] M_upDown_upDown;
+  wire [1-1:0] M_upDown_outerWall;
   reg [400-1:0] M_upDown_map;
   reg [400-1:0] M_upDown_position;
-  checkUpDown_14 upDown (
-    .upDown(M_upDown_upDown),
+  reg [1-1:0] M_upDown_upDown;
+  checkUpDown_15 upDown (
     .map(M_upDown_map),
     .position(M_upDown_position),
-    .out(M_upDown_out)
+    .upDown(M_upDown_upDown),
+    .out(M_upDown_out),
+    .outerWall(M_upDown_outerWall)
   );
   
   wire [1-1:0] M_leftRight_out;
+  wire [1-1:0] M_leftRight_outerWall;
   reg [400-1:0] M_leftRight_map;
   reg [400-1:0] M_leftRight_position;
   reg [1-1:0] M_leftRight_leftRight;
-  checkLeftRight_15 leftRight (
+  checkLeftRight_16 leftRight (
     .map(M_leftRight_map),
     .position(M_leftRight_position),
     .leftRight(M_leftRight_leftRight),
-    .out(M_leftRight_out)
+    .out(M_leftRight_out),
+    .outerWall(M_leftRight_outerWall)
   );
   
   localparam STATIONARY_direction = 3'd0;
@@ -49,6 +54,7 @@ module collision_13 (
     M_direction_d = M_direction_q;
     
     out = 1'h1;
+    outerWall = 1'h0;
     
     case (movement)
       1'h0: begin
@@ -81,18 +87,22 @@ module collision_13 (
       UP_direction: begin
         M_upDown_upDown = 1'h1;
         out = M_upDown_out;
+        outerWall = M_upDown_outerWall;
       end
       DOWN_direction: begin
         M_upDown_upDown = 1'h0;
         out = M_upDown_out;
+        outerWall = M_upDown_outerWall;
       end
       LEFT_direction: begin
         M_leftRight_leftRight = 1'h0;
         out = M_leftRight_out;
+        outerWall = M_leftRight_outerWall;
       end
       RIGHT_direction: begin
         M_leftRight_leftRight = 1'h1;
         out = M_leftRight_out;
+        outerWall = M_leftRight_outerWall;
       end
     endcase
   end

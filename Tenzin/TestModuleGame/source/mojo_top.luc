@@ -31,11 +31,11 @@ module mojo_top (
     // The reset conditioner is used to synchronize the reset signal to the FPGA
     // clock. This ensures the entire FPGA comes out of reset at the same time.
     reset_conditioner reset_cond;
-    reset_conditioner myreset_cond;
-    button_conditioner directions[4];
-    button_conditioner win_cond;
-    .rst(rst){
-      controller control;      
+    button_conditioner myreset_cond(#MIN_DELAY(50));
+    button_conditioner directions[4](#MIN_DELAY(50));
+    button_conditioner win_cond(#MIN_DELAY(50));
+    .rst(newrst){
+      controller control;
     }
   }
   

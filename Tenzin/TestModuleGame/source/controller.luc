@@ -16,7 +16,7 @@ module controller (
   .clk(clk) {
     .rst(rst) {
       dff start[1];
-      dff level[2];  // the level that you are currently on
+      dff level[3];  // the level that you are currently on
       dff difficulty[1];  // 1 for hard, 0 for easy
       dff position[20][20];
       dff currentMap[20][20];
@@ -43,6 +43,10 @@ module controller (
     // change state to STATIONARY
     if (collide.out) {
       state.d = state.STATIONARY;
+    }
+    
+    if (difficulty.q & collide.outerWall) {
+      start.d = 0;
     }
     
     case (state.q) {
@@ -102,6 +106,12 @@ module controller (
     
     mapMod.level = level.q;
     if (~start.q) {
+      if (level.q > 2) {
+        difficulty.d = 1;
+      }
+      else {
+      difficulty.d = 0;
+      }
       currentMap.d = mapMod.map;
       position.d = mapMod.start;
       winPos.d = mapMod.winPos;

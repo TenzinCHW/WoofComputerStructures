@@ -4,7 +4,8 @@ module collision (
     input movement[4],
     input map[20][20],
     input position[20][20],
-    output out[1]
+    output out[1],
+    output outerWall[1]
   ) {
 
 
@@ -26,6 +27,7 @@ module collision (
   always {
     out = 1;  // don't move (usually) out indicates if there
               // is a collision
+    outerWall = 0;  // don't make the player lose automatically
     
     case (movement) {
       0: direction.d = direction.STATIONARY;  // each button is
@@ -48,15 +50,19 @@ module collision (
       direction.UP: 
         upDown.upDown = 1;
         out = upDown.out;
+        outerWall = upDown.outerWall;
       direction.DOWN:
         upDown.upDown = 0;
         out = upDown.out;
+        outerWall = upDown.outerWall;
       direction.LEFT:
         leftRight.leftRight = 0;
         out = leftRight.out;
+        outerWall = leftRight.outerWall;
       direction.RIGHT:
         leftRight.leftRight = 1;
         out = leftRight.out;
+        outerWall = leftRight.outerWall;
     }    
   }
 }

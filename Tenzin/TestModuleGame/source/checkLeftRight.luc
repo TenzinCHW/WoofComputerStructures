@@ -2,7 +2,8 @@ module checkLeftRight (
     input map[20][20],
     input position[20][20],
     input leftRight[1],  // left is 0, right is 1
-    output out
+    output out[1],
+    output outerWall[1]
   ) {
 
   var loop;
@@ -16,6 +17,7 @@ module checkLeftRight (
   
   always {
     out = 1; // collision, don't move
+    outerWall = 0;
       // for each case statement, perform the appropriate xform
       // or comparison call a diff alu function to check for
       // collision
@@ -29,12 +31,18 @@ module checkLeftRight (
             if (~|((position[loop] >> 1) & OUTERWALL[loop])){
             out = 0;  // no collision, continue to move
             }
+            else {
+              outerWall = 1;  // if hit outer wall, this flag should be up
+            }
           }
         }
         else {
           if (~|((position[loop] << 1) & map[loop])) {  // compare w/ next column
             if (~|((position[loop] << 1) & OUTERWALL[loop])){
             out = 0;  // no collision, continue to move
+            }
+            else {
+              outerWall = 1;
             }
           }
         }

@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module toDisplay_12 (
+module toDisplay_13 (
     input clk,
     input rst,
     input [255:0] pattern,
@@ -105,6 +105,15 @@ module toDisplay_12 (
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
+      M_state_q <= 3'h6;
+    end else begin
+      M_state_q <= M_state_d;
+    end
+  end
+  
+  
+  always @(posedge clk) begin
+    if (rst == 1'b1) begin
       M_i_q <= 1'h0;
       M_j_q <= 1'h0;
       M_k_q <= 1'h0;
@@ -114,15 +123,6 @@ module toDisplay_12 (
       M_j_q <= M_j_d;
       M_k_q <= M_k_d;
       M_time_q <= M_time_d;
-    end
-  end
-  
-  
-  always @(posedge clk) begin
-    if (rst == 1'b1) begin
-      M_state_q <= 3'h6;
-    end else begin
-      M_state_q <= M_state_d;
     end
   end
   

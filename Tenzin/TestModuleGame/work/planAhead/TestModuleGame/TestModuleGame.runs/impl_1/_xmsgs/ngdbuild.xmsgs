@@ -5,13 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;myreset[0]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(42)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;myreset[0]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_button[1]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(125)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_button[1]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
-</msg>
-
-<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_button[2]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(127)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_button[2]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
+<msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_button[1]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(124)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_button[1]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.
 </msg>
 
 <msg type="warning" file="ConstraintSystem" num="119" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;io_dip[23]&quot; IOSTANDARD = LVTTL;&gt; [mojo_top_0.ucf(136)]</arg>: This constraint cannot be distributed from the design objects matching &apos;<arg fmt="%s" index="2">NET &quot;io_dip[23]&quot;</arg>&apos; because those design objects do not contain or drive any instances of the correct type.

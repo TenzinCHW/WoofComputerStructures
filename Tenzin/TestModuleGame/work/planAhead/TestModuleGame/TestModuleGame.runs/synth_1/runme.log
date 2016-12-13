@@ -7,30 +7,30 @@ Reading design: mojo_top_0.prj
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/checkUpDown_14.v" into library work
-Parsing module <checkUpDown_14>.
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/checkLeftRight_15.v" into library work
-Parsing module <checkLeftRight_15>.
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/toDisplay_12.v" into library work
-Parsing module <toDisplay_12>.
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/checkUpDown_15.v" into library work
+Parsing module <checkUpDown_15>.
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/checkLeftRight_16.v" into library work
+Parsing module <checkLeftRight_16>.
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/toDisplay_13.v" into library work
+Parsing module <toDisplay_13>.
 Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/pipeline_6.v" into library work
 Parsing module <pipeline_6>.
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/move_8.v" into library work
-Parsing module <move_8>.
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/map_9.v" into library work
-Parsing module <map_9>.
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/convertToDisplay_10.v" into library work
-Parsing module <convertToDisplay_10>.
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/collision_13.v" into library work
-Parsing module <collision_13>.
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/checkWin_11.v" into library work
-Parsing module <checkWin_11>.
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/move_9.v" into library work
+Parsing module <move_9>.
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/map_10.v" into library work
+Parsing module <map_10>.
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/convertToDisplay_11.v" into library work
+Parsing module <convertToDisplay_11>.
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/collision_14.v" into library work
+Parsing module <collision_14>.
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/checkWin_12.v" into library work
+Parsing module <checkWin_12>.
 Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/reset_conditioner_1.v" into library work
 Parsing module <reset_conditioner_1>.
 Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/controller_5.v" into library work
 Parsing module <controller_5>.
-Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/button_conditioner_3.v" into library work
-Parsing module <button_conditioner_3>.
+Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/button_conditioner_2.v" into library work
+Parsing module <button_conditioner_2>.
 Analyzing Verilog file "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/mojo_top_0.v" into library work
 Parsing module <mojo_top_0>.
 
@@ -42,30 +42,29 @@ Elaborating module <mojo_top_0>.
 
 Elaborating module <reset_conditioner_1>.
 
-Elaborating module <button_conditioner_3>.
+Elaborating module <button_conditioner_2>.
 
 Elaborating module <pipeline_6>.
 
 Elaborating module <controller_5>.
 
-Elaborating module <move_8>.
+Elaborating module <move_9>.
 
-Elaborating module <map_9>.
+Elaborating module <map_10>.
 
-Elaborating module <convertToDisplay_10>.
+Elaborating module <convertToDisplay_11>.
 
-Elaborating module <checkWin_11>.
+Elaborating module <checkWin_12>.
 
-Elaborating module <toDisplay_12>.
+Elaborating module <toDisplay_13>.
 
-Elaborating module <collision_13>.
+Elaborating module <collision_14>.
 
-Elaborating module <checkUpDown_14>.
+Elaborating module <checkUpDown_15>.
 
-Elaborating module <checkLeftRight_15>.
-WARNING:HDLCompiler:1127 - "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/controller_5.v" Line 185: Assignment to M_difficulty_q ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 86: Assignment to newrst ignored, since the identifier is never used
-WARNING:Xst:2972 - "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/mojo_top_0.v" line 50. All outputs of instance <myreset_cond> of block <reset_conditioner_1> are unconnected in block <mojo_top_0>. Underlying logic will be removed.
+Elaborating module <checkLeftRight_16>.
+WARNING:HDLCompiler:1127 - "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/mojo_top_0.v" Line 86: Assignment to rst ignored, since the identifier is never used
+WARNING:Xst:2972 - "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/mojo_top_0.v" line 43. All outputs of instance <reset_cond> of block <reset_conditioner_1> are unconnected in block <mojo_top_0>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -81,7 +80,7 @@ WARNING:Xst:647 - Input <spi_mosi> is never used. This port will be preserved an
 WARNING:Xst:647 - Input <spi_sck> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <avr_tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <avr_rx_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/mojo_top_0.v" line 50: Output port <out> of the instance <myreset_cond> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/mojo_top_0.v" line 43: Output port <out> of the instance <reset_cond> is unconnected or connected to loadless signal.
     Found 1-bit tristate buffer for signal <spi_miso> created at line 86
     Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 86
     Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 86
@@ -92,21 +91,14 @@ INFO:Xst:3210 - "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputer
 	inferred   6 Tristate(s).
 Unit <mojo_top_0> synthesized.
 
-Synthesizing Unit <reset_conditioner_1>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/reset_conditioner_1.v".
-    Found 4-bit register for signal <M_stage_q>.
-    Summary:
-	inferred   4 D-type flip-flop(s).
-Unit <reset_conditioner_1> synthesized.
-
-Synthesizing Unit <button_conditioner_3>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/button_conditioner_3.v".
-    Found 20-bit register for signal <M_ctr_q>.
-    Found 20-bit adder for signal <M_ctr_q[19]_GND_3_o_add_2_OUT> created at line 39.
+Synthesizing Unit <button_conditioner_2>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/button_conditioner_2.v".
+    Found 22-bit register for signal <M_ctr_q>.
+    Found 22-bit adder for signal <M_ctr_q[21]_GND_3_o_add_2_OUT> created at line 39.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  20 D-type flip-flop(s).
-Unit <button_conditioner_3> synthesized.
+	inferred  22 D-type flip-flop(s).
+Unit <button_conditioner_2> synthesized.
 
 Synthesizing Unit <pipeline_6>.
     Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/pipeline_6.v".
@@ -117,13 +109,14 @@ Unit <pipeline_6> synthesized.
 
 Synthesizing Unit <controller_5>.
     Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/controller_5.v".
-    Found 2-bit register for signal <M_level_q>.
+    Found 1-bit register for signal <M_start_q>.
+    Found 3-bit register for signal <M_level_q>.
+    Found 1-bit register for signal <M_difficulty_q>.
     Found 400-bit register for signal <M_position_q>.
     Found 400-bit register for signal <M_currentMap_q>.
     Found 400-bit register for signal <M_winPos_q>.
     Found 25-bit register for signal <M_timer_q>.
     Found 3-bit register for signal <M_state_q>.
-    Found 1-bit register for signal <M_start_q>.
     Found finite state machine <FSM_0> for signal <M_state_q>.
     -----------------------------------------------------------------------
     | States             | 5                                              |
@@ -138,31 +131,33 @@ Synthesizing Unit <controller_5>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 25-bit subtractor for signal <temp> created at line 142.
-    Found 25-bit adder for signal <M_timer_d> created at line 141.
-    Found 2-bit adder for signal <M_level_q[1]_GND_5_o_add_23_OUT> created at line 172.
+    Found 25-bit subtractor for signal <temp> created at line 148.
+    Found 25-bit adder for signal <M_timer_d> created at line 147.
+    Found 3-bit adder for signal <M_level_q[2]_GND_5_o_add_23_OUT> created at line 178.
+    Found 3-bit comparator greater for signal <GND_5_o_M_level_q[2]_LessThan_27_o> created at line 184
     Summary:
 	inferred   3 Adder/Subtractor(s).
-	inferred 1228 D-type flip-flop(s).
+	inferred 1230 D-type flip-flop(s).
+	inferred   1 Comparator(s).
 	inferred   1 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <controller_5> synthesized.
 
-Synthesizing Unit <move_8>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/move_8.v".
+Synthesizing Unit <move_9>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/move_9.v".
     Summary:
 	no macro.
-Unit <move_8> synthesized.
+Unit <move_9> synthesized.
 
-Synthesizing Unit <map_9>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/map_9.v".
-    Found 4x1200-bit Read Only RAM for signal <_n0011>
+Synthesizing Unit <map_10>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/map_10.v".
+    Found 8x1200-bit Read Only RAM for signal <_n0015>
     Summary:
 	inferred   1 RAM(s).
-Unit <map_9> synthesized.
+Unit <map_10> synthesized.
 
-Synthesizing Unit <convertToDisplay_10>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/convertToDisplay_10.v".
+Synthesizing Unit <convertToDisplay_11>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/convertToDisplay_11.v".
 WARNING:Xst:647 - Input <map<41:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <map<61:58>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <map<81:78>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -215,25 +210,25 @@ WARNING:Xst:647 - Input <position<399:358>> is never used. This port will be pre
     Found 16-bit adder for signal <placehold<255:240>> created at line 21.
     Summary:
 	inferred  16 Adder/Subtractor(s).
-Unit <convertToDisplay_10> synthesized.
+Unit <convertToDisplay_11> synthesized.
 
-Synthesizing Unit <checkWin_11>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/checkWin_11.v".
+Synthesizing Unit <checkWin_12>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/checkWin_12.v".
 WARNING:Xst:647 - Input <position<39:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <position<399:360>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <winPos<39:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <winPos<399:360>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	inferred  31 Multiplexer(s).
-Unit <checkWin_11> synthesized.
+Unit <checkWin_12> synthesized.
 
-Synthesizing Unit <toDisplay_12>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/toDisplay_12.v".
+Synthesizing Unit <toDisplay_13>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/toDisplay_13.v".
+    Found 4-bit register for signal <M_i_q>.
     Found 4-bit register for signal <M_j_q>.
     Found 4-bit register for signal <M_k_q>.
     Found 16-bit register for signal <M_time_q>.
     Found 3-bit register for signal <M_state_q>.
-    Found 4-bit register for signal <M_i_q>.
     Found finite state machine <FSM_1> for signal <M_state_q>.
     -----------------------------------------------------------------------
     | States             | 5                                              |
@@ -262,66 +257,68 @@ Synthesizing Unit <toDisplay_12>.
 	inferred   7 Multiplexer(s).
 	inferred   1 Combinational logic shifter(s).
 	inferred   1 Finite State Machine(s).
-Unit <toDisplay_12> synthesized.
+Unit <toDisplay_13> synthesized.
 
-Synthesizing Unit <collision_13>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/collision_13.v".
+Synthesizing Unit <collision_14>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/collision_14.v".
     Found 3-bit register for signal <M_direction_q>.
-    Found 8x2-bit Read Only RAM for signal <_n0033>
+    Found 8x2-bit Read Only RAM for signal <_n0038>
     Summary:
 	inferred   1 RAM(s).
 	inferred   3 D-type flip-flop(s).
-	inferred   6 Multiplexer(s).
-Unit <collision_13> synthesized.
+	inferred  12 Multiplexer(s).
+Unit <collision_14> synthesized.
 
-Synthesizing Unit <checkUpDown_14>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/checkUpDown_14.v".
+Synthesizing Unit <checkUpDown_15>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/checkUpDown_15.v".
 WARNING:Xst:647 - Input <map<19:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <map<399:380>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <position<39:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <position<399:360>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
-	inferred  80 Multiplexer(s).
-Unit <checkUpDown_14> synthesized.
+	inferred 160 Multiplexer(s).
+Unit <checkUpDown_15> synthesized.
 
-Synthesizing Unit <checkLeftRight_15>.
-    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/checkLeftRight_15.v".
+Synthesizing Unit <checkLeftRight_16>.
+    Related source file is "C:/Users/HanWei/Dropbox/SUTDNotes/ISTD1/CompStruct/WoofComputerStructures/Tenzin/TestModuleGame/work/planAhead/TestModuleGame/TestModuleGame.srcs/sources_1/imports/verilog/checkLeftRight_16.v".
 WARNING:Xst:647 - Input <map<39:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <map<399:360>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <position<39:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <position<399:360>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
-	inferred  94 Multiplexer(s).
-Unit <checkLeftRight_15> synthesized.
+	inferred 188 Multiplexer(s).
+Unit <checkLeftRight_16> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 2
- 4x1200-bit single-port Read Only RAM                  : 1
+ 8x1200-bit single-port Read Only RAM                  : 1
  8x2-bit single-port Read Only RAM                     : 1
-# Adders/Subtractors                                   : 30
+# Adders/Subtractors                                   : 31
  1-bit adder                                           : 1
  16-bit adder                                          : 17
- 2-bit adder                                           : 1
- 20-bit adder                                          : 5
+ 22-bit adder                                          : 6
  25-bit adder                                          : 1
  25-bit subtractor                                     : 1
+ 3-bit adder                                           : 1
  4-bit adder                                           : 1
  4-bit subtractor                                      : 2
  8-bit adder                                           : 1
-# Registers                                            : 22
- 1-bit register                                        : 1
+# Registers                                            : 24
+ 1-bit register                                        : 2
  16-bit register                                       : 1
  2-bit register                                        : 6
- 20-bit register                                       : 5
+ 22-bit register                                       : 6
  25-bit register                                       : 1
- 3-bit register                                        : 1
- 4-bit register                                        : 4
+ 3-bit register                                        : 2
+ 4-bit register                                        : 3
  400-bit register                                      : 3
-# Multiplexers                                         : 219
- 1-bit 2-to-1 multiplexer                              : 211
+# Comparators                                          : 1
+ 3-bit comparator greater                              : 1
+# Multiplexers                                         : 399
+ 1-bit 2-to-1 multiplexer                              : 391
  16-bit 2-to-1 multiplexer                             : 2
  4-bit 2-to-1 multiplexer                              : 5
  8-bit 5-to-1 multiplexer                              : 1
@@ -340,12 +337,12 @@ Macro Statistics
 =========================================================================
 
 
-Synthesizing (advanced) Unit <button_conditioner_3>.
+Synthesizing (advanced) Unit <button_conditioner_2>.
 The following registers are absorbed into counter <M_ctr_q>: 1 register on signal <M_ctr_q>.
-Unit <button_conditioner_3> synthesized (advanced).
+Unit <button_conditioner_2> synthesized (advanced).
 
-Synthesizing (advanced) Unit <collision_13>.
-INFO:Xst:3231 - The small RAM <Mram__n0033> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+Synthesizing (advanced) Unit <collision_14>.
+INFO:Xst:3231 - The small RAM <Mram__n0038> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -356,38 +353,38 @@ INFO:Xst:3231 - The small RAM <Mram__n0033> will be implemented on LUTs in order
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-Unit <collision_13> synthesized (advanced).
+Unit <collision_14> synthesized (advanced).
 
 Synthesizing (advanced) Unit <controller_5>.
 The following registers are absorbed into counter <M_timer_q>: 1 register on signal <M_timer_q>.
 The following registers are absorbed into counter <M_level_q>: 1 register on signal <M_level_q>.
 Unit <controller_5> synthesized (advanced).
 
-Synthesizing (advanced) Unit <map_9>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0011> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+Synthesizing (advanced) Unit <map_10>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0015> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 4-word x 1200-bit                   |          |
+    |     aspect ratio   | 8-word x 1200-bit                   |          |
     |     weA            | connected to signal <GND>           | high     |
     |     addrA          | connected to signal <level>         |          |
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-Unit <map_9> synthesized (advanced).
+Unit <map_10> synthesized (advanced).
 
-Synthesizing (advanced) Unit <toDisplay_12>.
-The following registers are absorbed into counter <M_k_q>: 1 register on signal <M_k_q>.
+Synthesizing (advanced) Unit <toDisplay_13>.
 The following registers are absorbed into counter <M_i_q>: 1 register on signal <M_i_q>.
-Unit <toDisplay_12> synthesized (advanced).
+The following registers are absorbed into counter <M_k_q>: 1 register on signal <M_k_q>.
+Unit <toDisplay_13> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 2
- 4x1200-bit single-port distributed Read Only RAM      : 1
+ 8x1200-bit single-port distributed Read Only RAM      : 1
  8x2-bit single-port distributed Read Only RAM         : 1
 # Adders/Subtractors                                   : 21
  1-bit adder                                           : 1
@@ -395,16 +392,18 @@ Macro Statistics
  25-bit subtractor                                     : 1
  4-bit subtractor                                      : 1
  8-bit adder                                           : 1
-# Counters                                             : 9
- 2-bit up counter                                      : 1
- 20-bit up counter                                     : 5
+# Counters                                             : 10
+ 22-bit up counter                                     : 6
  25-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
  4-bit down counter                                    : 1
  4-bit up counter                                      : 1
-# Registers                                            : 1238
- Flip-Flops                                            : 1238
-# Multiplexers                                         : 217
- 1-bit 2-to-1 multiplexer                              : 211
+# Registers                                            : 1237
+ Flip-Flops                                            : 1237
+# Comparators                                          : 1
+ 3-bit comparator greater                              : 1
+# Multiplexers                                         : 397
+ 1-bit 2-to-1 multiplexer                              : 391
  16-bit 2-to-1 multiplexer                             : 2
  4-bit 2-to-1 multiplexer                              : 3
  8-bit 5-to-1 multiplexer                              : 1
@@ -441,17 +440,7 @@ Optimizing FSM <control/display/FSM_1> on signal <M_state_q[1:3]> with user enco
  011   | 011
  000   | 000
 -------------------
-WARNING:Xst:1293 - FF/Latch <M_winPos_q_158> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_159> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_160> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_161> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_162> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_163> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_164> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_165> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_166> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_167> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_168> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <M_winPos_q_168> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_169> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_170> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_171> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -462,17 +451,15 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_175> has
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_176> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_177> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_178> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_135> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_136> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_137> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_138> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_139> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_140> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_141> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_142> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_144> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_145> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_146> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_179> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_180> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_181> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_182> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_183> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_184> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_185> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_186> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_187> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_147> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_148> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_149> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -484,14 +471,16 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_154> has
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_155> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_156> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_157> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_201> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_202> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_203> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_204> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_205> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_206> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_207> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_208> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_158> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_159> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_160> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_161> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_162> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_163> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_164> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_165> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_166> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_167> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_209> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_210> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_211> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -506,15 +495,13 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_219> has
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_220> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_221> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_222> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_179> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_180> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_181> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_182> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_183> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_184> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_185> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_186> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_187> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_223> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_224> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_225> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_226> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_227> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_228> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_229> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_188> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_189> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_190> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -528,6 +515,42 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_197> has
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_198> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_199> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_200> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_201> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_202> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_203> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_204> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_205> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_206> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_207> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_208> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_83> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_84> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_85> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_86> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_87> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_88> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_89> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_90> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_91> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_92> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_93> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_94> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_95> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_96> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_97> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_98> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_99> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_100> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_101> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_102> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_103> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_62> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_63> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_64> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_65> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_66> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_67> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_68> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_69> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_70> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_71> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -542,36 +565,36 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_79> has 
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_80> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_81> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_82> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_83> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_84> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_85> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_86> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_87> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_88> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_89> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_90> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_47> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_48> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_49> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_50> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_51> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_52> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_53> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_54> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_55> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_56> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_57> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_58> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_59> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_60> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_61> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_62> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_63> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_64> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_65> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_66> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_67> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_68> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_125> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_126> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_127> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_128> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_129> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_130> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_131> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_132> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_133> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_134> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_135> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_136> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_137> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_138> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_139> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_140> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_141> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_142> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_144> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_145> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_146> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_104> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_105> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_106> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_107> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_108> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_109> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_110> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_111> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_112> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_113> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_114> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_115> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -584,41 +607,6 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_121> has
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_122> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_123> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_124> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_125> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_126> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_127> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_128> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_129> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_130> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_131> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_132> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_133> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_134> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_91> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_92> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_93> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_94> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_95> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_96> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_97> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_98> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_99> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_100> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_101> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_102> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_103> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_104> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_105> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_106> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_107> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_108> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_109> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_110> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_111> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_112> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_334> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_335> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_336> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_337> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_338> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_339> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -638,10 +626,8 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_352> has
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_353> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_354> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_355> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_312> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_313> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_314> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_315> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_356> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_357> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_316> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_317> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_318> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -660,7 +646,9 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_330> has
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_331> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_332> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_333> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_378> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_334> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_335> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_336> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_379> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_380> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_381> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -682,8 +670,6 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_396> has
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_397> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_398> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_399> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_356> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_357> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_358> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_359> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_360> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -704,13 +690,7 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_374> has
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_375> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_376> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_377> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_246> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_247> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_248> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_249> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_250> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_251> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_252> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_378> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_253> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_254> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_255> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -726,13 +706,12 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_264> has
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_265> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_266> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_267> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_223> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_224> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_225> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_226> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_227> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_228> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_229> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_268> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_269> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_270> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_271> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_272> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_273> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_230> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_231> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_232> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -748,11 +727,12 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_241> has
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_242> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_244> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_245> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_290> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_291> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_292> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_293> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_294> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_246> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_247> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_248> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_249> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_250> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_252> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_295> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_296> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_297> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -770,12 +750,10 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_308> has
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_309> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_310> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_311> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_268> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_269> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_270> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_271> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_272> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_273> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_312> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_313> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_314> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_315> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_274> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_275> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_276> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -792,14 +770,11 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_286> has
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_287> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_288> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_289> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_152> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_153> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_155> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_156> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_157> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_158> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_159> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_160> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_290> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_291> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_292> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_293> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_294> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_161> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_162> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_165> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -814,19 +789,16 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_174>
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_175> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_176> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_178> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_179> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_180> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_181> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_182> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_184> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_188> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_118> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_119> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_120> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_121> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_122> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_123> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_125> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_126> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_128> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_131> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_133> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_134> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_135> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_136> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_138> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_139> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_140> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -836,35 +808,35 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_143>
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_144> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_147> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_151> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_207> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_208> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_210> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_212> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_213> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_214> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_218> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_219> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_220> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_221> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_224> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_225> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_226> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_228> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_229> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_230> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_152> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_153> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_155> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_156> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_157> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_158> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_159> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_160> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_231> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_232> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_233> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_235> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_236> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_237> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_179> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_180> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_181> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_182> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_184> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_185> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_188> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_238> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_239> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_240> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_241> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_243> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_244> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_247> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_249> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_251> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_252> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_253> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_257> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_258> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_259> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_260> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_189> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_190> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_191> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -876,10 +848,17 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_198>
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_199> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_200> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_201> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_202> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_204> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_205> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_206> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_218> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_219> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_220> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_221> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_224> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_225> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_226> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_228> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_229> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_230> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_21> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_22> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_23> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_24> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -900,8 +879,6 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_38> 
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_39> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_40> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_41> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_42> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_44> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_0> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_1> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_2> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -923,7 +900,7 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_17> 
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_18> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_19> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_20> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_21> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_80> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_81> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_84> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_85> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -931,7 +908,6 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_87> 
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_89> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_91> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_92> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_96> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_98> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_99> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_100> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -945,10 +921,9 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_109>
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_110> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_111> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_114> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_118> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_44> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_45> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_47> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_48> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_58> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_59> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_60> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -967,7 +942,30 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_75> 
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_76> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_78> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_79> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_80> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_399> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_0> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_1> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_2> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_3> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_4> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_5> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_6> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_7> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_8> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_9> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_10> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_11> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_12> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_13> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_14> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_15> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_16> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_17> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_18> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_19> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_378> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_379> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_380> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_381> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_382> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_383> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -986,32 +984,32 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_395>
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_396> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_397> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_398> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_399> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_0> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_1> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_2> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_359> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_360> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_361> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_362> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_363> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_364> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_365> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_366> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_367> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_368> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_369> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_370> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_371> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_372> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_373> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_374> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_375> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_376> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_377> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_378> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_379> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_380> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_41> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_42> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_43> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_44> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_45> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_46> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_47> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_48> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_49> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_50> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_51> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_52> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_53> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_54> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_55> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_56> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_57> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_58> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_59> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_60> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_61> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_20> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_21> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_22> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_23> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_24> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_25> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_26> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_27> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -1028,100 +1026,6 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_37> has 
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_38> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_39> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_40> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_41> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_42> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_43> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_44> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_45> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_46> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_3> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_4> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_5> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_6> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_7> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_8> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_9> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_10> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_11> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_12> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_13> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_14> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_15> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_16> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_17> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_18> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_19> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_20> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_21> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_22> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_23> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_winPos_q_24> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_271> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_274> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_275> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_276> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_277> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_278> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_279> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_280> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_281> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_282> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_283> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_285> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_287> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_288> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_290> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_291> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_293> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_294> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_296> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_298> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_299> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_300> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_238> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_239> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_240> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_241> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_243> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_244> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_247> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_248> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_249> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_251> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_252> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_253> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_257> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_258> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_259> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_260> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_261> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_263> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_266> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_267> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_268> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_269> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_329> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_330> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_332> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_333> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_334> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_335> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_336> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_337> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_338> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_339> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_340> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_341> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_342> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_343> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_344> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_346> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_349> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_350> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_352> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_354> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_357> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_358> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_301> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_303> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_304> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
@@ -1143,32 +1047,100 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_321>
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_324> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_325> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_326> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_261> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_263> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_266> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_267> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_268> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_269> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_271> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_274> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_275> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_276> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_277> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_278> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_279> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_280> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_281> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_288> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_290> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_291> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_298> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_299> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_300> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_357> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_358> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_359> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_360> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_361> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_362> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_363> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_364> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_365> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_366> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_367> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_368> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_369> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_370> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_371> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_372> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_373> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_374> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_375> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_376> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_377> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_327> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <M_currentMap_q_46> in Unit <controller_5> is equivalent to the following 12 FFs/Latches, which will be removed : <M_currentMap_q_83> <M_currentMap_q_93> <M_currentMap_q_130> <M_currentMap_q_145> <M_currentMap_q_186> <M_currentMap_q_234> <M_currentMap_q_262> <M_currentMap_q_286> <M_currentMap_q_295> <M_currentMap_q_328> <M_currentMap_q_351> <M_currentMap_q_356> 
-INFO:Xst:2261 - The FF/Latch <M_currentMap_q_177> in Unit <controller_5> is equivalent to the following 10 FFs/Latches, which will be removed : <M_currentMap_q_193> <M_currentMap_q_209> <M_currentMap_q_217> <M_currentMap_q_273> <M_currentMap_q_289> <M_currentMap_q_314> <M_currentMap_q_345> <M_currentMap_q_347> <M_currentMap_q_355> <M_winPos_q_243> 
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_329> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_330> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_332> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_333> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_334> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_335> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_336> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_337> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_338> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_339> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_340> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_341> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_342> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_343> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_344> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_346> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_349> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_350> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_352> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_currentMap_q_354> has a constant value of 0 in block <controller_5>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <M_difficulty_q_0> in Unit <controller_5> is equivalent to the following 4 FFs/Latches, which will be removed : <M_currentMap_q_46> <M_currentMap_q_130> <M_currentMap_q_286> <M_currentMap_q_295> 
+INFO:Xst:2261 - The FF/Latch <M_currentMap_q_51> in Unit <controller_5> is equivalent to the following FF/Latch, which will be removed : <M_currentMap_q_322> 
+INFO:Xst:2261 - The FF/Latch <M_currentMap_q_52> in Unit <controller_5> is equivalent to the following 17 FFs/Latches, which will be removed : <M_currentMap_q_53> <M_currentMap_q_57> <M_currentMap_q_70> <M_currentMap_q_77> <M_currentMap_q_95> <M_currentMap_q_97> <M_currentMap_q_115> <M_currentMap_q_116> <M_currentMap_q_117> <M_currentMap_q_124> <M_currentMap_q_137> <M_currentMap_q_149> <M_currentMap_q_150> <M_currentMap_q_203> <M_currentMap_q_306> <M_currentMap_q_323> <M_currentMap_q_348> 
+INFO:Xst:2261 - The FF/Latch <M_currentMap_q_177> in Unit <controller_5> is equivalent to the following 7 FFs/Latches, which will be removed : <M_currentMap_q_209> <M_currentMap_q_217> <M_currentMap_q_289> <M_currentMap_q_314> <M_currentMap_q_345> <M_currentMap_q_347> <M_winPos_q_243> 
+INFO:Xst:2261 - The FF/Latch <M_currentMap_q_193> in Unit <controller_5> is equivalent to the following 2 FFs/Latches, which will be removed : <M_currentMap_q_273> <M_currentMap_q_355> 
+INFO:Xst:2261 - The FF/Latch <M_currentMap_q_183> in Unit <controller_5> is equivalent to the following 3 FFs/Latches, which will be removed : <M_currentMap_q_222> <M_currentMap_q_255> <M_winPos_q_143> 
+INFO:Xst:2261 - The FF/Latch <M_currentMap_q_127> in Unit <controller_5> is equivalent to the following FF/Latch, which will be removed : <M_currentMap_q_215> 
+INFO:Xst:2261 - The FF/Latch <M_currentMap_q_42> in Unit <controller_5> is equivalent to the following 32 FFs/Latches, which will be removed : <M_currentMap_q_48> <M_currentMap_q_96> <M_currentMap_q_122> <M_currentMap_q_123> <M_currentMap_q_125> <M_currentMap_q_126> <M_currentMap_q_128> <M_currentMap_q_131> <M_currentMap_q_133> <M_currentMap_q_134> <M_currentMap_q_135> <M_currentMap_q_136> <M_currentMap_q_185> <M_currentMap_q_202> <M_currentMap_q_204> <M_currentMap_q_205> <M_currentMap_q_206> <M_currentMap_q_207> <M_currentMap_q_208> <M_currentMap_q_210> <M_currentMap_q_212> <M_currentMap_q_213> <M_currentMap_q_214> <M_currentMap_q_248> <M_currentMap_q_282> <M_currentMap_q_283> <M_currentMap_q_285> <M_currentMap_q_287> <M_currentMap_q_293> <M_currentMap_q_294> <M_currentMap_q_296> <M_winPos_q_251> 
+INFO:Xst:2261 - The FF/Latch <M_currentMap_q_50> in Unit <controller_5> is equivalent to the following 12 FFs/Latches, which will be removed : <M_currentMap_q_82> <M_currentMap_q_86> <M_currentMap_q_90> <M_currentMap_q_112> <M_currentMap_q_113> <M_currentMap_q_146> <M_currentMap_q_154> <M_currentMap_q_171> <M_currentMap_q_187> <M_currentMap_q_242> <M_currentMap_q_256> <M_currentMap_q_353> 
 INFO:Xst:2261 - The FF/Latch <M_currentMap_q_67> in Unit <controller_5> is equivalent to the following 4 FFs/Latches, which will be removed : <M_currentMap_q_164> <M_currentMap_q_223> <M_currentMap_q_245> <M_currentMap_q_270> 
-INFO:Xst:2261 - The FF/Latch <M_currentMap_q_183> in Unit <controller_5> is equivalent to the following 4 FFs/Latches, which will be removed : <M_currentMap_q_216> <M_currentMap_q_222> <M_currentMap_q_255> <M_winPos_q_143> 
-INFO:Xst:2261 - The FF/Latch <M_currentMap_q_51> in Unit <controller_5> is equivalent to the following 3 FFs/Latches, which will be removed : <M_currentMap_q_127> <M_currentMap_q_215> <M_currentMap_q_322> 
-INFO:Xst:2261 - The FF/Latch <M_currentMap_q_43> in Unit <controller_5> is equivalent to the following 24 FFs/Latches, which will be removed : <M_currentMap_q_49> <M_currentMap_q_50> <M_currentMap_q_82> <M_currentMap_q_86> <M_currentMap_q_90> <M_currentMap_q_112> <M_currentMap_q_113> <M_currentMap_q_129> <M_currentMap_q_132> <M_currentMap_q_146> <M_currentMap_q_148> <M_currentMap_q_154> <M_currentMap_q_171> <M_currentMap_q_187> <M_currentMap_q_211> <M_currentMap_q_227> <M_currentMap_q_242> <M_currentMap_q_256> <M_currentMap_q_284> <M_currentMap_q_292> <M_currentMap_q_297> <M_currentMap_q_302> <M_currentMap_q_331> <M_currentMap_q_353> 
-INFO:Xst:2261 - The FF/Latch <M_currentMap_q_52> in Unit <controller_5> is equivalent to the following 30 FFs/Latches, which will be removed : <M_currentMap_q_53> <M_currentMap_q_54> <M_currentMap_q_56> <M_currentMap_q_57> <M_currentMap_q_70> <M_currentMap_q_77> <M_currentMap_q_88> <M_currentMap_q_94> <M_currentMap_q_95> <M_currentMap_q_97> <M_currentMap_q_104> <M_currentMap_q_105> <M_currentMap_q_115> <M_currentMap_q_116> <M_currentMap_q_117> <M_currentMap_q_124> <M_currentMap_q_137> <M_currentMap_q_149> <M_currentMap_q_150> <M_currentMap_q_163> <M_currentMap_q_195> <M_currentMap_q_203> <M_currentMap_q_246> <M_currentMap_q_250> <M_currentMap_q_264> <M_currentMap_q_265> <M_currentMap_q_272> <M_currentMap_q_306> <M_currentMap_q_323> <M_currentMap_q_348> 
+INFO:Xst:2261 - The FF/Latch <M_currentMap_q_43> in Unit <controller_5> is equivalent to the following 11 FFs/Latches, which will be removed : <M_currentMap_q_49> <M_currentMap_q_129> <M_currentMap_q_132> <M_currentMap_q_148> <M_currentMap_q_211> <M_currentMap_q_227> <M_currentMap_q_284> <M_currentMap_q_292> <M_currentMap_q_297> <M_currentMap_q_302> <M_currentMap_q_331> 
+INFO:Xst:2261 - The FF/Latch <M_currentMap_q_54> in Unit <controller_5> is equivalent to the following 12 FFs/Latches, which will be removed : <M_currentMap_q_56> <M_currentMap_q_88> <M_currentMap_q_94> <M_currentMap_q_104> <M_currentMap_q_105> <M_currentMap_q_163> <M_currentMap_q_195> <M_currentMap_q_246> <M_currentMap_q_250> <M_currentMap_q_264> <M_currentMap_q_265> <M_currentMap_q_272> 
+INFO:Xst:2261 - The FF/Latch <M_currentMap_q_83> in Unit <controller_5> is equivalent to the following 8 FFs/Latches, which will be removed : <M_currentMap_q_93> <M_currentMap_q_145> <M_currentMap_q_186> <M_currentMap_q_234> <M_currentMap_q_262> <M_currentMap_q_328> <M_currentMap_q_351> <M_currentMap_q_356> 
 
 Optimizing unit <mojo_top_0> ...
 
 Optimizing unit <controller_5> ...
 
-Optimizing unit <toDisplay_12> ...
+Optimizing unit <toDisplay_13> ...
 
-Optimizing unit <collision_13> ...
+Optimizing unit <collision_14> ...
 
-Optimizing unit <checkUpDown_14> ...
+Optimizing unit <checkUpDown_15> ...
 
-Optimizing unit <checkLeftRight_15> ...
+Optimizing unit <checkLeftRight_16> ...
 
-Optimizing unit <move_8> ...
+Optimizing unit <move_9> ...
 
-Optimizing unit <checkWin_11> ...
+Optimizing unit <checkWin_12> ...
 
-Optimizing unit <convertToDisplay_10> ...
+Optimizing unit <convertToDisplay_11> ...
 WARNING:Xst:2677 - Node <control/M_position_q_399> of sequential type is unconnected in block <mojo_top_0>.
 WARNING:Xst:2677 - Node <control/M_position_q_398> of sequential type is unconnected in block <mojo_top_0>.
 WARNING:Xst:2677 - Node <control/M_position_q_397> of sequential type is unconnected in block <mojo_top_0>.
@@ -1252,31 +1224,28 @@ WARNING:Xst:2677 - Node <control/M_position_q_0> of sequential type is unconnect
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 48.
-FlipFlop control/M_state_q_FSM_FFd1 has been replicated 1 time(s)
-FlipFlop control/M_state_q_FSM_FFd2 has been replicated 1 time(s)
-FlipFlop control/M_state_q_FSM_FFd3 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 53.
 FlipFlop control/M_timer_q_24 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
 Processing Unit <mojo_top_0> :
+	Found 2-bit shift register for signal <myreset_cond/sync/M_pipe_q_1>.
 	Found 2-bit shift register for signal <directions_gen_0[0].directions/sync/M_pipe_q_1>.
 	Found 2-bit shift register for signal <directions_gen_0[1].directions/sync/M_pipe_q_1>.
 	Found 2-bit shift register for signal <directions_gen_0[2].directions/sync/M_pipe_q_1>.
 	Found 2-bit shift register for signal <directions_gen_0[3].directions/sync/M_pipe_q_1>.
 	Found 2-bit shift register for signal <win_cond/sync/M_pipe_q_1>.
-INFO:Xst:741 - HDL ADVISOR - A 4-bit shift register was found for signal <reset_cond/M_stage_q_3> and currently occupies 4 logic cells (2 slices). Removing the set/reset logic would take advantage of SRL32 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
 Unit <mojo_top_0> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 503
- Flip-Flops                                            : 503
-# Shift Registers                                      : 5
- 2-bit shift register                                  : 5
+# Registers                                            : 536
+ Flip-Flops                                            : 536
+# Shift Registers                                      : 6
+ 2-bit shift register                                  : 6
 
 =========================================================================
 
@@ -1300,7 +1269,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | IBUF+BUFG              | 513   |
+clk                                | IBUF+BUFG              | 548   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -1311,9 +1280,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 10.758ns (Maximum Frequency: 92.953MHz)
-   Minimum input arrival time before clock: 3.526ns
-   Maximum output required time after clock: 22.563ns
+   Minimum period: 9.852ns (Maximum Frequency: 101.504MHz)
+   Minimum input arrival time before clock: 2.945ns
+   Maximum output required time after clock: 21.562ns
    Maximum combinational path delay: 5.857ns
 
 =========================================================================

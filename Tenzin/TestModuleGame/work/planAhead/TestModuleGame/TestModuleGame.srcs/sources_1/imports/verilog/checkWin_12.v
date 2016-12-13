@@ -4,7 +4,7 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module checkWin_11 (
+module checkWin_12 (
     input [399:0] position,
     input [399:0] winPos,
     output reg out

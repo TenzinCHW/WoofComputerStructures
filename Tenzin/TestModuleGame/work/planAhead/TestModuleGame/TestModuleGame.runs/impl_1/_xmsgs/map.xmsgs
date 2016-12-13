@@ -15,8 +15,8 @@
 <arg fmt="%s" index="3">io_dip(19),
 io_dip(13),
 io_dip(9),
-io_button(2),
-io_button(1)</arg>
+io_button(1),
+rst_n_IBUF</arg>
 To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
 </msg>
 
@@ -53,7 +53,7 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 <msg type="info" file="Map" num="215" delta="new" >The Interim Design Summary has been generated in the MAP Report (.mrp).
 </msg>
 
-<msg type="info" file="Place" num="834" delta="new" >Only a subset of IOs are locked. Out of <arg fmt="%d" index="1">88</arg> IOs, <arg fmt="%d" index="2">81</arg> are locked and <arg fmt="%d" index="3">7</arg> are not locked. <arg fmt="%s" index="4">If you would like to print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1.</arg> 
+<msg type="info" file="Place" num="834" delta="new" >Only a subset of IOs are locked. Out of <arg fmt="%d" index="1">90</arg> IOs, <arg fmt="%d" index="2">81</arg> are locked and <arg fmt="%d" index="3">9</arg> are not locked. <arg fmt="%s" index="4">If you would like to print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1.</arg> 
 </msg>
 
 <msg type="info" file="Pack" num="1650" delta="new" >Map created a placed design.

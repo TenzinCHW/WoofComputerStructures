@@ -47,7 +47,7 @@ module mojo_top_0 (
   );
   wire [1-1:0] M_myreset_cond_out;
   reg [1-1:0] M_myreset_cond_in;
-  reset_conditioner_1 myreset_cond (
+  button_conditioner_2 myreset_cond (
     .clk(clk),
     .in(M_myreset_cond_in),
     .out(M_myreset_cond_out)
@@ -58,7 +58,7 @@ module mojo_top_0 (
   genvar GEN_directions0;
   generate
   for (GEN_directions0=0;GEN_directions0<3'h4;GEN_directions0=GEN_directions0+1) begin: directions_gen_0
-    button_conditioner_3 directions (
+    button_conditioner_2 directions (
       .clk(clk),
       .in(M_directions_in[GEN_directions0*(1)+(1)-1-:(1)]),
       .out(M_directions_out[GEN_directions0*(1)+(1)-1-:(1)])
@@ -67,7 +67,7 @@ module mojo_top_0 (
   endgenerate
   wire [1-1:0] M_win_cond_out;
   reg [1-1:0] M_win_cond_in;
-  button_conditioner_3 win_cond (
+  button_conditioner_2 win_cond (
     .clk(clk),
     .in(M_win_cond_in),
     .out(M_win_cond_out)
@@ -77,7 +77,7 @@ module mojo_top_0 (
   reg [1-1:0] M_control_winButton;
   controller_5 control (
     .clk(clk),
-    .rst(rst),
+    .rst(newrst),
     .buttons(M_control_buttons),
     .winButton(M_control_winButton),
     .out(M_control_out)

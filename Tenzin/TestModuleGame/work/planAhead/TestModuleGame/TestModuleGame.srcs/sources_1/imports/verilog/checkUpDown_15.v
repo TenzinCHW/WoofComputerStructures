@@ -4,11 +4,12 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
-module checkUpDown_14 (
-    input [0:0] upDown,
+module checkUpDown_15 (
     input [399:0] map,
     input [399:0] position,
-    output reg out
+    input [0:0] upDown,
+    output reg [0:0] out,
+    output reg [0:0] outerWall
   );
   
   
@@ -31,6 +32,7 @@ module checkUpDown_14 (
   
   always @* begin
     out = 1'h1;
+    outerWall = 1'h0;
     for (loop = 2'h2; loop < 5'h12; loop = loop + 1'h1) begin
       if ((|position[(loop)*20+19-:20])) begin
         if (upDown) begin
@@ -40,6 +42,8 @@ module checkUpDown_14 (
           if ((~|(position[(loop)*20+19-:20] & map[(loop + 1'h1)*20+19-:20]))) begin
             if ((~|(position[(loop)*20+19-:20] & OUTERWALL[(loop + 1'h1)*20+19-:20]))) begin
               out = 1'h0;
+            end else begin
+              outerWall = 1'h1;
             end
           end
         end else begin
@@ -49,6 +53,8 @@ module checkUpDown_14 (
           if ((~|(position[(loop)*20+19-:20] & map[(loop - 1'h1)*20+19-:20]))) begin
             if ((~|(position[(loop)*20+19-:20] & OUTERWALL[(loop - 1'h1)*20+19-:20]))) begin
               out = 1'h0;
+            end else begin
+              outerWall = 1'h1;
             end
           end
         end
